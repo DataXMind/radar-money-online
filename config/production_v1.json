@@ -1,0 +1,15 @@
+{
+  "execution_mode": "HUMAN_APPROVAL_REQUIRED",
+  "option": "B",
+  "network_enabled": false,
+  "window_days": 7,
+  "limits": {"raw_items": 15, "claims": 8, "opportunities": 5},
+  "input_manifest": "artifacts/mvp-v1/run_manifest.json",
+  "input_manifest_sha256": "e17335c5910f8f6b79bc8e39322fc84b0f72ebe3009f6dd1058bd40db8de0c99",
+  "criteria_file": "docs/evidence_criteria.md",
+  "criteria_sha256": "86146a39213ae422c7a57c7b2810acad404969c6e308dbfc842feb8c096e4514",
+  "test_report": "artifacts/offline-production-prep/offline_tests.json",
+  "dashboard_template": "dashboard.md",
+  "output_root": "artifacts/production-v1",
+  "required_evidence": ["buyer_evidence", "payment_evidence", "trend_evidence"]
+}

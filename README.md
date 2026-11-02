@@ -4,6 +4,16 @@ MVP Python 3.12, chỉ dùng standard library, chạy local và lưu được tr
 Đây là công cụ thu thập bằng chứng về chủ đề AI agent; chưa dùng LLM và chưa
 đủ khả năng xác nhận cơ hội kinh doanh. **Không production-ready.**
 
+Đã chuẩn bị [Production v1 theo phương án B](docs/production_v1_plan.md),
+chưa kích hoạt/chưa chạy. Script `scripts/run_production.py` chỉ replay archive
+offline sau approval riêng cho từng run; không tự fetch live hoặc cài cron.
+Template dashboard ở `dashboard.md`, config ở `config/production_v1.json`.
+Suite cho bản chuẩn bị chạy bằng lệnh sau để giữ report P2 và MVP lịch sử:
+
+```powershell
+python -m money_trend.offline_tests --output artifacts/offline-production-prep
+```
+
 Đợt sửa P2 offline: [evidence criteria](docs/evidence_criteria.md) và
 [phương án tiếp theo](docs/next_run_decision.md). Chưa chạy thêm live.
 Chạy suite hiện tại và giữ nguyên báo cáo lịch sử được manifest v1 tham chiếu:

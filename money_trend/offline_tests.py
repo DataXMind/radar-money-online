@@ -21,6 +21,12 @@ def write_report(out, log, result, root):
               'tests_run': result.testsRun, 'failures': len(result.failures), 'errors': len(result.errors),
               'network': 'socket creation blocked', 'source_sha256': hashes,
               'log_sha256': hashlib.sha256(log_path.read_bytes()).hexdigest()}
+    bundle = {'config_sha256': 'config/production_v1.json',
+              'script_sha256': 'scripts/run_production.py',
+              'criteria_sha256': 'docs/evidence_criteria.md', 'dashboard_sha256': 'dashboard.md'}
+    if all((root / name).is_file() for name in bundle.values()):
+        report['production_bundle_sha256'] = {
+            key: hashlib.sha256((root / name).read_bytes()).hexdigest() for key, name in bundle.items()}
     write_json(out / 'offline_tests.json', report)
     return report
 
