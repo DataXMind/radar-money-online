@@ -4,6 +4,22 @@ MVP Python 3.12, chỉ dùng standard library, chạy local và lưu được tr
 Đây là công cụ thu thập bằng chứng về chủ đề AI agent; chưa dùng LLM và chưa
 đủ khả năng xác nhận cơ hội kinh doanh. **Không production-ready.**
 
+Đợt sửa P2 offline: [evidence criteria](docs/evidence_criteria.md) và
+[phương án tiếp theo](docs/next_run_decision.md). Chưa chạy thêm live.
+Chạy suite hiện tại và giữ nguyên báo cáo lịch sử được manifest v1 tham chiếu:
+
+```powershell
+python -m money_trend.offline_tests --output artifacts/offline-p2
+```
+
+Report mới ở `artifacts/offline-p2/offline_tests.json`. Các số liệu 32 tests và
+run bên dưới mô tả phiên MVP v1 đã commit, không phải số tests sau bản sửa P2.
+GitHub ingress hiện yêu cầu metadata `errors`, `type`, `result_count` ở route
+được chọn: errors rỗng, type repositories, total count >= số rows trên trang;
+empty chỉ hợp lệ nếu total count bằng 0. Thiếu/mâu thuẫn metadata là lỗi ingress.
+Không đồng nhất total count với số rows một trang. Khi sau này được duyệt live,
+phải truyền test report hiện tại bằng `--test-report`; report v1 không khớp source mới.
+
 ## Kết quả đã chạy
 
 Ngày 02/11/2026, một lượt MVP thật thu được **10 repo GitHub + 5 HN stories**,

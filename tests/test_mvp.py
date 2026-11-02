@@ -1,5 +1,6 @@
 """Offline tests. Synthetic payloads below are tests, never historical evidence."""
 import hashlib
+import http.client
 import io
 import json
 import tempfile
@@ -16,7 +17,9 @@ FIXTURE = Path(__file__).parent / 'fixtures' / 'public_capture'
 
 
 def gh(rows, nested=False):
-    return json.dumps({'payload': {'blackbirdSearchRoute': {'results': rows}} if nested else {'results': rows}})
+    metadata = {'results': rows, 'errors': [], 'type': 'repositories',
+                'result_count': len(rows) if isinstance(rows, list) else 0}
+    return json.dumps({'payload': {'blackbirdSearchRoute': metadata} if nested else metadata})
 
 
 def hn():

@@ -1,5 +1,6 @@
 """Untrusted public data ingestion. No source content is executed or prompted."""
 import hashlib
+import http.client
 import json
 import math
 import os
@@ -109,12 +110,26 @@ def github_rows(body):
             if 'results' not in route:
                 raise DataError('missing blackbird results')
             rows = route['results']
+            metadata = route
         elif 'results' in payload:
             rows = payload['results']
+            metadata = payload
         else:
             continue
         if not isinstance(rows, list) or any(not isinstance(row, dict) for row in rows):
             raise DataError('GitHub results must be object array')
+        # result_count is the TOTAL across pages, not the current page length.
+        # Missing/contradictory metadata is an ingress error, never genuine empty.
+        for envelope in (payload, metadata):
+            if 'errors' in envelope and (not isinstance(envelope['errors'], list) or envelope['errors']):
+                raise DataError('GitHub source errors or invalid errors metadata')
+        if not isinstance(metadata.get('errors'), list):
+            raise DataError('GitHub errors metadata missing')
+        if metadata.get('type') != 'repositories':
+            raise DataError('GitHub result type must be repositories')
+        count = metadata.get('result_count')
+        if type(count) is not int or count < 0 or count < len(rows) or (not rows and count != 0):
+            raise DataError('GitHub result_count inconsistent with results')
         return rows
     raise DataError('unrecognized GitHub response; not an empty result')
 
@@ -235,7 +250,8 @@ class Client:
                 except UnicodeDecodeError as exc:
                     raise DataError('response is not UTF-8') from exc
                 return body, meta
-            except (urllib.error.URLError, TimeoutError, socket.timeout, OSError, DataError) as exc:
+            except (urllib.error.URLError, TimeoutError, socket.timeout, OSError, DataError,
+                    http.client.IncompleteRead, http.client.BadStatusLine) as exc:
                 status = getattr(exc, 'code', None)
                 self.log('request_error', url=url, attempt=attempt, error=str(exc), status=status, request_id=stem)
                 write_json(self.root / 'checkpoint.json', {'state': 'request_failed', 'url': url, 'attempt': attempt, 'error': str(exc)})

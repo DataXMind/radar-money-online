@@ -2,6 +2,7 @@
 import argparse
 import csv
 import hashlib
+import http.client
 import io
 import subprocess
 from pathlib import Path
@@ -72,7 +73,7 @@ def run(output, test_report):
                 item['retrieved_at'] = meta['retrieved_at']
                 items.append(item)
             client.log('validation_pass', source=name, normalized_count=len(parsed), schema='v1')
-        except DataError as exc:
+        except (DataError, http.client.IncompleteRead, http.client.BadStatusLine) as exc:
             errors.append(f'{name}: {exc}')
             client.log('validation_fail', source=name, error=str(exc))
             # Fail closed immediately; do not continue acquisition or generation.
