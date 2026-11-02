@@ -1,0 +1,11 @@
+{
+  "url": "https://feed.indiehackers.world/posts.rss?q=AI+agent",
+  "status": 500,
+  "retrieved_at": "2026-11-02T05:55:51.026842+00:00",
+  "sha256": "960cb40c87532a4f4106cb64f1ae22ee76bec74f198c9a5b6e4d217de6b3b3c9",
+  "bytes": 4643,
+  "body_file": "002_keyword_1_2_40d19300.body",
+  "content_type": "text/html; charset=UTF-8",
+  "error_response": true,
+  "rate_limit": {}
+}

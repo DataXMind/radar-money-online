@@ -38,6 +38,11 @@ def write_report(out, log, result, root):
     if all((root / name).is_file() for name in bundle.values()):
         report['production_bundle_sha256'] = {
             key: hashlib.sha256((root / name).read_bytes()).hexdigest() for key, name in bundle.items()}
+    indie_paths = [root / name for name in ('config/production_v1.json', 'docs/evidence_criteria.md',
+                   'scripts/finalize_indiehackers.py')]
+    if all(p.is_file() for p in indie_paths):
+        report['indiehackers_bundle_sha256'] = {
+            p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in indie_paths}
     agent_files = sorted((root / '.codex/agents').glob('*.toml'))
     if agent_files:
         agent_files += sorted((root / '.codex/hooks').glob('*.py'))

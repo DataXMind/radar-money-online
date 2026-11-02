@@ -1,0 +1,33 @@
+{
+  "recorded_at": "2026-11-02T05:55:02.747965+00:00",
+  "authorization": "User explicitly approved feed.indiehackers.world only and one IndieHackers RSS live run in this chat.",
+  "seed_url": "https://feed.indiehackers.world/",
+  "allowed_hosts": [
+    "feed.indiehackers.world"
+  ],
+  "denied_sources": [
+    "producthunt.com"
+  ],
+  "company_blog_status": "NOT_APPROVED",
+  "keywords": [
+    "AI agent",
+    "Claude Code",
+    "Codex",
+    "AI automation",
+    "MRR report"
+  ],
+  "selection": "Fetch root once. If RSS/Atom parse it; if HTML, discover at most3 real RSS/Atom links on same exact host from response only. No guessed paths or external link following. Filter/dedupe locally; retain up to15 matching source items, no irrelevant backfill.",
+  "target_items_with_mrr_reports": [
+    10,
+    15
+  ],
+  "max_http_attempts": 8,
+  "max_source_urls": 4,
+  "max_bytes_per_response": 4000000,
+  "interval_seconds": 3,
+  "attempts_per_url": 2,
+  "deadline_seconds": 300,
+  "max_claims": 8,
+  "max_opportunities": 5,
+  "state": "PROTOCOL_FROZEN_BEFORE_NETWORK"
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>IndieHackers Feed</title>
+      <link rel="stylesheet" href="https://unpkg.com/awsm.css/dist/awsm_theme_big-stone.min.css">
+    </head>
+    <body>
+  <h1>IndieHackers Feed</h1>
+  <p>This is an unofficial feed of indiehackers.com</p>
+
+  <h2>Posts feed</h2>
+    <ul>
+      <li><a target="_blank" href="/posts.rss">RSS</a></li>
+      <li><a target="_blank" href="/posts.atom">Atom</a></li>
+      <li><a target="_blank" href="/posts.json">JSON</a></li>
+    </ul>
+
+  <h2>Top posts</h2>
+    <ul>
+      <li>week
+        <a target="_blank" href="/top/week/posts.rss">RSS</a>
+        <a target="_blank" href="/top/week/posts.atom">Atom</a>
+        <a target="_blank" href="/top/week/posts.json">JSON</a>
+      </li>
+      <li>month
+        <a target="_blank" href="/top/month/posts.rss">RSS</a>
+        <a target="_blank" href="/top/month/posts.atom">Atom</a>
+        <a target="_blank" href="/top/month/posts.json">JSON</a>
+      </li>
+      <li>year
+        <a target="_blank" href="/top/year/posts.rss">RSS</a>
+        <a target="_blank" href="/top/year/posts.atom">Atom</a>
+        <a target="_blank" href="/top/year/posts.json">JSON</a>
+      </li>
+    </ul>
+
+  <h2>Group post feeds</h2>
+    <a href="/groups">A list of group post feeds</a>
+
+  <h2>Search</h2>
+  <p>
+    You can search by using the 'q' parameter
+    <br/>
+    Examples:
+    <ul>
+      <li><code>https://feed.indiehackers.world/posts.rss?<strong>q=</strong>keywords</code></li>
+    </ul>
+  </p>
+
+  <h2>Exclude link posts</h2>
+  <p>
+    You can exclude link posts using 'exclude' parameter
+    <br/>
+    <br/>
+    Examples:
+    <ul>
+      <li><code>https://feed.indiehackers.world/posts.rss?<strong>exclude=</strong>link-post</code></li>
+    </ul>
+  </p>
+
+  <h2>User post feed</h2>
+  <p>
+    Get your favorite user's post feed
+    <br/>
+    Examples:
+    <ul>
+      <li><code>https://feed.indiehackers.world/user/<strong>:username</strong>/posts.rss</code></li>
+      <li><code>https://feed.indiehackers.world/user/<strong>:username</strong>/posts.atom</code></li>
+      <li><code>https://feed.indiehackers.world/user/<strong>:username</strong>/posts.json</code></li>
+    </ul>
+
+    <h3>My feeds</h3>
+    <a target="_blank" href="/user/pyoner/posts.rss">RSS</a>
+    <a target="_blank" href="/user/pyoner/posts.atom">Atom</a>
+    <a target="_blank" href="/user/pyoner/posts.json">JSON</a>
+  </p>
+
+  <h2>Support the project</h2>
+  <p>
+    If you like the feed and want to support it then you can buy me a coffee!
+  </p>
+  <a href="https://www.buymeacoffee.com/pyoner" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important; display: inline;" ></a>
+
+  <h2>Social Links</h2>
+  <ul>
+    <li><a target="_blank" href="https://t.me/pyoner">Telegram</a></li>
+    <li><a target="_blank" href="https://twitter.com/pyoner">Twitter</a></li>
+    <li><a target="_blank" href="https://github.com/pyoner">Github</a></li>
+    <li><a target="_blank" href="https://www.buymeacoffee.com/pyoner">BMC</a></li>
+    <li><a target="_blank" href="https://www.indiehackers.com/pyoner">IndieHackers</a></li>
+    <li><a target="_blank" href="https://t.me/indiehackersworld">Telegram Channel</a></li>
+  </ul>
+  <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/vce701823e78c4301a35b7e07294d87301792088814092" integrity="sha512-UKNk8GbxkABxKcXYuLkO16EleLGUkcvJWtpSNmExE0Too3ZaFAxTscNWEc1OdAv5/BikHawapSCaiD2XCmp+Bw==" data-cf-beacon='{"version":"2024.11.0","token":"25d7547956bb4557ab993012d92d3f26","r":1,"spa":2}' crossorigin="anonymous"></script>
+</body>
+  </html>

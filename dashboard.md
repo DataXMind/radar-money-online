@@ -1,47 +1,40 @@
-# AI Money-Trend — live evidence v1 dashboard
+# AI Money-Trend — IndieHackers evidence v1
 
-**RESEARCH_DRAFT_ONLY**
-
-One targeted live acquisition; no qualified business opportunity.
+**RESEARCH_DRAFT_ONLY** — source unavailable, 02/11/2026.
 
 | Metric | Count |
 |---|---:|
-| GitHub unique issues | 14 |
-| HN stories/comments | 15 |
-| Merged live records | 29 |
-| Current source-attributed claims | 8 |
+| Retained raw economic records | 0 |
+| Claims | 0 |
 | Opportunities | 0 |
-| Historical T0 records (separate) | 15 |
-| Historical baseline claims (not new claims) | 8 |
+| HTTP attempts / saved responses | 3 / 3 |
+| Valid RSS/Atom responses | 0 |
 
-## Verdict distribution (current claims)
+## Verdict distribution (business candidates)
 
 | Verdict | Count |
 |---|---:|
-| UNVERIFIED_LEAD | 8 |
-| HYPED | 0 |
+| PROVEN | 0 |
 | EMERGING | 0 |
+| HYPED | 0 |
 
 ## Top Opportunities
 
-No opportunity meets all BUYER + PAYMENT + TREND criteria.
+Không có. Chưa nhận được RSS hợp lệ để review T2. HTTP 500 không phải feed rỗng.
 
 ## GAP summary
 
-- NO_VERIFIED_BUYER_OR_PAYMENT_EVIDENCE
-- NO_LONGITUDINAL_TREND_EVIDENCE
-- MISSING_BUYER_EVIDENCE
-- MISSING_PAYMENT_EVIDENCE
-- MISSING_TREND_EVIDENCE
-- LOW_RELEVANCE_SEARCH_HITS: bounded query matches are not verified problem/buyer relevance
-- DISCUSSIONS_NOT_COLLECTED: anonymous REST issue search only
-- SUBAGENT_RUNTIME_USAGE_LIMIT: final merge/trend completed locally from saved artifacts
+- Root 200 HTML; query AI agent 500 hai lần. Chỉ feed.indiehackers.world được request.
+- Bốn keyword còn lại NOT_RUN; target 10–15 MRR records chưa đạt.
+- Không có reviewed T2 hoặc T1 quan sát được. Không kết luận thị trường không có proof.
+- T0 lịch sử giữ nguyên; chưa có T+7/T+14. T2 có thể EMERGING theo criteria v2,
+  không được gọi self-report là verified payment hoặc growth đã kiểm chứng.
 
-Baseline: one historical T0 only, no T+7/T+14. The lost 12 cloud cases were not reconstructed.
-New records are purposive, noisy source leads; they are not independent proof of demand, transactions or incidents.
-12 successful public GET responses; 2 earlier HN DNS failures preserved. Only api.github.com and hn.algolia.com were requested.
-Runtime subagents hit the account usage limit; saved evidence was reviewed and finalized locally. No new model workers or source requests were started afterward.
+[Run report](artifacts/indiehackers-evidence-v1/live_evidence_report.md) ·
+[Ledger](artifacts/indiehackers-evidence-v1/evidence_ledger.json) ·
+[Manifest](artifacts/indiehackers-evidence-v1/run_manifest.json) ·
+[CSV](artifacts/indiehackers-evidence-v1/opportunities.csv).
 
-[Live report](artifacts/live-evidence-v1/live_evidence_report.md) | [Ledger](artifacts/live-evidence-v1/evidence_ledger.json) | [Manifest](artifacts/live-evidence-v1/run_manifest.json) | [Opportunities CSV](artifacts/live-evidence-v1/opportunities.csv)
-
-[Previous offline baseline](artifacts/production-v1/production_run_report.md). Not production-ready. Waiting for human review.
+[Previous GitHub/HN run: 29 records, 8 claims, 0 opportunities](artifacts/live-evidence-v1/live_evidence_report.md).
+[Previous offline baseline](artifacts/production-v1/production_run_report.md).
+Không chạy thêm, không production-ready. Chờ human review.

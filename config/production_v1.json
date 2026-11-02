@@ -3,13 +3,54 @@
   "option": "B",
   "network_enabled": false,
   "window_days": 7,
-  "limits": {"raw_items": 15, "claims": 8, "opportunities": 5},
+  "limits": {
+    "raw_items": 15,
+    "claims": 8,
+    "opportunities": 5
+  },
   "input_manifest": "artifacts/mvp-v1/run_manifest.json",
   "input_manifest_sha256": "e17335c5910f8f6b79bc8e39322fc84b0f72ebe3009f6dd1058bd40db8de0c99",
   "criteria_file": "docs/evidence_criteria.md",
-  "criteria_sha256": "86146a39213ae422c7a57c7b2810acad404969c6e308dbfc842feb8c096e4514",
+  "criteria_sha256": "ea5c100425fbdfcaaa01fb9664fcefb4afc161de7862c927e437040224726097",
   "test_report": "artifacts/production-v1/preflight/offline_tests.json",
   "dashboard_template": "templates/dashboard.md",
   "output_root": "artifacts/production-v1",
-  "required_evidence": ["buyer_evidence", "payment_evidence", "trend_evidence"]
+  "required_evidence": [
+    "buyer_evidence",
+    "payment_evidence",
+    "trend_evidence"
+  ],
+  "sources": {
+    "indiehackers_rss": {
+      "allowed_hosts": [
+        "feed.indiehackers.world"
+      ],
+      "seed_url": "https://feed.indiehackers.world/",
+      "execution_mode": "EXPLICIT_HUMAN_APPROVAL_PER_RUN",
+      "automatic_refresh": false,
+      "keywords": [
+        "AI agent",
+        "Claude Code",
+        "Codex",
+        "AI automation",
+        "MRR report"
+      ],
+      "target_mrr_items": [
+        10,
+        15
+      ],
+      "minimum_opportunity_tier": "T2",
+      "follow_article_links": false,
+      "follow_redirects": false,
+      "output_root": "artifacts/indiehackers-evidence-v1",
+      "capture_protocol": "artifacts/indiehackers-evidence-v1/execution_protocol.json"
+    }
+  },
+  "source_decisions": {
+    "producthunt.com": "NOT_APPROVED",
+    "feed.indiehackers.world": "APPROVED_SINGLE_RSS_RUN",
+    "indiehackers.com": "NOT_APPROVED",
+    "company_blogs": "PENDING_EXACT_DOMAIN_APPROVAL"
+  },
+  "policy_scope": "Legacy option B remains offline archive-only. Separately approved RSS capture uses T1/T2/T3 v2; RSS merger emits only reviewed T2 histories. T1 needs separate authentic document verification."
 }

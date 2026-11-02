@@ -1,0 +1,12 @@
+{
+  "finished_at": "2026-11-02T05:55:51.029567+00:00",
+  "responses": [],
+  "errors": [
+    {
+      "keyword": "AI agent",
+      "error": "public request failed: https://feed.indiehackers.world/posts.rss?q=AI+agent: HTTP Error 500: Internal Server Error"
+    }
+  ],
+  "total_attempts": 3,
+  "state": "stopped"
+}

@@ -1,0 +1,122 @@
+{
+  "run_id": "indiehackers-evidence-v1",
+  "run_kind": "live_capture_then_offline_finalize",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "source_status": "SOURCE_UNAVAILABLE",
+  "finalized_at": "2026-11-02T10:23:36.878427+00:00",
+  "acquisition_finished_at": "2026-11-02T05:55:51.029567+00:00",
+  "allowed_source_hosts": [
+    "feed.indiehackers.world"
+  ],
+  "additional_live_run": false,
+  "raw_items": 0,
+  "claims": 0,
+  "opportunities": 0,
+  "request_attempts": 3,
+  "raw_http_responses": 3,
+  "parsed_feed_responses": 0,
+  "opportunity_verdicts": [],
+  "query_status": [
+    {
+      "keyword": "AI agent",
+      "url": "https://feed.indiehackers.world/posts.rss?q=AI+agent",
+      "state": "FAILED",
+      "attempts": 2,
+      "http_statuses": [
+        500,
+        500
+      ]
+    },
+    {
+      "keyword": "Claude Code",
+      "url": "https://feed.indiehackers.world/posts.rss?q=Claude+Code",
+      "state": "NOT_RUN",
+      "attempts": 0,
+      "http_statuses": []
+    },
+    {
+      "keyword": "Codex",
+      "url": "https://feed.indiehackers.world/posts.rss?q=Codex",
+      "state": "NOT_RUN",
+      "attempts": 0,
+      "http_statuses": []
+    },
+    {
+      "keyword": "AI automation",
+      "url": "https://feed.indiehackers.world/posts.rss?q=AI+automation",
+      "state": "NOT_RUN",
+      "attempts": 0,
+      "http_statuses": []
+    },
+    {
+      "keyword": "MRR report",
+      "url": "https://feed.indiehackers.world/posts.rss?q=MRR+report",
+      "state": "NOT_RUN",
+      "attempts": 0,
+      "http_statuses": []
+    }
+  ],
+  "gaps": [
+    "SOURCE_UNAVAILABLE_HTTP_500",
+    "NO_REVIEWED_T2_REVENUE_HISTORY",
+    "MRR_ITEM_TARGET_NOT_MET",
+    "QUERY_COVERAGE_INCOMPLETE",
+    "NO_VERIFIED_PAYMENT_PROOF_OBSERVED",
+    "MVP_T7_T14_NOT_OBSERVED"
+  ],
+  "criteria_sha256": "ea5c100425fbdfcaaa01fb9664fcefb4afc161de7862c927e437040224726097",
+  "config_sha256": "046a849fe79b5221180fed162169420c483b7fb295d725bf7cba6dea9b01f8a6",
+  "test_report": "artifacts/indiehackers-evidence-v1/offline-tests/offline_tests.json",
+  "test_count": 123,
+  "test_report_sha256": "2dbfa6bed789dc57d49e66e75ac4233fe4db5cea5aa7cc870f4d559fbd7c6ff8",
+  "source_sha256": {
+    "money_trend/__init__.py": "ac245010262c2ae4d099c3b83ce31a39e821413f018c8647ed5f58d022a9b7c2",
+    "money_trend/capture.py": "afdc8521fffe5d98bd2fbcd586210a9531e9a56f0d76c6440c8e1ba86e0b8d3d",
+    "money_trend/core.py": "c92a68bbd3b2da9799ff216b57ada0d2be354f982b6c89079a3668ba69c8559b",
+    "money_trend/evidence_tiers.py": "96c998800ea2a9a429dcbd0974ab00bf501df38f5eabdc6b4e6088ee7c1a5c0b",
+    "money_trend/indie_rss.py": "4129d548c017076dffcd4e4ce28934325a4d92d255ad3ebe5deae3768f2364ef",
+    "money_trend/indie_run.py": "b2afabafd7cf4035aa43bf559ce9aa00dffba58da18a7a6d781712f572e3ff13",
+    "money_trend/live_github.py": "6e341ad1205ecdae60901efcec0bfdc33d3a353cffb933cf931f258c7102bab3",
+    "money_trend/live_hn.py": "4a34dd5c19761f0b6f4fa73664e0bb4fbefd3024a736297cfdb0a575aef166f7",
+    "money_trend/live_shared.py": "fe84360978705e2e1eec4487edc1d2df27be5b2bca8724a3feabce924b89cc0a",
+    "money_trend/offline_tests.py": "3f265626bd42491682e4a976b01fb61a607ea9db370514d6513c5c5444055d47",
+    "money_trend/pipeline.py": "0ea6556376b27f902ee79f8c19a27029fdcb20d6ebb4ac379b9443f78dd2caf5",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_evidence_tiers.py": "52056cc843cf7998406be201e329811efff29397d2fba6f1b9d8622dc639d5e0",
+    "tests/test_gold_pattern.py": "c0df0528e8724a912b2e147706db03d1a8ffcacc2ec5e823eabf45ccb503d55e",
+    "tests/test_indie_rss.py": "5515fe3bfe148dd7e014b7c5b2cccd6a3f46d9934de742af98fde33167505367",
+    "tests/test_indie_run.py": "974349bfaa220f6050c84760c3c985cee46fb3c4f103b24926b350279c45d704",
+    "tests/test_live_github.py": "d7bb7812b8697e040741fa3174e62dcaf55cb88d249b420121912f4de245453b",
+    "tests/test_live_hn.py": "3836273e77b313ef8edf2a1736ed21eae16e5676bbf3e74bd12651eba60264e9",
+    "tests/test_live_merge.py": "0c69614b8c79ceba686333d7589db05a1590233c8740750492fab66063ba2e2b",
+    "tests/test_live_shared.py": "c3b652387e41fbc8752835bee1e025a55100dc9ea6cb39de05e967f576571d5c",
+    "tests/test_mvp.py": "a288fc5296d164f69028c04d8559c400138483128e97e4e099b43106e23abe9f",
+    "tests/test_p2.py": "3d46eab2189de5fd4725e637c0a350b83867138b631fdf77873936bed969998b",
+    "tests/test_production_prep.py": "c091b1b7625ec96999274090b847e21a92853b91fae8363e2b978db469a8a1bf"
+  },
+  "finalizer_sha256": "8065a385aeea477db7b5c62c863d3a80262e2a062317e11ad3b37bb1e2c03e4d",
+  "dashboard_sha256": "a1082d8f0b91fc7fca793f2d7f1c24ce9b5873d85afa6c68d7754bae73de4864",
+  "artifacts_sha256": {
+    "acquisition_checkpoint.json": "8580bfc64862e963a597c3f24306c2f66bfcaf4c1da15acbcf2b18e9dd8e7194",
+    "acquisition_summary.json": "c6f605f5c7fba13712f982d3e9368e2360493d30ae09f472ce47918cc2def92c",
+    "evidence_ledger.json": "f742ef376403f9823c304feba0090e54dfa5bfc4a19f9011b05b633384314e01",
+    "execution_protocol.json": "ca467cb2f1c5989c756c2fd61aa48ffa70c9aa17ad6b55697e4decceaa7a9370",
+    "indiehackers_evidence.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "live_evidence_report.md": "3286b5e1e01179df3f904f7ad315a1d7f5fecd0f0d72f80f8ef44f96d3a6f6d5",
+    "offline-tests/offline_tests.json": "2dbfa6bed789dc57d49e66e75ac4233fe4db5cea5aa7cc870f4d559fbd7c6ff8",
+    "offline-tests/offline_tests.txt": "653f05d0065b172066f3015be62098412006afa9587effde3baee386e8e62ba7",
+    "opportunities.csv": "26322a6bfe6bad30db6ece11515ecfd60fbfb74b834ab346b0897f2ac5424e17",
+    "protocol.json": "f8eabced273f6156116736e756483c9cb0c72f43a2671409644159396536df1c",
+    "requests/001_keyword_1_1_0318d578.body": "6060ea661077d75a745de866d7c25694af423b822a5c9aa4810584c0f607440d",
+    "requests/001_keyword_1_1_0318d578.meta.json": "657d6a8f95874b395d3dc54f60518ab4615007161110f62be268ab150e510787",
+    "requests/001_seed_1_e6198699.body": "034497bf699f02ab4a020aef6aab54db28d6b7692c2395da00959d4b1ca785b7",
+    "requests/001_seed_1_e6198699.meta.json": "ba23e6edcc711656d7b61646130ef34520420fc98b7a00302866dc07a42f4715",
+    "requests/002_keyword_1_2_40d19300.body": "960cb40c87532a4f4106cb64f1ae22ee76bec74f198c9a5b6e4d217de6b3b3c9",
+    "requests/002_keyword_1_2_40d19300.meta.json": "2847555d93946534d7e27b56e19a05664881aed208c62da68f05d75a9819c5c9",
+    "requests/checkpoint.json": "1f25c21e8b563afe45e57f542be5d3236027b564c5251e6e96e7b52c4ac1830f",
+    "requests/requests.jsonl": "28f445a56221f8fc07a22f1cace15c4ec5f4c59d5d1898aedb69492b9cf5f540",
+    "reviewed_candidates.json": "02a8a40a158ea5c3270deb8a706c1464c722fc6f81e034291f4e6290d1538cf5",
+    "terminal_checkpoint.json": "6587f77e95ffe7a51db5e7478d7beaf881f1c1d318a14768b6e798adc3af5e46"
+  },
+  "production_ready": false
+}

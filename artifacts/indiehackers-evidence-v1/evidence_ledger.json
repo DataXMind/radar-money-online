@@ -1,0 +1,122 @@
+{
+  "run_id": "indiehackers-evidence-v1",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "source_status": "SOURCE_UNAVAILABLE",
+  "criteria": "docs/evidence_criteria.md",
+  "criteria_sha256": "ea5c100425fbdfcaaa01fb9664fcefb4afc161de7862c927e437040224726097",
+  "counts": {
+    "raw_items": 0,
+    "claims": 0,
+    "opportunities": 0,
+    "request_attempts": 3,
+    "raw_http_responses": 3,
+    "parsed_feed_responses": 0
+  },
+  "capture_audit": {
+    "request_attempts": 3,
+    "response_count": 3,
+    "responses": [
+      {
+        "url": "https://feed.indiehackers.world/",
+        "status": 200,
+        "retrieved_at": "2026-11-02T05:55:06.200293+00:00",
+        "sha256": "034497bf699f02ab4a020aef6aab54db28d6b7692c2395da00959d4b1ca785b7",
+        "bytes": 3796,
+        "body_file": "001_seed_1_e6198699.body",
+        "content_type": "text/html",
+        "error_response": false,
+        "rate_limit": {},
+        "request_id": "001_seed_1_e6198699",
+        "raw_response_path": "artifacts/indiehackers-evidence-v1/requests/001_seed_1_e6198699.body",
+        "meta_path": "artifacts/indiehackers-evidence-v1/requests/001_seed_1_e6198699.meta.json"
+      },
+      {
+        "url": "https://feed.indiehackers.world/posts.rss?q=AI+agent",
+        "status": 500,
+        "retrieved_at": "2026-11-02T05:55:48.075287+00:00",
+        "sha256": "6060ea661077d75a745de866d7c25694af423b822a5c9aa4810584c0f607440d",
+        "bytes": 4643,
+        "body_file": "001_keyword_1_1_0318d578.body",
+        "content_type": "text/html; charset=UTF-8",
+        "error_response": true,
+        "rate_limit": {},
+        "request_id": "001_keyword_1_1_0318d578",
+        "raw_response_path": "artifacts/indiehackers-evidence-v1/requests/001_keyword_1_1_0318d578.body",
+        "meta_path": "artifacts/indiehackers-evidence-v1/requests/001_keyword_1_1_0318d578.meta.json"
+      },
+      {
+        "url": "https://feed.indiehackers.world/posts.rss?q=AI+agent",
+        "status": 500,
+        "retrieved_at": "2026-11-02T05:55:51.026842+00:00",
+        "sha256": "960cb40c87532a4f4106cb64f1ae22ee76bec74f198c9a5b6e4d217de6b3b3c9",
+        "bytes": 4643,
+        "body_file": "002_keyword_1_2_40d19300.body",
+        "content_type": "text/html; charset=UTF-8",
+        "error_response": true,
+        "rate_limit": {},
+        "request_id": "002_keyword_1_2_40d19300",
+        "raw_response_path": "artifacts/indiehackers-evidence-v1/requests/002_keyword_1_2_40d19300.body",
+        "meta_path": "artifacts/indiehackers-evidence-v1/requests/002_keyword_1_2_40d19300.meta.json"
+      }
+    ],
+    "parsed_feed_responses": 0,
+    "recognized_empty_urls": [],
+    "query_status": [
+      {
+        "keyword": "AI agent",
+        "url": "https://feed.indiehackers.world/posts.rss?q=AI+agent",
+        "state": "FAILED",
+        "attempts": 2,
+        "http_statuses": [
+          500,
+          500
+        ]
+      },
+      {
+        "keyword": "Claude Code",
+        "url": "https://feed.indiehackers.world/posts.rss?q=Claude+Code",
+        "state": "NOT_RUN",
+        "attempts": 0,
+        "http_statuses": []
+      },
+      {
+        "keyword": "Codex",
+        "url": "https://feed.indiehackers.world/posts.rss?q=Codex",
+        "state": "NOT_RUN",
+        "attempts": 0,
+        "http_statuses": []
+      },
+      {
+        "keyword": "AI automation",
+        "url": "https://feed.indiehackers.world/posts.rss?q=AI+automation",
+        "state": "NOT_RUN",
+        "attempts": 0,
+        "http_statuses": []
+      },
+      {
+        "keyword": "MRR report",
+        "url": "https://feed.indiehackers.world/posts.rss?q=MRR+report",
+        "state": "NOT_RUN",
+        "attempts": 0,
+        "http_statuses": []
+      }
+    ],
+    "gaps": [
+      "SOURCE_UNAVAILABLE_HTTP_500"
+    ],
+    "source_status": "SOURCE_UNAVAILABLE"
+  },
+  "raw_items": [],
+  "claims": [],
+  "evaluations": [],
+  "opportunities": [],
+  "gaps": [
+    "SOURCE_UNAVAILABLE_HTTP_500",
+    "NO_REVIEWED_T2_REVENUE_HISTORY",
+    "MRR_ITEM_TARGET_NOT_MET",
+    "QUERY_COVERAGE_INCOMPLETE",
+    "NO_VERIFIED_PAYMENT_PROOF_OBSERVED",
+    "MVP_T7_T14_NOT_OBSERVED"
+  ],
+  "provenance_limit": "Unofficial mirror; not independently verified IndieHackers primary content or paid revenue."
+}

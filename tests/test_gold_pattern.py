@@ -21,11 +21,11 @@ import uninstall
 import gold_common
 from scripts import install_gold_pattern as installer
 
-NAMES = set('scout_multi_source scout_github scout_vn normalizer claim_extractor mechanism_analyst evidence_auditor vietnam_adapter synthesizer action_planner fact_checker final_editor repo_discovery'.split())
+NAMES = set('scout_multi_source scout_github scout_vn scout_indiehackers normalizer claim_extractor mechanism_analyst evidence_auditor vietnam_adapter synthesizer action_planner fact_checker final_editor repo_discovery'.split())
 
 
 class AgentConfigTests(unittest.TestCase):
-    def test_exactly_thirteen_parse_with_only_verified_fields(self):
+    def test_exactly_fourteen_parse_with_only_verified_fields(self):
         paths = list((ROOT / '.codex/agents').glob('*.toml'))
         self.assertEqual({p.stem for p in paths}, NAMES)
         for path in paths:

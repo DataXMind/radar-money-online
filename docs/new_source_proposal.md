@@ -1,4 +1,11 @@
-# Đề xuất nguồn bổ sung — chờ duyệt domain
+# Đề xuất nguồn bổ sung — lịch sử và quyết định mới
+
+**Quyết định người dùng ngày 02/11/2026:** Product Hunt không được duyệt;
+chỉ RSS public tại `feed.indiehackers.world` được duyệt cho một lượt live;
+`indiehackers.com` và company blog chưa được duyệt. Không kiểm tra thêm ToS/API
+ngoài phạm vi này. Phần proposal phía dưới giữ lại để đối chiếu, không phải
+quyền truy cập hiện tại. Policy mới là [evidence criteria v2](evidence_criteria.md):
+lịch sử revenue tự khai đủ T2 có thể EMERGING, vẫn không phải payment proof T1.
 
 Ngày lập: 02/11/2026. Trạng thái: **PROPOSAL ONLY — CHƯA ĐƯỢC DUYỆT / CHƯA FETCH**.
 Phiên này chỉ tạo tài liệu; không sửa allowlist, viết adapter, gọi nguồn mới,

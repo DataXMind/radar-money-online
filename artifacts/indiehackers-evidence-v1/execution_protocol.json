@@ -1,0 +1,40 @@
+{
+  "recorded_at": "2026-11-02T05:55:44.134625+00:00",
+  "state": "FROZEN_BEFORE_FEED_QUERY_REQUESTS",
+  "discovery_source": "artifacts/indiehackers-evidence-v1/requests/001_seed_1_e6198699.body",
+  "discovery_sha256": "034497bf699f02ab4a020aef6aab54db28d6b7692c2395da00959d4b1ca785b7",
+  "discovery": "Actual landing href /posts.rss and literal q parameter documented in captured HTML; no guessed source endpoints.",
+  "scope": "One authorized RSS run; effective query plan supersedes initial max3-discovery-feed proposal before any feed results were fetched.",
+  "source_host": "feed.indiehackers.world",
+  "queries": [
+    {
+      "keyword": "AI agent",
+      "url": "https://feed.indiehackers.world/posts.rss?q=AI+agent"
+    },
+    {
+      "keyword": "Claude Code",
+      "url": "https://feed.indiehackers.world/posts.rss?q=Claude+Code"
+    },
+    {
+      "keyword": "Codex",
+      "url": "https://feed.indiehackers.world/posts.rss?q=Codex"
+    },
+    {
+      "keyword": "AI automation",
+      "url": "https://feed.indiehackers.world/posts.rss?q=AI+automation"
+    },
+    {
+      "keyword": "MRR report",
+      "url": "https://feed.indiehackers.world/posts.rss?q=MRR+report"
+    }
+  ],
+  "max_source_urls_total_including_seed": 6,
+  "max_attempts_total": 12,
+  "attempts_per_url": 2,
+  "max_retained_items": 15,
+  "minimum_mrr_target": 10,
+  "max_claims": 8,
+  "max_opportunities": 5,
+  "selection": "fixed query order; deduplicate IDs; retain first keyword+revenue-report leads, up to15. No external article fetch, no query backfill or guessed paths.",
+  "initial_attempts_used": 1
+}

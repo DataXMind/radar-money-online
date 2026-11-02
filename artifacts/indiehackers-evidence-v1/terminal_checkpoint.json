@@ -1,0 +1,13 @@
+{
+  "state": "FINALIZED_OFFLINE_SOURCE_STOPPED",
+  "finalized_at": "2026-11-02T10:23:36.878427+00:00",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "source_status": "SOURCE_UNAVAILABLE",
+  "raw_items": 0,
+  "claims": 0,
+  "opportunities": 0,
+  "request_attempts": 3,
+  "raw_http_responses": 3,
+  "parsed_feed_responses": 0,
+  "note": "acquisition_checkpoint.json is the original seed-stage checkpoint; requests/checkpoint.json is the final per-request failure. No further fetch."
+}

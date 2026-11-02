@@ -1,0 +1,16 @@
+{
+  "state": "seed_saved",
+  "source_urls_requested": 1,
+  "attempts_used": 1,
+  "response": {
+    "url": "https://feed.indiehackers.world/",
+    "status": 200,
+    "retrieved_at": "2026-11-02T05:55:06.200293+00:00",
+    "sha256": "034497bf699f02ab4a020aef6aab54db28d6b7692c2395da00959d4b1ca785b7",
+    "bytes": 3796,
+    "body_file": "001_seed_1_e6198699.body",
+    "content_type": "text/html",
+    "error_response": false,
+    "rate_limit": {}
+  }
+}

@@ -13,6 +13,7 @@ from pathlib import Path
 from .core import DataError, MAX_BYTES, utc, write_json
 
 ALLOWED = frozenset(('api.github.com', 'github.com', 'hn.algolia.com'))
+APPROVED_EXPLICIT_HOSTS = ALLOWED | frozenset(('feed.indiehackers.world',))
 
 
 def public_url(url, hosts=ALLOWED):
@@ -33,16 +34,19 @@ class NoRedirect(urllib.request.HTTPRedirectHandler):
 
 class LiveClient:
     def __init__(self, root, allowed_hosts=ALLOWED, timeout=15, attempts=2, interval=2,
-                 max_requests=12, deadline_seconds=300, sleeper=time.sleep):
-        if (not set(allowed_hosts) or not set(allowed_hosts) <= ALLOWED or not 0 < timeout <= 20
+                 max_requests=12, deadline_seconds=300, sleeper=time.sleep, accept='application/json'):
+        if (not set(allowed_hosts) or not set(allowed_hosts) <= APPROVED_EXPLICIT_HOSTS or not 0 < timeout <= 20
                 or type(attempts) is not int or not 1 <= attempts <= 2 or not 2 <= interval <= 10
                 or type(max_requests) is not int or not 1 <= max_requests <= 12 or not 0 < deadline_seconds <= 300):
             raise ValueError('invalid live network budget')
+        if accept not in ('application/json', 'application/rss+xml, application/atom+xml, application/xml, text/xml, text/html'):
+            raise ValueError('unsupported accept header')
         self.root = Path(root)
         self.root.mkdir(parents=True, exist_ok=True)
         self.hosts, self.timeout, self.attempts = frozenset(allowed_hosts), timeout, attempts
         self.interval, self.max_requests, self.deadline = interval, max_requests, time.monotonic() + deadline_seconds
         self.sleep, self.last, self.count = sleeper, None, 0
+        self.accept = accept
         self.opener = urllib.request.build_opener(urllib.request.ProxyHandler({}), NoRedirect())
 
     def log(self, event, **fields):
@@ -79,7 +83,7 @@ class LiveClient:
             self.log('request_start', url=url, attempt=attempt, request_id=stem)
             write_json(self.root / 'checkpoint.json', {'state': 'request_started', 'url': url, 'attempt': attempt})
             try:
-                request = urllib.request.Request(url, headers={'User-Agent': 'AI-Money-Trend-Evidence/1.0', 'Accept': 'application/json'})
+                request = urllib.request.Request(url, headers={'User-Agent': 'AI-Money-Trend-Evidence/1.0', 'Accept': self.accept})
                 started = time.monotonic()
                 with self.opener.open(request, timeout=min(self.timeout, max(0.1, self.deadline - started))) as response:
                     raw = bytearray()
