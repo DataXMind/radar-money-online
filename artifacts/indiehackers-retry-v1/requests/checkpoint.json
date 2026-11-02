@@ -1,0 +1,6 @@
+{
+  "state": "request_failed",
+  "url": "https://feed.indiehackers.world/posts.rss",
+  "attempt": 1,
+  "error": "HTTP Error 500: Internal Server Error"
+}

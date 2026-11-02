@@ -1,0 +1,62 @@
+{
+  "status": "RESEARCH_DRAFT_ONLY",
+  "source_reliability": "UNRELIABLE",
+  "raw_http_responses": 3,
+  "raw_items": [],
+  "claims": [],
+  "evaluations": [],
+  "opportunities": [],
+  "gaps": [
+    "RSS_UNRELIABLE_HTTP_500_ALL_THREE",
+    "NO_FEED_DATA_OBSERVED",
+    "NO_REVIEWED_T2_REVENUE_HISTORY",
+    "NO_VERIFIED_PAYMENT_PROOF_OBSERVED",
+    "T7_T14_NOT_OBSERVED",
+    "GITHUB_T0_METRICS_MISSING"
+  ],
+  "request_evidence": [
+    {
+      "time": "2026-11-02T10:33:34.986943+00:00",
+      "event": "data_ingress",
+      "request_id": "001_fallback_1_1_a27ec066",
+      "url": "https://feed.indiehackers.world/posts.rss?q=AI",
+      "status": 500,
+      "retrieved_at": "2026-11-02T10:33:34.986943+00:00",
+      "sha256": "ff9f2115952b176f05dc0c73bd2a77109e4b4003fbea90b660c1f05888ef137c",
+      "bytes": 4643,
+      "body_file": "001_fallback_1_1_a27ec066.body",
+      "content_type": "text/html; charset=UTF-8",
+      "error_response": true,
+      "rate_limit": {}
+    },
+    {
+      "time": "2026-11-02T10:33:38.020740+00:00",
+      "event": "data_ingress",
+      "request_id": "002_fallback_2_1_cd2ca906",
+      "url": "https://feed.indiehackers.world/posts.rss?q=MRR",
+      "status": 500,
+      "retrieved_at": "2026-11-02T10:33:38.015694+00:00",
+      "sha256": "dd667d5ce52537ba5580901fad1b4f787ecbaf90242cec7acb9fe66626459b3c",
+      "bytes": 4643,
+      "body_file": "002_fallback_2_1_cd2ca906.body",
+      "content_type": "text/html; charset=UTF-8",
+      "error_response": true,
+      "rate_limit": {}
+    },
+    {
+      "time": "2026-11-02T10:33:40.957456+00:00",
+      "event": "data_ingress",
+      "request_id": "003_fallback_3_1_77baed36",
+      "url": "https://feed.indiehackers.world/posts.rss",
+      "status": 500,
+      "retrieved_at": "2026-11-02T10:33:40.957456+00:00",
+      "sha256": "d6e0b4212830cdc386653ccbbf148fa3fc281e39f91f743e387046a97d670ac1",
+      "bytes": 4643,
+      "body_file": "003_fallback_3_1_77baed36.body",
+      "content_type": "text/html; charset=UTF-8",
+      "error_response": true,
+      "rate_limit": {}
+    }
+  ],
+  "criteria_sha256": "ea5c100425fbdfcaaa01fb9664fcefb4afc161de7862c927e437040224726097"
+}

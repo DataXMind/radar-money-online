@@ -43,12 +43,40 @@
       "follow_article_links": false,
       "follow_redirects": false,
       "output_root": "artifacts/indiehackers-evidence-v1",
-      "capture_protocol": "artifacts/indiehackers-evidence-v1/execution_protocol.json"
+      "capture_protocol": "artifacts/indiehackers-evidence-v1/execution_protocol.json",
+      "retry_exhausted": true,
+      "enabled": false,
+      "retry_batch": {
+        "run_id": "indiehackers-retry-v1",
+        "state": "FINISHED",
+        "max_http_attempts": 3,
+        "attempts_per_url": 1,
+        "restart_authorized": false,
+        "outcomes": [
+          {
+            "url": "https://feed.indiehackers.world/posts.rss?q=AI",
+            "state": "HTTP_ERROR",
+            "http_status": 500
+          },
+          {
+            "url": "https://feed.indiehackers.world/posts.rss?q=MRR",
+            "state": "HTTP_ERROR",
+            "http_status": 500
+          },
+          {
+            "url": "https://feed.indiehackers.world/posts.rss",
+            "state": "HTTP_ERROR",
+            "http_status": 500
+          }
+        ],
+        "finished_at": "2026-11-02T10:33:40.973786+00:00"
+      },
+      "reliability": "UNRELIABLE"
     }
   },
   "source_decisions": {
     "producthunt.com": "NOT_APPROVED",
-    "feed.indiehackers.world": "APPROVED_SINGLE_RSS_RUN",
+    "feed.indiehackers.world": "DISABLED_UNRELIABLE_RETRY_EXHAUSTED",
     "indiehackers.com": "NOT_APPROVED",
     "company_blogs": "PENDING_EXACT_DOMAIN_APPROVAL"
   },

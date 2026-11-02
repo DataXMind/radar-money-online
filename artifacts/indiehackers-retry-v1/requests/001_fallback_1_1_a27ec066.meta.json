@@ -1,0 +1,11 @@
+{
+  "url": "https://feed.indiehackers.world/posts.rss?q=AI",
+  "status": 500,
+  "retrieved_at": "2026-11-02T10:33:34.986943+00:00",
+  "sha256": "ff9f2115952b176f05dc0c73bd2a77109e4b4003fbea90b660c1f05888ef137c",
+  "bytes": 4643,
+  "body_file": "001_fallback_1_1_a27ec066.body",
+  "content_type": "text/html; charset=UTF-8",
+  "error_response": true,
+  "rate_limit": {}
+}

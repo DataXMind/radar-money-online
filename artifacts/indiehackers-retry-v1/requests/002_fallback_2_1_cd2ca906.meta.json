@@ -1,0 +1,11 @@
+{
+  "url": "https://feed.indiehackers.world/posts.rss?q=MRR",
+  "status": 500,
+  "retrieved_at": "2026-11-02T10:33:38.015694+00:00",
+  "sha256": "dd667d5ce52537ba5580901fad1b4f787ecbaf90242cec7acb9fe66626459b3c",
+  "bytes": 4643,
+  "body_file": "002_fallback_2_1_cd2ca906.body",
+  "content_type": "text/html; charset=UTF-8",
+  "error_response": true,
+  "rate_limit": {}
+}

@@ -1,40 +1,29 @@
-# AI Money-Trend — IndieHackers evidence v1
+# AI Money-Trend — RSS retry and T+7 preparation
 
-**RESEARCH_DRAFT_ONLY** — source unavailable, 02/11/2026.
+**RESEARCH_DRAFT_ONLY** — 02/11/2026.
 
-| Metric | Count |
+| Metric | Result |
 |---|---:|
-| Retained raw economic records | 0 |
-| Claims | 0 |
-| Opportunities | 0 |
-| HTTP attempts / saved responses | 3 / 3 |
-| Valid RSS/Atom responses | 0 |
-
-## Verdict distribution (business candidates)
-
-| Verdict | Count |
-|---|---:|
-| PROVEN | 0 |
-| EMERGING | 0 |
-| HYPED | 0 |
+| RSS GET attempts / HTTP 500 responses | 3 / 3 |
+| Retained economic records / claims / opportunities | 0 / 0 / 0 |
+| PROVEN / EMERGING / HYPED candidates | 0 / 0 / 0 |
+| Archived T0 records frozen offline | 15 |
+| T+7/T+14 measurements | 0 |
 
 ## Top Opportunities
 
-Không có. Chưa nhận được RSS hợp lệ để review T2. HTTP 500 không phải feed rỗng.
+Không có T2/T1 quan sát được: cả AI, MRR và latest feed đều 500.
+RSS **UNRELIABLE**, disabled, retry exhausted; không thử lại.
 
 ## GAP summary
 
-- Root 200 HTML; query AI agent 500 hai lần. Chỉ feed.indiehackers.world được request.
-- Bốn keyword còn lại NOT_RUN; target 10–15 MRR records chưa đạt.
-- Không có reviewed T2 hoặc T1 quan sát được. Không kết luận thị trường không có proof.
-- T0 lịch sử giữ nguyên; chưa có T+7/T+14. T2 có thể EMERGING theo criteria v2,
-  không được gọi self-report là verified payment hoặc growth đã kiểm chứng.
+T0 có HN counters nhưng thiếu verified GitHub stars/total issues/issue comments.
+Missing giữ null; không backfill. T+7 chờ **09/11/2026**, chưa chạy hoặc cài lịch.
+Không coi lỗi nguồn là feed rỗng hoặc absence of market evidence.
 
-[Run report](artifacts/indiehackers-evidence-v1/live_evidence_report.md) ·
-[Ledger](artifacts/indiehackers-evidence-v1/evidence_ledger.json) ·
-[Manifest](artifacts/indiehackers-evidence-v1/run_manifest.json) ·
-[CSV](artifacts/indiehackers-evidence-v1/opportunities.csv).
+[Retry report](artifacts/indiehackers-retry-v1/retry_report.md) ·
+[Ledger](artifacts/indiehackers-retry-v1/evidence_ledger.json) ·
+[Baseline](artifacts/t7-baseline/run_manifest.json) · [T+7 plan](docs/t7_plan.md).
 
-[Previous GitHub/HN run: 29 records, 8 claims, 0 opportunities](artifacts/live-evidence-v1/live_evidence_report.md).
-[Previous offline baseline](artifacts/production-v1/production_run_report.md).
-Không chạy thêm, không production-ready. Chờ human review.
+[Previous RSS run](artifacts/indiehackers-evidence-v1/live_evidence_report.md).
+Offline suite: 140 PASS. Chờ human review; chưa production-ready.

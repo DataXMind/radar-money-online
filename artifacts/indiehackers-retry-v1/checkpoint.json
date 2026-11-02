@@ -1,0 +1,6 @@
+{
+  "state": "ACQUISITION_FINISHED",
+  "source_reliability": "UNRELIABLE",
+  "request_attempts": 3,
+  "additional_retry_authorized": false
+}

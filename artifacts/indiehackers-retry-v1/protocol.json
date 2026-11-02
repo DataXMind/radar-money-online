@@ -1,0 +1,37 @@
+{
+  "run_id": "indiehackers-retry-v1",
+  "recorded_at": "2026-11-02T10:33:34.438862+00:00",
+  "authorization": "User approved one simplified three-URL fallback batch in this chat.",
+  "allowed_hosts": [
+    "feed.indiehackers.world"
+  ],
+  "queries": [
+    {
+      "keyword": "AI",
+      "url": "https://feed.indiehackers.world/posts.rss?q=AI"
+    },
+    {
+      "keyword": "MRR",
+      "url": "https://feed.indiehackers.world/posts.rss?q=MRR"
+    },
+    {
+      "keyword": null,
+      "url": "https://feed.indiehackers.world/posts.rss"
+    }
+  ],
+  "max_http_attempts": 3,
+  "attempts_per_url": 1,
+  "interval_seconds": 3,
+  "timeout_seconds": 15,
+  "stop": "First 200 recognized nonempty RSS/Atom; otherwise after third URL. Never retry a URL.",
+  "discovery_path": "artifacts/indiehackers-evidence-v1/requests/001_seed_1_e6198699.body",
+  "discovery_sha256": "034497bf699f02ab4a020aef6aab54db28d6b7692c2395da00959d4b1ca785b7",
+  "limits": {
+    "raw_items": 15,
+    "claims": 8,
+    "opportunities": 5
+  },
+  "criteria_sha256": "ea5c100425fbdfcaaa01fb9664fcefb4afc161de7862c927e437040224726097",
+  "config_before_sha256": "046a849fe79b5221180fed162169420c483b7fb295d725bf7cba6dea9b01f8a6",
+  "state": "FROZEN_BEFORE_REQUESTS"
+}

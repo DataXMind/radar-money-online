@@ -1,0 +1,11 @@
+{
+  "url": "https://feed.indiehackers.world/posts.rss",
+  "status": 500,
+  "retrieved_at": "2026-11-02T10:33:40.957456+00:00",
+  "sha256": "d6e0b4212830cdc386653ccbbf148fa3fc281e39f91f743e387046a97d670ac1",
+  "bytes": 4643,
+  "body_file": "003_fallback_3_1_77baed36.body",
+  "content_type": "text/html; charset=UTF-8",
+  "error_response": true,
+  "rate_limit": {}
+}

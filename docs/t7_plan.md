@@ -1,9 +1,23 @@
 # Kế hoạch T+7 / T+14 — chưa chạy, chưa cài lịch tự động
 
 Ngày lập: 02/11/2026. Múi giờ trình bày: **Asia/Saigon (UTC+7)**.
-Đây chỉ là kế hoạch; không gọi network, tạo scheduler, sửa baseline hoặc tạo
-trend_t7.jsonl/trend_t14.jsonl trong phiên này. Mỗi lượt tương lai cần người
+Chuẩn bị T0 trong phiên được duyệt này chỉ đọc archive offline; không gọi network,
+tạo scheduler, sửa archive gốc hoặc tạo trend_t7.jsonl/trend_t14.jsonl. Mỗi lượt tương lai cần người
 dùng duyệt. Hiện vẫn **chỉ một snapshot T0; T+7/T+14 null — GAP**.
+
+## Script chuẩn bị T0 được duyệt
+
+`python scripts/prepare_t7_snapshot.py` đóng băng đúng 15 records từ MVP vào
+`artifacts/t7-baseline/snapshot_t0.jsonl`, kèm manifest hash và README về GAP.
+Script kiểm pin manifest MVP, hash toàn bộ artifact gốc, metadata và mapping
+record/counter về raw trước khi xuất. Nếu output đã tồn tại thì từ chối ghi đè.
+Nó không fetch counters hiện tại, không đổi timestamp T0 thành thời gian chuẩn
+bị và không chạy T+7. Dữ liệu thiếu giữ null, counter thực bằng 0 giữ nguyên 0.
+HN có points/num_comments; GitHub giữ followers và hai labeled issue counters
+đúng tên nguồn, không thay thế chúng cho stars/total issues/issue comments.
+Vì vậy đây là **BASELINE_PREPARED_WITH_GAPS**, không phải baseline đủ cho mọi
+metric được yêu cầu. Thu metric GitHub còn thiếu cần một mốc quan sát mới có
+timestamp thật; không backfill vào T0 lịch sử.
 
 ## Cohort đóng băng: đúng 15 records MVP
 
@@ -138,5 +152,7 @@ cho hai lượt, chưa triển khai adapter follow-up và chưa có trend_t7/tre
 
 Ngay cả khi có longitudinal activity hợp lệ, buyer/payment gate vẫn độc lập:
 tăng stars/comments không chứng minh giao dịch, doanh thu hay nhu cầu trả tiền.
-Thiếu proof tiếp tục RESEARCH_DRAFT_ONLY, opportunities rỗng; dừng sau báo cáo
-từng mốc và chờ review, không tự chuyển sang live run khác.
+Thiếu proof của longitudinal vẫn là GAP. Theo criteria v2 được duyệt riêng,
+T2 revenue history có thể EMERGING mà không có T+7/T+14 MVP; tuyệt đối không
+gọi T2 là payment proof/T1 hoặc phép đo prospective của cohort này. Mỗi lượt
+follow-up dừng sau báo cáo và chờ review, không tự chuyển sang live run khác.

@@ -43,6 +43,11 @@ def write_report(out, log, result, root):
     if all(p.is_file() for p in indie_paths):
         report['indiehackers_bundle_sha256'] = {
             p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in indie_paths}
+    retry_paths = [root / name for name in ('scripts/retry_indiehackers.py', 'scripts/prepare_t7_snapshot.py',
+                   'docs/t7_plan.md', 'config/production_v1.json')]
+    if all(p.is_file() for p in retry_paths):
+        report['retry_t7_bundle_sha256'] = {
+            p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in retry_paths}
     agent_files = sorted((root / '.codex/agents').glob('*.toml'))
     if agent_files:
         agent_files += sorted((root / '.codex/hooks').glob('*.py'))

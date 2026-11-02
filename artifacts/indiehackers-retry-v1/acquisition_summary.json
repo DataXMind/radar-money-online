@@ -1,0 +1,41 @@
+{
+  "run_id": "indiehackers-retry-v1",
+  "finished_at": "2026-11-02T10:33:40.973786+00:00",
+  "source_reliability": "UNRELIABLE",
+  "request_attempts": 3,
+  "outcomes": [
+    {
+      "keyword": "AI",
+      "url": "https://feed.indiehackers.world/posts.rss?q=AI",
+      "state": "HTTP_ERROR",
+      "http_status": 500,
+      "feed_entries": null,
+      "raw_response_path": "artifacts/indiehackers-retry-v1/requests/001_fallback_1_1_a27ec066.body",
+      "raw_response_sha256": "ff9f2115952b176f05dc0c73bd2a77109e4b4003fbea90b660c1f05888ef137c",
+      "error": "public request failed: https://feed.indiehackers.world/posts.rss?q=AI: HTTP Error 500: Internal Server Error"
+    },
+    {
+      "keyword": "MRR",
+      "url": "https://feed.indiehackers.world/posts.rss?q=MRR",
+      "state": "HTTP_ERROR",
+      "http_status": 500,
+      "feed_entries": null,
+      "raw_response_path": "artifacts/indiehackers-retry-v1/requests/002_fallback_2_1_cd2ca906.body",
+      "raw_response_sha256": "dd667d5ce52537ba5580901fad1b4f787ecbaf90242cec7acb9fe66626459b3c",
+      "error": "public request failed: https://feed.indiehackers.world/posts.rss?q=MRR: HTTP Error 500: Internal Server Error"
+    },
+    {
+      "keyword": null,
+      "url": "https://feed.indiehackers.world/posts.rss",
+      "state": "HTTP_ERROR",
+      "http_status": 500,
+      "feed_entries": null,
+      "raw_response_path": "artifacts/indiehackers-retry-v1/requests/003_fallback_3_1_77baed36.body",
+      "raw_response_sha256": "d6e0b4212830cdc386653ccbbf148fa3fc281e39f91f743e387046a97d670ac1",
+      "error": "public request failed: https://feed.indiehackers.world/posts.rss: HTTP Error 500: Internal Server Error"
+    }
+  ],
+  "records": [],
+  "additional_retry_authorized": false,
+  "automatic_refresh": false
+}
