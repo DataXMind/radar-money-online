@@ -1,0 +1,18 @@
+{
+  "time": "2026-11-02T03:01:22.248933+00:00",
+  "status": "PASS",
+  "tests_run": 32,
+  "failures": 0,
+  "errors": 0,
+  "network": "socket creation blocked",
+  "source_sha256": {
+    "money_trend/__init__.py": "ac245010262c2ae4d099c3b83ce31a39e821413f018c8647ed5f58d022a9b7c2",
+    "money_trend/capture.py": "afdc8521fffe5d98bd2fbcd586210a9531e9a56f0d76c6440c8e1ba86e0b8d3d",
+    "money_trend/core.py": "4190402fec93152d8219a806d47ab787412babb136c7a11cea308a02fc622011",
+    "money_trend/offline_tests.py": "4f7f032529ba1209cd4f0da797764a1676f79b1e1d5a582a5809d79b801e1d56",
+    "money_trend/pipeline.py": "271639609f6c24c20d50c95ad26d3a16f6ecb7efe0d6c3aeec03430578f28250",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_mvp.py": "056863371314192af61b02461475db703766fc33a97007c56114c452aad97796"
+  },
+  "log_sha256": "2a83bedf553fd09809d361720bea4fb2baa2d3b78122bd05095954dcf41f8d4a"
+}

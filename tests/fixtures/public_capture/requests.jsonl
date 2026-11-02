@@ -1,0 +1,11 @@
+{"time": "2026-11-02T02:59:27.298176+00:00", "event": "request_start", "url": "https://github.com/search?q=ai+agent&type=repositories", "attempt": 1, "request_id": "001_github_sample_1"}
+{"time": "2026-11-02T02:59:27.327237+00:00", "event": "request_error", "url": "https://github.com/search?q=ai+agent&type=repositories", "attempt": 1, "error": "<urlopen error [Errno 11001] getaddrinfo failed>", "status": null, "request_id": "001_github_sample_1"}
+{"time": "2026-11-02T02:59:27.328390+00:00", "event": "retry_wait", "seconds": 2, "url": "https://github.com/search?q=ai+agent&type=repositories"}
+{"time": "2026-11-02T02:59:29.328923+00:00", "event": "request_start", "url": "https://github.com/search?q=ai+agent&type=repositories", "attempt": 2, "request_id": "002_github_sample_2"}
+{"time": "2026-11-02T02:59:29.331433+00:00", "event": "request_error", "url": "https://github.com/search?q=ai+agent&type=repositories", "attempt": 2, "error": "<urlopen error [Errno 11001] getaddrinfo failed>", "status": null, "request_id": "002_github_sample_2"}
+{"time": "2026-11-02T02:59:29.332965+00:00", "event": "retry_wait", "seconds": 4, "url": "https://github.com/search?q=ai+agent&type=repositories"}
+{"time": "2026-11-02T02:59:33.333647+00:00", "event": "request_start", "url": "https://github.com/search?q=ai+agent&type=repositories", "attempt": 3, "request_id": "003_github_sample_3"}
+{"time": "2026-11-02T02:59:33.337221+00:00", "event": "request_error", "url": "https://github.com/search?q=ai+agent&type=repositories", "attempt": 3, "error": "<urlopen error [Errno 11001] getaddrinfo failed>", "status": null, "request_id": "003_github_sample_3"}
+{"time": "2026-11-02T02:59:38.516745+00:00", "event": "request_start", "url": "https://github.com/search?q=ai+agent&type=repositories", "attempt": 1, "request_id": "001_github_sample_1"}
+{"time": "2026-11-02T02:59:39.464860+00:00", "event": "data_ingress", "url": "https://github.com/search?q=ai+agent&type=repositories", "status": 200, "retrieved_at": "2026-11-02T02:59:39.464351+00:00", "sha256": "6a254475a1c4e29102c6d4e85acda96cc583e71fe62e65f77b91b862fcd32893", "bytes": 232648, "content_type": "text/html; charset=utf-8", "body_file": "001_github_sample_1.body", "request_id": "001_github_sample_1"}
+{"time": "2026-11-02T02:59:39.480401+00:00", "event": "validation_pass", "adapter": "github", "extracted_count": 8}

@@ -1,0 +1,22 @@
+{
+  "purpose": "real public request captured for offline parser regression; not historical evidence",
+  "response": {
+    "url": "https://github.com/search?q=ai+agent&type=repositories",
+    "status": 200,
+    "retrieved_at": "2026-11-02T02:59:39.464351+00:00",
+    "sha256": "6a254475a1c4e29102c6d4e85acda96cc583e71fe62e65f77b91b862fcd32893",
+    "bytes": 232648,
+    "content_type": "text/html; charset=utf-8",
+    "body_file": "001_github_sample_1.body"
+  },
+  "expected_repo_ids": [
+    "vercel/ai",
+    "microsoft/ai-agents-for-beginners",
+    "activepieces/activepieces",
+    "FlowiseAI/Flowise",
+    "reworkd/AgentGPT",
+    "bojieli/ai-agent-book",
+    "addyosmani/agent-skills",
+    "zai-org/Open-AutoGLM"
+  ]
+}

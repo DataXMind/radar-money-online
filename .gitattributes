@@ -1,0 +1,8 @@
+*.py text eol=lf
+*.md text eol=lf
+.gitignore text eol=lf
+.gitattributes text eol=lf
+# Preserve request bytes, test reports and manifest hashes across Git checkouts.
+artifacts/** -text -whitespace
+tests/fixtures/** -text -whitespace
+*.body binary

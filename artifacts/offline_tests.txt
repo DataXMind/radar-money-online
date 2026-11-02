@@ -1,0 +1,37 @@
+test_bad_rows_fail_closed (tests.test_mvp.AdapterTests.test_bad_rows_fail_closed) ... ok
+test_highlight_and_dedupe (tests.test_mvp.AdapterTests.test_highlight_and_dedupe) ... ok
+test_hn_and_dedupe (tests.test_mvp.AdapterTests.test_hn_and_dedupe) ... ok
+test_hn_empty (tests.test_mvp.AdapterTests.test_hn_empty) ... ok
+test_hn_malformed (tests.test_mvp.AdapterTests.test_hn_malformed) ... ok
+test_nested_schema_malformed (tests.test_mvp.AdapterTests.test_nested_schema_malformed) ... ok
+test_real_payload_in_both_json_routes (tests.test_mvp.AdapterTests.test_real_payload_in_both_json_routes) ... ok
+test_real_public_html_extracts_at_least_five (tests.test_mvp.AdapterTests.test_real_public_html_extracts_at_least_five) ... ok
+test_recognized_empty_both_routes (tests.test_mvp.AdapterTests.test_recognized_empty_both_routes) ... ok
+test_source_instructions_are_inert (tests.test_mvp.AdapterTests.test_source_instructions_are_inert) ... ok
+test_strict_json (tests.test_mvp.AdapterTests.test_strict_json) ... ok
+test_synthetic_nested_json_and_html (tests.test_mvp.AdapterTests.test_synthetic_nested_json_and_html) ... ok
+test_unknown_is_not_empty (tests.test_mvp.AdapterTests.test_unknown_is_not_empty) ... ok
+test_allowlisted_redirect_still_refused (tests.test_mvp.NetworkTests.test_allowlisted_redirect_still_refused) ... ok
+test_domain_and_credentials_blocked (tests.test_mvp.NetworkTests.test_domain_and_credentials_blocked) ... ok
+test_http_403_not_retried (tests.test_mvp.NetworkTests.test_http_403_not_retried) ... ok
+test_invalid_network_bounds (tests.test_mvp.NetworkTests.test_invalid_network_bounds) ... ok
+test_invalid_utf8_logged_and_rejected (tests.test_mvp.NetworkTests.test_invalid_utf8_logged_and_rejected) ... ok
+test_long_rate_limit_stops_without_early_retry (tests.test_mvp.NetworkTests.test_long_rate_limit_stops_without_early_retry) ... ok
+test_minimum_interval_between_requests (tests.test_mvp.NetworkTests.test_minimum_interval_between_requests) ... ok
+test_oversized_ingress_rejected (tests.test_mvp.NetworkTests.test_oversized_ingress_rejected) ... ok
+test_rate_limit_retry_after (tests.test_mvp.NetworkTests.test_rate_limit_retry_after) ... ok
+test_redirect_cannot_escape (tests.test_mvp.NetworkTests.test_redirect_cannot_escape) ... ok
+test_success_captures_hash_logs_and_checkpoint (tests.test_mvp.NetworkTests.test_success_captures_hash_logs_and_checkpoint) ... ok
+test_timeout_retries_bounded (tests.test_mvp.NetworkTests.test_timeout_retries_bounded) ... ok
+test_claim_cap_and_both_sources (tests.test_mvp.PipelineTests.test_claim_cap_and_both_sources) ... ok
+test_existing_run_cannot_be_overwritten_or_refetched (tests.test_mvp.PipelineTests.test_existing_run_cannot_be_overwritten_or_refetched) ... ok
+test_failed_ingress_stops_and_writes_empty_artifacts (tests.test_mvp.PipelineTests.test_failed_ingress_stops_and_writes_empty_artifacts) ... ok
+test_full_offline_pipeline_caps_and_manifest_integrity (tests.test_mvp.PipelineTests.test_full_offline_pipeline_caps_and_manifest_integrity) ... ok
+test_missing_source_and_payment_kill (tests.test_mvp.PipelineTests.test_missing_source_and_payment_kill) ... ok
+test_pipeline_requires_passing_current_offline_report (tests.test_mvp.PipelineTests.test_pipeline_requires_passing_current_offline_report) ... ok
+test_popularity_is_not_payment_proof (tests.test_mvp.PipelineTests.test_popularity_is_not_payment_proof) ... ok
+
+----------------------------------------------------------------------
+Ran 32 tests in 2.912s
+
+OK

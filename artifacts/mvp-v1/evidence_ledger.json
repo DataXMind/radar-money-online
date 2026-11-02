@@ -1,0 +1,284 @@
+{
+  "schema_version": 1,
+  "started_at": "2026-11-02T03:01:39.338653+00:00",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "data_policy": "Untrusted DATA only. No execution, LLM tool calls, or source-driven actions.",
+  "sources": [
+    {
+      "source": "github",
+      "url": "https://github.com/search?q=ai+agent&type=repositories",
+      "status": 200,
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00",
+      "sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "bytes": 232650,
+      "content_type": "text/html; charset=utf-8",
+      "body_file": "5e98cd643ddf_001_github_1.body"
+    },
+    {
+      "source": "hn",
+      "url": "https://hn.algolia.com/api/v1/search?query=ai%20agent&tags=story&hitsPerPage=5",
+      "status": 200,
+      "retrieved_at": "2026-11-02T03:01:44.931800+00:00",
+      "sha256": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+      "bytes": 11426,
+      "content_type": "application/json",
+      "body_file": "9c5bb5b674a7_002_hn_1.body"
+    }
+  ],
+  "raw_items": [
+    {
+      "source": "github",
+      "source_id": "vercel/ai",
+      "url": "https://github.com/vercel/ai",
+      "title": "vercel/ai",
+      "text": "The <em>AI</em> Toolkit for TypeScript. From the creators of Next.js, the <em>AI</em> SDK is a free open-source library for building <em>AI</em>-powered application…",
+      "evidence_id": "E01",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "microsoft/ai-agents-for-beginners",
+      "url": "https://github.com/microsoft/ai-agents-for-beginners",
+      "title": "microsoft/ai-agents-for-beginners",
+      "text": "18 Lessons to Get Started Building <em>AI</em> <em>Agents</em>",
+      "evidence_id": "E02",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "activepieces/activepieces",
+      "url": "https://github.com/activepieces/activepieces",
+      "title": "activepieces/activepieces",
+      "text": "<em>AI</em> <em>Agents</em> &amp; MCPs &amp; <em>AI</em> Workflow Automation • (~400 MCP servers for <em>AI</em> <em>agents</em>) • <em>AI</em> Automation / <em>AI</em> <em>Agent</em> with MCPs • <em>AI</em> Workflows &amp; <em>AI</em> <em>Agents</em>",
+      "evidence_id": "E03",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "FlowiseAI/Flowise",
+      "url": "https://github.com/FlowiseAI/Flowise",
+      "title": "FlowiseAI/Flowise",
+      "text": "Build <em>AI</em> <em>Agents</em>, Visually",
+      "evidence_id": "E04",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "reworkd/AgentGPT",
+      "url": "https://github.com/reworkd/AgentGPT",
+      "title": "reworkd/AgentGPT",
+      "text": "🤖 Assemble, configure, and deploy autonomous <em>AI</em> <em>Agents</em> in your browser.",
+      "evidence_id": "E05",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "bojieli/ai-agent-book",
+      "url": "https://github.com/bojieli/ai-agent-book",
+      "title": "bojieli/ai-agent-book",
+      "text": "《深入理解 <em>AI</em> <em>Agent</em>：设计原理与工程实践》（李博杰 著）开源主仓库：全书正文、编译版 PDF 与按章配套代码",
+      "evidence_id": "E06",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "addyosmani/agent-skills",
+      "url": "https://github.com/addyosmani/agent-skills",
+      "title": "addyosmani/agent-skills",
+      "text": "Production-grade engineering skills for <em>AI</em> coding <em>agents</em>.",
+      "evidence_id": "E07",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "zai-org/Open-AutoGLM",
+      "url": "https://github.com/zai-org/Open-AutoGLM",
+      "title": "zai-org/Open-AutoGLM",
+      "text": "An Open Phone <em>Agent</em> Model &amp; Framework. Unlocking the <em>AI</em> Phone for Everyone",
+      "evidence_id": "E08",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "ashishpatel26/500-AI-Agents-Projects",
+      "url": "https://github.com/ashishpatel26/500-AI-Agents-Projects",
+      "title": "ashishpatel26/500-AI-Agents-Projects",
+      "text": "The 500 <em>AI</em> <em>Agents</em> Projects is a curated collection of <em>AI</em> <em>agent</em> use cases across various industries. It showcases practical applications a…",
+      "evidence_id": "E09",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "github",
+      "source_id": "NirDiamant/GenAI_Agents",
+      "url": "https://github.com/NirDiamant/GenAI_Agents",
+      "title": "NirDiamant/GenAI_Agents",
+      "text": "50+ tutorials and implementations for Generative <em>AI</em> <em>Agent</em> techniques, from basic conversational bots to complex multi-<em>agent</em> systems.",
+      "evidence_id": "E10",
+      "response_sha256": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+      "response_body": "requests/5e98cd643ddf_001_github_1.body",
+      "retrieved_at": "2026-11-02T03:01:40.308906+00:00"
+    },
+    {
+      "source": "hn",
+      "source_id": "46990729",
+      "url": "https://news.ycombinator.com/item?id=46990729",
+      "title": "An AI agent published a hit piece on me",
+      "text": "",
+      "points": 2346,
+      "comments": 951,
+      "evidence_id": "E11",
+      "response_sha256": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+      "response_body": "requests/9c5bb5b674a7_002_hn_1.body",
+      "retrieved_at": "2026-11-02T03:01:44.931800+00:00"
+    },
+    {
+      "source": "hn",
+      "source_id": "48500012",
+      "url": "https://news.ycombinator.com/item?id=48500012",
+      "title": "AI agent bankrupted their operator while trying to scan DN42",
+      "text": "",
+      "points": 1467,
+      "comments": 536,
+      "evidence_id": "E12",
+      "response_sha256": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+      "response_body": "requests/9c5bb5b674a7_002_hn_1.body",
+      "retrieved_at": "2026-11-02T03:01:44.931800+00:00"
+    },
+    {
+      "source": "hn",
+      "source_id": "47460525",
+      "url": "https://news.ycombinator.com/item?id=47460525",
+      "title": "OpenCode – Open source AI coding agent",
+      "text": "",
+      "points": 1274,
+      "comments": 618,
+      "evidence_id": "E13",
+      "response_sha256": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+      "response_body": "requests/9c5bb5b674a7_002_hn_1.body",
+      "retrieved_at": "2026-11-02T03:01:44.931800+00:00"
+    },
+    {
+      "source": "hn",
+      "source_id": "46987559",
+      "url": "https://news.ycombinator.com/item?id=46987559",
+      "title": "AI agent opens a PR write a blogpost to shames the maintainer who closes it",
+      "text": "",
+      "points": 953,
+      "comments": 750,
+      "evidence_id": "E14",
+      "response_sha256": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+      "response_body": "requests/9c5bb5b674a7_002_hn_1.body",
+      "retrieved_at": "2026-11-02T03:01:44.931800+00:00"
+    },
+    {
+      "source": "hn",
+      "source_id": "46515696",
+      "url": "https://news.ycombinator.com/item?id=46515696",
+      "title": "Opus 4.5 is not the normal AI agent experience that I have had thus far",
+      "text": "",
+      "points": 879,
+      "comments": 1353,
+      "evidence_id": "E15",
+      "response_sha256": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+      "response_body": "requests/9c5bb5b674a7_002_hn_1.body",
+      "retrieved_at": "2026-11-02T03:01:44.931800+00:00"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "C01",
+      "kind": "observed_search_metadata",
+      "statement": "Repository appeared in the public GitHub search response.",
+      "evidence_ids": [
+        "E01"
+      ],
+      "limits": "Snapshot only; no revenue, payment, demand, or growth verified."
+    },
+    {
+      "claim_id": "C02",
+      "kind": "observed_search_metadata",
+      "statement": "Repository appeared in the public GitHub search response.",
+      "evidence_ids": [
+        "E02"
+      ],
+      "limits": "Snapshot only; no revenue, payment, demand, or growth verified."
+    },
+    {
+      "claim_id": "C03",
+      "kind": "observed_search_metadata",
+      "statement": "Repository appeared in the public GitHub search response.",
+      "evidence_ids": [
+        "E03"
+      ],
+      "limits": "Snapshot only; no revenue, payment, demand, or growth verified."
+    },
+    {
+      "claim_id": "C04",
+      "kind": "observed_search_metadata",
+      "statement": "Repository appeared in the public GitHub search response.",
+      "evidence_ids": [
+        "E04"
+      ],
+      "limits": "Snapshot only; no revenue, payment, demand, or growth verified."
+    },
+    {
+      "claim_id": "C05",
+      "kind": "observed_search_metadata",
+      "statement": "HN story metadata reports 2346 points and 951 comments at retrieval.",
+      "evidence_ids": [
+        "E11"
+      ],
+      "limits": "Snapshot only; no revenue, payment, demand, or growth verified."
+    },
+    {
+      "claim_id": "C06",
+      "kind": "observed_search_metadata",
+      "statement": "HN story metadata reports 1467 points and 536 comments at retrieval.",
+      "evidence_ids": [
+        "E12"
+      ],
+      "limits": "Snapshot only; no revenue, payment, demand, or growth verified."
+    },
+    {
+      "claim_id": "C07",
+      "kind": "observed_search_metadata",
+      "statement": "HN story metadata reports 1274 points and 618 comments at retrieval.",
+      "evidence_ids": [
+        "E13"
+      ],
+      "limits": "Snapshot only; no revenue, payment, demand, or growth verified."
+    },
+    {
+      "claim_id": "C08",
+      "kind": "observed_search_metadata",
+      "statement": "HN story metadata reports 953 points and 750 comments at retrieval.",
+      "evidence_ids": [
+        "E14"
+      ],
+      "limits": "Snapshot only; no revenue, payment, demand, or growth verified."
+    }
+  ],
+  "kill_reasons": [
+    "NO_VERIFIED_BUYER_OR_PAYMENT_EVIDENCE: public search metadata is insufficient",
+    "NO_LONGITUDINAL_TREND_EVIDENCE: one snapshot cannot establish growth"
+  ],
+  "opportunities": []
+}

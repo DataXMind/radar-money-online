@@ -1,0 +1,16 @@
+{
+  "type": "post-run offline artifact consistency check",
+  "checks": {
+    "artifact_hashes": true,
+    "source_hashes": true,
+    "license_hash": true,
+    "test_report_hash": true,
+    "limits": true,
+    "empty_csv": true,
+    "exactly_two_requests": true,
+    "both_sources_200": true,
+    "draft": true,
+    "evidence_refs": true
+  },
+  "status": "PASS"
+}

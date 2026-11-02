@@ -1,0 +1,10 @@
+{
+  "state": "response_saved",
+  "url": "https://hn.algolia.com/api/v1/search?query=ai%20agent&tags=story&hitsPerPage=5",
+  "status": 200,
+  "retrieved_at": "2026-11-02T03:01:44.931800+00:00",
+  "sha256": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+  "bytes": 11426,
+  "content_type": "application/json",
+  "body_file": "9c5bb5b674a7_002_hn_1.body"
+}

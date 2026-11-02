@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "run_kind": "single_live_mvp",
+  "started_at": "2026-11-02T03:01:39.338653+00:00",
+  "finished_at": "2026-11-02T03:01:45.109632+00:00",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "kill_reasons": [
+    "NO_VERIFIED_BUYER_OR_PAYMENT_EVIDENCE: public search metadata is insufficient",
+    "NO_LONGITUDINAL_TREND_EVIDENCE: one snapshot cannot establish growth"
+  ],
+  "source_counts": {
+    "github": 10,
+    "hn": 5
+  },
+  "opportunities": [],
+  "raw_count": 15,
+  "claim_count": 8,
+  "opportunity_count": 0,
+  "limits": {
+    "raw_items": 15,
+    "claims": 8,
+    "opportunities": 5
+  },
+  "network_policy": {
+    "public_get_only": true,
+    "timeout_seconds": 15,
+    "attempts_per_source": 3,
+    "minimum_interval_seconds": 2,
+    "max_retry_wait_seconds": 8,
+    "max_response_bytes": 4000000
+  },
+  "code_base_commit": "c32e4bc038cebdcca11c3af1db40609af45ada6c",
+  "source_sha256": {
+    "money_trend/__init__.py": "ac245010262c2ae4d099c3b83ce31a39e821413f018c8647ed5f58d022a9b7c2",
+    "money_trend/capture.py": "afdc8521fffe5d98bd2fbcd586210a9531e9a56f0d76c6440c8e1ba86e0b8d3d",
+    "money_trend/core.py": "4190402fec93152d8219a806d47ab787412babb136c7a11cea308a02fc622011",
+    "money_trend/offline_tests.py": "4f7f032529ba1209cd4f0da797764a1676f79b1e1d5a582a5809d79b801e1d56",
+    "money_trend/pipeline.py": "271639609f6c24c20d50c95ad26d3a16f6ecb7efe0d6c3aeec03430578f28250",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_mvp.py": "056863371314192af61b02461475db703766fc33a97007c56114c452aad97796"
+  },
+  "license_sha256": "0f09cb00c5641efd60179cc2dce8b7c9b7f96ff49b206d8695011b5b8b2d2b0e",
+  "offline_test_report": {
+    "path": "artifacts\\offline_tests.json",
+    "sha256": "dc21072dda433348af603a70c7e88c0d708d2480bfb266084ea0b9de27dbf3ea",
+    "tests_run": 32,
+    "status": "PASS"
+  },
+  "artifacts_sha256": {
+    "AI_MONEY_TREND_BRIEF_v1.md": "70c436543c828f1596f083dcbb6661b1f33bd1c4127211945db863d06e077490",
+    "checkpoint.json": "326ceb1cf52fe2b0d2c5e5ccf86902f6823f9ba917906a6f2a0eb4606ecd78f9",
+    "evidence_ledger.json": "7cdc2b29ef634fadd4e5c00e6cc767dc0e7e644797d30a2a8b1d3a1d13e85390",
+    "opportunities.csv": "77eecc73ad2b90b2137d55568ce05ce5a228be6fee87717a582d67651cd6c91b",
+    "requests/5e98cd643ddf_001_github_1.body": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+    "requests/5e98cd643ddf_001_github_1.meta.json": "7aac783159246c73e087c57b2ee5e8c80dfab4fa3aecc27d889310c0860394dc",
+    "requests/9c5bb5b674a7_002_hn_1.body": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+    "requests/9c5bb5b674a7_002_hn_1.meta.json": "d62c8808ba69575470fc9873e1afdb463f6c32bbceb7d2cb7d0e7720ae522da8",
+    "requests/checkpoint.json": "dd8c35f05388a7d9329caf3f5bede570c5e9ad7afafb5c636baf10141fa289cc",
+    "requests/requests.jsonl": "2942bf485c5045339f10180a0b9a4724963273e64ff2604cca0ea47e5eecbe8c"
+  },
+  "errors": [],
+  "limitations": [
+    "No LLM model used; deterministic evidence extraction.",
+    "Qualification intentionally unavailable without verified buyer/payment and longitudinal evidence.",
+    "Retained raw item cap is 15; search response envelopes may include additional service metadata.",
+    "Checkpoint is an audit record; interrupted runs are not automatically replayed.",
+    "Request timeout bounds socket operations and checks the body deadline between reads; not a hard process deadline."
+  ]
+}
