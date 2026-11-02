@@ -6,7 +6,7 @@ import unittest
 from pathlib import Path
 from unittest.mock import patch
 
-from .core import utc, write_json
+from .core import utc, write_json, strict_json
 
 
 def write_report(out, log, result, root):
@@ -24,6 +24,17 @@ def write_report(out, log, result, root):
     bundle = {'config_sha256': 'config/production_v1.json',
               'script_sha256': 'scripts/run_production.py',
               'criteria_sha256': 'docs/evidence_criteria.md', 'dashboard_sha256': 'dashboard.md'}
+    config_path = root / bundle['config_sha256']
+    if config_path.is_file():
+        config = strict_json(config_path.read_text(encoding='utf-8'))
+        criteria = (root / config['criteria_file']).resolve()
+        template = (root / config['dashboard_template']).resolve()
+        if not criteria.is_relative_to((root / 'docs').resolve()):
+            raise ValueError('criteria must stay inside docs')
+        if template != (root / 'dashboard.md').resolve() and not template.is_relative_to((root / 'templates').resolve()):
+            raise ValueError('dashboard template must stay inside templates')
+        bundle['criteria_sha256'] = str(criteria.relative_to(root.resolve()))
+        bundle['dashboard_sha256'] = str(template.relative_to(root.resolve()))
     if all((root / name).is_file() for name in bundle.values()):
         report['production_bundle_sha256'] = {
             key: hashlib.sha256((root / name).read_bytes()).hexdigest() for key, name in bundle.items()}

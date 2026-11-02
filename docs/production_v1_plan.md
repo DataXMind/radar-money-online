@@ -1,5 +1,11 @@
 # Production Run v1 plan — phương án B, chưa kích hoạt
 
+Historical preparation plan. One manual option B offline baseline was later
+authorized and completed on 2026-11-02; see artifacts/production-v1/production_run_report.md.
+Cron/live collection remain disabled. Current template is templates/dashboard.md,
+published results are dashboard.md, and the baseline preflight report is under
+artifacts/production-v1/preflight/. The text below records the preparation state.
+
 EXECUTION_MODE: **HUMAN_APPROVAL_REQUIRED**. Đây là bản chuẩn bị cho báo cáo
 draft local, không tuyên bố production-ready. Không có production run được
 thực hiện khi tạo các file này. Không mở nguồn hoặc gỡ gate để có opportunities.

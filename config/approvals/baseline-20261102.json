@@ -1,0 +1,16 @@
+{
+  "approved": true,
+  "action": "RUN_OFFLINE_DRAFT",
+  "reviewer": "user (explicit approval in this chat)",
+  "approved_at": "2026-11-02T04:51:26.346863+00:00",
+  "run_id": "baseline-20261102",
+  "output_root": "artifacts/production-v1",
+  "authorization_source": "User accepted deployment_report.md and requested Production Run v1 draft-only in this chat.",
+  "authorization_scope": "Exactly one run of the existing option B offline replay; no additional live run or new source.",
+  "approval_timestamp_semantics": "Time the existing chat approval was recorded locally; not a digital signature.",
+  "config_sha256": "3a2995bd724f9a7e7db6715a72d86a3555e614373f454e2cb5cc4c95ae948ed7",
+  "script_sha256": "972ba2b36ee3f1e012bf8ab3af6075b38b8520aaa053b8f8bfde5827597f5b9b",
+  "criteria_sha256": "86146a39213ae422c7a57c7b2810acad404969c6e308dbfc842feb8c096e4514",
+  "test_report_sha256": "9aa3928ba1c2a17afedc2e481539671f78f27ad15bcf1115b1fe49c380979287",
+  "dashboard_sha256": "cf9546c4072cf8851511466bcdb3a37ad028c9d3dafa1054f7b21b8b032935ab"
+}

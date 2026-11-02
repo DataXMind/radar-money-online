@@ -8,3 +8,6 @@ tests/fixtures/** -text -whitespace
 *.body binary
 # Agent/hook bundle hashes must survive checkout without newline conversion.
 .codex/** -text
+# Preserve the exact approved configuration bytes alongside the run manifest.
+config/production_v1.json -text
+config/approvals/** -text -whitespace

@@ -1,0 +1,63 @@
+{
+  "run_id": "baseline-20261102",
+  "run_kind": "offline_archive_replay",
+  "execution_mode": "HUMAN_APPROVAL_REQUIRED",
+  "network_enabled": false,
+  "window_days": 7,
+  "status": "RESEARCH_DRAFT_ONLY",
+  "raw_count": 15,
+  "claim_count": 8,
+  "opportunity_count": 0,
+  "opportunities": [],
+  "kill_reasons": [
+    "NO_VERIFIED_BUYER_OR_PAYMENT_EVIDENCE: public search metadata is insufficient",
+    "NO_LONGITUDINAL_TREND_EVIDENCE: one snapshot cannot establish growth",
+    "MISSING_BUYER_EVIDENCE",
+    "MISSING_PAYMENT_EVIDENCE",
+    "MISSING_TREND_EVIDENCE",
+    "OPTION_B_KEEP_DRAFT: proof verification and qualification remain unavailable"
+  ],
+  "approval": {
+    "approved": true,
+    "action": "RUN_OFFLINE_DRAFT",
+    "reviewer": "user (explicit approval in this chat)",
+    "approved_at": "2026-11-02T04:51:26.346863+00:00",
+    "run_id": "baseline-20261102",
+    "output_root": "artifacts/production-v1",
+    "authorization_source": "User accepted deployment_report.md and requested Production Run v1 draft-only in this chat.",
+    "authorization_scope": "Exactly one run of the existing option B offline replay; no additional live run or new source.",
+    "approval_timestamp_semantics": "Time the existing chat approval was recorded locally; not a digital signature.",
+    "config_sha256": "3a2995bd724f9a7e7db6715a72d86a3555e614373f454e2cb5cc4c95ae948ed7",
+    "script_sha256": "972ba2b36ee3f1e012bf8ab3af6075b38b8520aaa053b8f8bfde5827597f5b9b",
+    "criteria_sha256": "86146a39213ae422c7a57c7b2810acad404969c6e308dbfc842feb8c096e4514",
+    "test_report_sha256": "9aa3928ba1c2a17afedc2e481539671f78f27ad15bcf1115b1fe49c380979287",
+    "dashboard_sha256": "cf9546c4072cf8851511466bcdb3a37ad028c9d3dafa1054f7b21b8b032935ab"
+  },
+  "input_bindings": {
+    "config_sha256": "3a2995bd724f9a7e7db6715a72d86a3555e614373f454e2cb5cc4c95ae948ed7",
+    "script_sha256": "972ba2b36ee3f1e012bf8ab3af6075b38b8520aaa053b8f8bfde5827597f5b9b",
+    "criteria_sha256": "86146a39213ae422c7a57c7b2810acad404969c6e308dbfc842feb8c096e4514",
+    "test_report_sha256": "9aa3928ba1c2a17afedc2e481539671f78f27ad15bcf1115b1fe49c380979287",
+    "dashboard_sha256": "cf9546c4072cf8851511466bcdb3a37ad028c9d3dafa1054f7b21b8b032935ab"
+  },
+  "source_sha256": {
+    "money_trend/__init__.py": "ac245010262c2ae4d099c3b83ce31a39e821413f018c8647ed5f58d022a9b7c2",
+    "money_trend/capture.py": "afdc8521fffe5d98bd2fbcd586210a9531e9a56f0d76c6440c8e1ba86e0b8d3d",
+    "money_trend/core.py": "c92a68bbd3b2da9799ff216b57ada0d2be354f982b6c89079a3668ba69c8559b",
+    "money_trend/offline_tests.py": "91e0e78d1df15afd0978ea44385dcaaafbe99b2c3e21b55cc1ed97012145ca12",
+    "money_trend/pipeline.py": "0ea6556376b27f902ee79f8c19a27029fdcb20d6ebb4ac379b9443f78dd2caf5",
+    "tests/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests/test_gold_pattern.py": "b2a7ad63f905e2d74f20e18f8c014df14a68e8f644a6036372bca147bcf37844",
+    "tests/test_mvp.py": "a288fc5296d164f69028c04d8559c400138483128e97e4e099b43106e23abe9f",
+    "tests/test_p2.py": "3d46eab2189de5fd4725e637c0a350b83867138b631fdf77873936bed969998b",
+    "tests/test_production_prep.py": "c091b1b7625ec96999274090b847e21a92853b91fae8363e2b978db469a8a1bf"
+  },
+  "archive_manifest_sha256": "e17335c5910f8f6b79bc8e39322fc84b0f72ebe3009f6dd1058bd40db8de0c99",
+  "artifacts_sha256": {
+    "checkpoint.json": "99005ee9d9b561f9b16e5f64f20c8cd43bb2f0ca2b91d0e9aece79bb16f1dd0b",
+    "dashboard.md": "b70b490766cdc7d5e8c51a2b83048e921de9e595aba2d82ef92f1ea9fd59677b",
+    "evidence_ledger.json": "0c1398b0e51beeaebe2c288e2ccbefe448736ddf5e14ca90c052c18e311fcd24",
+    "ingress.jsonl": "2f6d173c219172d5d8cbae049d34589eb12de33703c09a1449afa55399721c0d",
+    "opportunities.csv": "56b030defcc6c90cf02f0b719e588ee99f6179647ca787fec80fde0cfbd00b63"
+  }
+}

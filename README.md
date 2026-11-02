@@ -4,6 +4,13 @@ MVP Python 3.12, chỉ dùng standard library, chạy local và lưu được tr
 Đây là công cụ thu thập bằng chứng về chủ đề AI agent; chưa dùng LLM và chưa
 đủ khả năng xác nhận cơ hội kinh doanh. **Không production-ready.**
 
+Production v1 baseline đã chạy theo phương án B: **offline replay**, 15 records,
+8 metadata claims, 0 opportunities, RESEARCH_DRAFT_ONLY; không phải live fetch.
+Xem [run report](artifacts/production-v1/production_run_report.md),
+[dashboard hiện tại](dashboard.md), và [phương án tiếp theo](docs/next_after_production_v1.md).
+Template được giữ riêng tại `templates/dashboard.md`; báo cáo preflight cho
+baseline này ở `artifacts/production-v1/preflight/` (69 tests PASS).
+
 Custom agents và Gold Pattern: [deployment report](deployment_report.md),
 [dependency graph](docs/agent_dependency_graph.md), [hook guide](docs/gold_pattern.md).
 Suite hiện tại chạy offline, giữ nguyên mọi report lịch sử:
@@ -18,7 +25,7 @@ host, không được truyền qua Git; xem hướng dẫn trước khi bật tr
 Đã chuẩn bị [Production v1 theo phương án B](docs/production_v1_plan.md),
 chưa kích hoạt/chưa chạy. Script `scripts/run_production.py` chỉ replay archive
 offline sau approval riêng cho từng run; không tự fetch live hoặc cài cron.
-Template dashboard ở `dashboard.md`, config ở `config/production_v1.json`.
+Template dashboard ở `templates/dashboard.md`, config ở `config/production_v1.json`.
 Suite cho bản chuẩn bị chạy bằng lệnh sau để giữ report P2 và MVP lịch sử:
 
 ```powershell

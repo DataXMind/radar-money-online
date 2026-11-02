@@ -1,0 +1,7 @@
+{
+  "recorded_at": "2026-11-02T04:51:12.108416+00:00",
+  "command": "python scripts/run_production.py",
+  "result": "argument validation rejected missing --approval-file and --run-id",
+  "pipeline_started": false,
+  "remedy": "use explicit required arguments and bind existing human authorization; do not relax preflight"
+}

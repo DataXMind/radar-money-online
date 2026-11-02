@@ -20,9 +20,9 @@ class ProductionPreparationTests(unittest.TestCase):
         self.temp = tempfile.TemporaryDirectory()
         self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name)
-        for folder in ('config/approvals', 'docs', 'artifacts/offline-production-prep'):
+        for folder in ('config/approvals', 'docs', 'templates'):
             (self.root / folder).mkdir(parents=True)
-        for name in ('config/production_v1.json', 'docs/evidence_criteria.md', 'dashboard.md'):
+        for name in ('config/production_v1.json', 'docs/evidence_criteria.md', 'dashboard.md', 'templates/dashboard.md'):
             shutil.copyfile(REPO / name, self.root / name)
         shutil.copytree(REPO / 'artifacts/mvp-v1', self.root / 'artifacts/mvp-v1')
         self.addCleanup(patch.stopall)
@@ -30,13 +30,14 @@ class ProductionPreparationTests(unittest.TestCase):
         self.now = datetime(2026, 11, 2, 3, 5, tzinfo=timezone.utc)
         clock = patch.object(production, 'datetime', wraps=datetime).start()
         clock.now.return_value = self.now
-        self.report_path = self.root / 'artifacts/offline-production-prep/offline_tests.json'
+        self.config_path = self.root / 'config/production_v1.json'
+        self.config = strict_json(self.config_path.read_text())
+        self.report_path = self.root / self.config['test_report']
+        self.report_path.parent.mkdir(parents=True)
         log = self.report_path.with_name('offline_tests.txt')
         log.write_bytes(b'Synthetic report persistence fixture, not a real test result\n')
         write_json(self.report_path, {'status': 'PASS', 'tests_run': 1, 'failures': 0, 'errors': 0,
                                     'source_sha256': {}, 'log_sha256': production.sha(log)})
-        self.config_path = self.root / 'config/production_v1.json'
-        self.config = strict_json(self.config_path.read_text())
         report = strict_json(self.report_path.read_text())
         report['production_bundle_sha256'] = {
             k: v for k, v in production.approval_bindings(self.config_path, self.config).items()
@@ -75,7 +76,7 @@ class ProductionPreparationTests(unittest.TestCase):
         self.approval_path.unlink()
         with self.assertRaises(OSError):
             self.execute()
-        self.assertFalse((self.root / 'artifacts/production-v1').exists())
+        self.assertFalse((self.root / 'artifacts/production-v1/test-only').exists())
 
     def test_wrong_expired_or_unapproved_authorization_is_blocked(self):
         for field, value in [('approved', False), ('run_id', 'other'), ('config_sha256', 'wrong'),
@@ -86,7 +87,7 @@ class ProductionPreparationTests(unittest.TestCase):
                 write_json(self.approval_path, approval)
                 with self.assertRaises(DataError):
                     self.execute()
-        self.assertFalse((self.root / 'artifacts/production-v1').exists())
+        self.assertFalse((self.root / 'artifacts/production-v1/test-only').exists())
 
     def test_network_mode_or_weakened_policy_is_rejected(self):
         for field, value in [('network_enabled', True), ('option', 'A'), ('window_days', 14),
@@ -146,6 +147,12 @@ class ProductionPreparationTests(unittest.TestCase):
         self.execute()
         with self.assertRaises(FileExistsError):
             self.execute()
+
+    def test_root_dashboard_refresh_does_not_change_template_approval(self):
+        before = production.approval_bindings(self.config_path, self.config)
+        (self.root / 'dashboard.md').write_bytes(b'Rendered latest results')
+        self.assertEqual(before, production.approval_bindings(self.config_path, self.config))
+        self.assertTrue((self.execute() / 'dashboard.md').is_file())
 
     def test_boolean_evidence_summaries_never_bypass_option_b(self):
         candidate = {'buyer_evidence': {'present': True, 'proof_type': 'receipt', 'url': 'TEST ONLY'},

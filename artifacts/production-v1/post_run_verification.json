@@ -1,0 +1,112 @@
+{
+  "verified_at": "2026-11-02T04:53:13.576148+00:00",
+  "kind": "post-run independent offline artifact review, not another pipeline run",
+  "status": "PASS",
+  "checks": {
+    "terminal_draft": true,
+    "counts_and_caps": true,
+    "empty_opportunities": true,
+    "artifact_hashes": true,
+    "current_source_hashes": true,
+    "current_preflight_pass": true,
+    "input_approval_bindings": true,
+    "preflight_bundle_matches_run": true,
+    "approval_file_matches_manifest": true,
+    "published_dashboard_matches_result": true,
+    "exactly_one_baseline_manifest": true,
+    "no_live_request_events": true,
+    "two_archives_validated": true,
+    "eight_claims_field_traceability": true,
+    "historical_evidence_and_license_unchanged": true
+  },
+  "claim_traceability": [
+    {
+      "claim_id": "C01",
+      "evidence_ids": [
+        "E01"
+      ],
+      "raw_body": "artifacts/mvp-v1/requests/5e98cd643ddf_001_github_1.body",
+      "match": true
+    },
+    {
+      "claim_id": "C02",
+      "evidence_ids": [
+        "E02"
+      ],
+      "raw_body": "artifacts/mvp-v1/requests/5e98cd643ddf_001_github_1.body",
+      "match": true
+    },
+    {
+      "claim_id": "C03",
+      "evidence_ids": [
+        "E03"
+      ],
+      "raw_body": "artifacts/mvp-v1/requests/5e98cd643ddf_001_github_1.body",
+      "match": true
+    },
+    {
+      "claim_id": "C04",
+      "evidence_ids": [
+        "E04"
+      ],
+      "raw_body": "artifacts/mvp-v1/requests/5e98cd643ddf_001_github_1.body",
+      "match": true
+    },
+    {
+      "claim_id": "C05",
+      "evidence_ids": [
+        "E11"
+      ],
+      "raw_body": "artifacts/mvp-v1/requests/9c5bb5b674a7_002_hn_1.body",
+      "match": true
+    },
+    {
+      "claim_id": "C06",
+      "evidence_ids": [
+        "E12"
+      ],
+      "raw_body": "artifacts/mvp-v1/requests/9c5bb5b674a7_002_hn_1.body",
+      "match": true
+    },
+    {
+      "claim_id": "C07",
+      "evidence_ids": [
+        "E13"
+      ],
+      "raw_body": "artifacts/mvp-v1/requests/9c5bb5b674a7_002_hn_1.body",
+      "match": true
+    },
+    {
+      "claim_id": "C08",
+      "evidence_ids": [
+        "E14"
+      ],
+      "raw_body": "artifacts/mvp-v1/requests/9c5bb5b674a7_002_hn_1.body",
+      "match": true
+    }
+  ],
+  "source_counts": {
+    "github": 10,
+    "hn": 5
+  },
+  "files_sha256": {
+    "artifacts/production-v1/baseline-20261102/checkpoint.json": "99005ee9d9b561f9b16e5f64f20c8cd43bb2f0ca2b91d0e9aece79bb16f1dd0b",
+    "artifacts/production-v1/baseline-20261102/dashboard.md": "b70b490766cdc7d5e8c51a2b83048e921de9e595aba2d82ef92f1ea9fd59677b",
+    "artifacts/production-v1/baseline-20261102/evidence_ledger.json": "0c1398b0e51beeaebe2c288e2ccbefe448736ddf5e14ca90c052c18e311fcd24",
+    "artifacts/production-v1/baseline-20261102/ingress.jsonl": "2f6d173c219172d5d8cbae049d34589eb12de33703c09a1449afa55399721c0d",
+    "artifacts/production-v1/baseline-20261102/opportunities.csv": "56b030defcc6c90cf02f0b719e588ee99f6179647ca787fec80fde0cfbd00b63",
+    "artifacts/production-v1/baseline-20261102/run_manifest.json": "6de3597805e0d63b4754f3577c18259cc5398a43c952ca2047b7fa744a61f28b",
+    "artifacts/production-v1/cli_initial_check.json": "0fd48092c0ced53335eb32e0d4d4be348cf861606042f09e761ba381edcfc8a0",
+    "artifacts/production-v1/preflight/offline_tests.json": "9aa3928ba1c2a17afedc2e481539671f78f27ad15bcf1115b1fe49c380979287",
+    "artifacts/production-v1/preflight/offline_tests.txt": "8a88633705369e4824a362d2ca4e9f354f6fabf68214ffe6c9492cb4eddc36a1",
+    "artifacts/production-v1/production_run_report.md": "5b61ceb5e2c8dfeff2fa8c9999c59267a91c49956bf479a526d0d5e44c069080",
+    "config/approvals/baseline-20261102.json": "98691eac0abc6524f994dfc995616841425cce73b5d71d70539062cfc50b4773",
+    "config/production_v1.json": "3a2995bd724f9a7e7db6715a72d86a3555e614373f454e2cb5cc4c95ae948ed7",
+    "dashboard.md": "8b1501efe94d7744199625c4b7032a017fc7e91184f2ce9536d4883db74974bb",
+    "docs/evidence_criteria.md": "86146a39213ae422c7a57c7b2810acad404969c6e308dbfc842feb8c096e4514",
+    "docs/next_after_production_v1.md": "d1f426e42a7f7b725a55cb8925d195fe0586f1db21f84f45898b8bd4ec12f4cb",
+    "scripts/run_production.py": "972ba2b36ee3f1e012bf8ab3af6075b38b8520aaa053b8f8bfde5827597f5b9b",
+    "templates/dashboard.md": "cf9546c4072cf8851511466bcdb3a37ad028c9d3dafa1054f7b21b8b032935ab"
+  },
+  "excluded_from_self_hash": "artifacts\\production-v1\\post_run_verification.json"
+}

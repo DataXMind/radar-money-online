@@ -1,21 +1,21 @@
 # AI Money-Trend — Production v1 draft dashboard
 
-Run: {run_id} | Generated: {generated_at}
+Run: baseline-20261102 | Generated: 2026-11-02T04:51:26.698337+00:00
 EXECUTION_MODE: HUMAN_APPROVAL_REQUIRED | Option: B | Network: disabled
 
-Status: **{status}**
+Status: **RESEARCH_DRAFT_ONLY**
 
 | Overview | Count |
 |---|---:|
-| Retained raw records | {raw_count} |
-| Metadata claims | {claim_count} |
-| Qualified opportunities | {opportunity_count} |
+| Retained raw records | 15 |
+| Metadata claims | 8 |
+| Qualified opportunities | 0 |
 
 ## Verdict distribution (claims, not market classifications)
 
 | Verdict | Count |
 |---|---:|
-| OBSERVED_METADATA | {claim_count} |
+| OBSERVED_METADATA | 8 |
 | HYPED | 0 |
 | EMERGING | 0 |
 
@@ -26,13 +26,21 @@ upper bound for metadata, not an automatic classification.
 
 | Opportunity | Buyer proof | Payment proof | Trend proof |
 |---|---|---|---|
-{top_rows}
+No eligible opportunities.
 
 ## GAP summary
 
-{gap_summary}
+- NO_VERIFIED_BUYER_OR_PAYMENT_EVIDENCE: public search metadata is insufficient
+- NO_LONGITUDINAL_TREND_EVIDENCE: one snapshot cannot establish growth
+- MISSING_BUYER_EVIDENCE
+- MISSING_PAYMENT_EVIDENCE
+- MISSING_TREND_EVIDENCE
+- OPTION_B_KEEP_DRAFT: proof verification and qualification remain unavailable
 
 Window: last 7 days of response retrieval, not story publication or proven growth.
 Original retrieval timestamps remain in evidence_ledger.json. This is an offline
 replay of archived public GitHub/HN responses, never a new live observation.
 Review run_manifest.json and opportunities.csv. Not production-ready.
+
+
+[Production run report](artifacts/production-v1/production_run_report.md) | [Run manifest](artifacts/production-v1/baseline-20261102/run_manifest.json) | [Evidence ledger](artifacts/production-v1/baseline-20261102/evidence_ledger.json) | [Opportunities CSV](artifacts/production-v1/baseline-20261102/opportunities.csv)
