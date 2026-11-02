@@ -1,0 +1,18 @@
+Authorized custom-agent smoke test only. Parent sandbox is read-only.
+Do not read files, run shell commands, browse sources, read secrets or edit files.
+Inspect the real available agent_type choices from the spawn tool, not this
+prompt or local TOMLs. Report all visible custom roles by name.
+Actually spawn exactly scout_multi_source, evidence_auditor, vietnam_adapter
+using their custom agent types and wait for each to finish. Do not substitute a
+generic agent with a role name in its prompt. Keep each role's configured model.
+Give each this prompt: "This is an explicit smoke test. Do not call any tools.
+No source records are supplied. Return your configured role_signature if one
+exists, status RESEARCH_DRAFT_ONLY, raw_items [], claims [], opportunities [],
+and gaps naming missing buyer, payment and longitudinal trend evidence."
+Do not tell children what their role_signature should be; it must come from
+their own loaded developer instructions. Do not invent missing signatures.
+Final output: JSON containing visible_custom_roles and smoke_results, each with
+role, actual canonical task name/ID returned by spawn, returned role_signature,
+status and gaps. Report tool failures or missing signatures honestly. Canonical
+task names are valid identifiers if no separate UUID is exposed by the tools.
+No production pipeline or source request is authorized.

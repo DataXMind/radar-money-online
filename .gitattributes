@@ -6,3 +6,5 @@
 artifacts/** -text -whitespace
 tests/fixtures/** -text -whitespace
 *.body binary
+# Agent/hook bundle hashes must survive checkout without newline conversion.
+.codex/** -text

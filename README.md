@@ -4,6 +4,17 @@ MVP Python 3.12, chỉ dùng standard library, chạy local và lưu được tr
 Đây là công cụ thu thập bằng chứng về chủ đề AI agent; chưa dùng LLM và chưa
 đủ khả năng xác nhận cơ hội kinh doanh. **Không production-ready.**
 
+Custom agents và Gold Pattern: [deployment report](deployment_report.md),
+[dependency graph](docs/agent_dependency_graph.md), [hook guide](docs/gold_pattern.md).
+Suite hiện tại chạy offline, giữ nguyên mọi report lịch sử:
+
+```powershell
+python -m money_trend.offline_tests --output artifacts/agent-sprint
+```
+
+Cấu hình 13 role không tự chạy pipeline. Trust hooks là trạng thái riêng trên
+host, không được truyền qua Git; xem hướng dẫn trước khi bật trên máy khác.
+
 Đã chuẩn bị [Production v1 theo phương án B](docs/production_v1_plan.md),
 chưa kích hoạt/chưa chạy. Script `scripts/run_production.py` chỉ replay archive
 offline sau approval riêng cho từng run; không tự fetch live hoặc cài cron.

@@ -3,3 +3,5 @@ __pycache__/
 .venv/
 # Windows shell redirection artifact; leave the local file untouched.
 /nul
+.codex/state/
+*.bak.*

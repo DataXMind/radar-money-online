@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-11-02T04:45:03.489936+00:00",
+  "kind": "operator_observed_native_CLI_TUI",
+  "cli_version": "0.166.0",
+  "project": "D:/Projects/radar-money-online",
+  "hooks_config_sha256": "f2f8afb45c91e3ec8fd2953e26473d52e172e71de826a7219670d3a4aa54f147",
+  "events": {
+    "PreToolUse": {
+      "installed": 1,
+      "active": 1
+    },
+    "PreCompact": {
+      "installed": 1,
+      "active": 1
+    },
+    "PostCompact": {
+      "installed": 1,
+      "active": 1
+    },
+    "SessionStart": {
+      "installed": 1,
+      "active": 1
+    },
+    "Stop": {
+      "installed": 1,
+      "active": 1
+    },
+    "SubagentStop": {
+      "installed": 1,
+      "active": 1
+    }
+  },
+  "initial_trust_attempt": "rejected by automatic approval review; no bypass used",
+  "user_approval": "Duy\u1ec7t trust v\u00e0 k\u00edch ho\u1ea1t 6 project hooks",
+  "subsequent_trust": "native /hooks browser trust action succeeded",
+  "scope": "host-local hook trust only; no production authorization",
+  "not_verified": [
+    "actual model compaction",
+    "complete child tool-call audit"
+  ]
+}

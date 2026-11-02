@@ -1,0 +1,18 @@
+This is an authorized custom-agent smoke test, not a production pipeline run.
+Do not execute tools that read files, network sources, credentials, or secrets.
+Do not edit any files. All spawned agents inherit this parent's read-only sandbox.
+First inspect the agent_type choices supplied by your spawn tool (not TOML files).
+Return the exact visible names among these 13 custom roles: scout_multi_source,
+scout_github, scout_vn, normalizer, claim_extractor, mechanism_analyst,
+evidence_auditor, vietnam_adapter, synthesizer, action_planner, fact_checker,
+final_editor, repo_discovery. Do not infer visibility from this list.
+Then actually spawn exactly three subagents by custom agent_type:
+scout_multi_source, evidence_auditor, vietnam_adapter. No model substitution.
+Give each this synthetic task: no source records are supplied; assess whether
+a business opportunity can be qualified from no evidence. Return a JSON object
+with status RESEARCH_DRAFT_ONLY, raw_items [], claims [], opportunities [], and
+gaps identifying missing buyer, payment and longitudinal trend evidence.
+Tell each subagent not to call tools or read files and wait for all to finish.
+Final output: JSON with visible_custom_roles and three smoke_results containing
+role, real agent_id, status and returned gaps. Report failures honestly. Do not
+fabricate agent IDs or claim a spawn succeeded without a tool result.

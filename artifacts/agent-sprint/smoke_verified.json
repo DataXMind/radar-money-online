@@ -1,0 +1,86 @@
+{
+  "status": "PASS",
+  "kind": "runtime_smoke_with_role_markers",
+  "runtime_parent_sandbox": "read-only",
+  "source": "artifacts/agent-sprint/runtime-smoke-v2.jsonl",
+  "sha256": "27eaedcab1cb250081877794bd83794bdaeca6b9bec18b8056f54c07afe9a34c",
+  "visible_custom_roles": [
+    "action_planner",
+    "claim_extractor",
+    "evidence_auditor",
+    "fact_checker",
+    "final_editor",
+    "mechanism_analyst",
+    "normalizer",
+    "repo_discovery",
+    "scout_github",
+    "scout_multi_source",
+    "scout_vn",
+    "synthesizer",
+    "vietnam_adapter"
+  ],
+  "smoke_results": [
+    {
+      "role": "scout_multi_source",
+      "canonical_task_name": "/root/scout_multi_source",
+      "role_signature": "scout-ms-8f4c19b2",
+      "status": "RESEARCH_DRAFT_ONLY",
+      "gaps": [
+        "No source records supplied.",
+        "Missing buyer evidence.",
+        "Missing payment evidence.",
+        "Missing longitudinal trend evidence."
+      ]
+    },
+    {
+      "role": "evidence_auditor",
+      "canonical_task_name": "/root/evidence_auditor",
+      "role_signature": "audit-ev-27d0a6e1",
+      "status": "RESEARCH_DRAFT_ONLY",
+      "gaps": [
+        "Missing buyer evidence with verified proof and entity linkage.",
+        "Missing payment evidence with verified proof and entity linkage.",
+        "Missing longitudinal trend evidence with verified proof and entity linkage.",
+        "No source records or raw response hashes supplied for verification."
+      ]
+    },
+    {
+      "role": "vietnam_adapter",
+      "canonical_task_name": "/root/vietnam_adapter",
+      "role_signature": "vn-adapt-c35b904e",
+      "status": "RESEARCH_DRAFT_ONLY",
+      "gaps": [
+        "Missing Vietnam buyer and segment evidence.",
+        "Missing payment and willingness-to-pay evidence.",
+        "Missing longitudinal trend evidence.",
+        "Missing evidence for localization and operational assumptions."
+      ]
+    }
+  ],
+  "usage": [
+    {
+      "index": 10,
+      "usage": {
+        "input_tokens": 109727,
+        "cached_input_tokens": 93056,
+        "cache_write_input_tokens": 0,
+        "output_tokens": 846,
+        "reasoning_output_tokens": 14
+      }
+    }
+  ],
+  "token_warnings": [
+    {
+      "systemMessage": "Token warning 95K: measured input+output=110573. Review budget; this is a warning, not a hard cap."
+    }
+  ],
+  "runtime_reported_recoveries": [
+    "The first wait_agent call was aborted before dispatch. Subsequent waits succeeded, and all three agents finished."
+  ],
+  "limits": [
+    "CLI stream exposes parent responses and usage; not a complete child tool-call audit.",
+    "Role signatures were requested without giving expected values in the smoke prompt.",
+    "Native hook activation/trust and real compaction were not exercised by this smoke.",
+    "Usage is measured CLI parent usage; child usage is not separately established."
+  ]
+}

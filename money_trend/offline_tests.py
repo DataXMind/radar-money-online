@@ -27,6 +27,14 @@ def write_report(out, log, result, root):
     if all((root / name).is_file() for name in bundle.values()):
         report['production_bundle_sha256'] = {
             key: hashlib.sha256((root / name).read_bytes()).hexdigest() for key, name in bundle.items()}
+    agent_files = sorted((root / '.codex/agents').glob('*.toml'))
+    if agent_files:
+        agent_files += sorted((root / '.codex/hooks').glob('*.py'))
+        agent_files += [root / name for name in ('.codex/hooks.json', '.codex/gold-registration.json',
+                        '.codex/context.md', 'scripts/install_gold_pattern.py', 'scripts/verify_agent_smoke.py')]
+        report['agent_bundle_sha256'] = {
+            str(p.relative_to(root)).replace('\\', '/'): hashlib.sha256(p.read_bytes()).hexdigest()
+            for p in agent_files if p.is_file()}
     write_json(out / 'offline_tests.json', report)
     return report
 

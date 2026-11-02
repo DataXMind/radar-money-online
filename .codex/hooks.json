@@ -1,0 +1,80 @@
+{
+  "hooks": {
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/validate_output.py\"",
+            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/validate_output.py')\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/token_guard.py\"",
+            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/token_guard.py')\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/save_context.py\"",
+            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/save_context.py')\"",
+            "timeout": 5
+          }
+        ],
+        "matcher": "manual|auto"
+      }
+    ],
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/restore_context.py\"",
+            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/restore_context.py')\"",
+            "timeout": 5,
+            "additionalContextLimit": 1500
+          }
+        ],
+        "matcher": "^compact$"
+      }
+    ],
+    "PostCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/restore_context.py\"",
+            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/restore_context.py')\"",
+            "timeout": 5
+          }
+        ],
+        "matcher": "manual|auto"
+      }
+    ],
+    "SubagentStop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/validate_output.py\"",
+            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/validate_output.py')\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ]
+  }
+}
