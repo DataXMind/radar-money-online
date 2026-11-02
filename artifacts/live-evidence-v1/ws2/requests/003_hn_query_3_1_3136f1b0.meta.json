@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=Codex+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+  "status": 200,
+  "retrieved_at": "2026-11-02T05:08:20.343697+00:00",
+  "sha256": "c6ec5bc28b2360026720921189c367056d2a90f6db986f5e6a565e7c6a997d35",
+  "bytes": 6726,
+  "body_file": "003_hn_query_3_1_3136f1b0.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

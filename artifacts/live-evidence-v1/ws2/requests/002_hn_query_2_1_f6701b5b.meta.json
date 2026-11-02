@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=Claude+Code+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+  "status": 200,
+  "retrieved_at": "2026-11-02T05:08:18.384291+00:00",
+  "sha256": "1c2b63d7bc8f2d556a61a8fb72846108f4c61d2189c73107500e22c6448dc540",
+  "bytes": 15876,
+  "body_file": "002_hn_query_2_1_f6701b5b.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

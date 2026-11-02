@@ -1,0 +1,13 @@
+{
+  "recorded_at": "2026-11-02T05:16:18.843040+00:00",
+  "basis": "User clarification in this chat",
+  "missing_cloud_cases": "User confirmed the 12 Cổng 2 cases do not exist locally; do not search further.",
+  "source": "artifacts/mvp-v1/evidence_ledger.json",
+  "source_sha256": "7cdc2b29ef634fadd4e5c00e6cc767dc0e7e644797d30a2a8b1d3a1d13e85390",
+  "historical_records": 15,
+  "historical_claims": 8,
+  "new_cohort_created": false,
+  "new_metric_created": false,
+  "future_values_invented": false,
+  "supersedes": "ws3/protocol.json discovery-cohort proposal; not used for final trend output"
+}

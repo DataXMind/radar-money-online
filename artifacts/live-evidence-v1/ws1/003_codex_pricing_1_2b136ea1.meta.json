@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+  "status": 200,
+  "retrieved_at": "2026-11-02T05:07:47.872903+00:00",
+  "sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+  "bytes": 22896,
+  "body_file": "003_codex_pricing_1_2b136ea1.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "7",
+    "X-RateLimit-Reset": "1793596113"
+  }
+}

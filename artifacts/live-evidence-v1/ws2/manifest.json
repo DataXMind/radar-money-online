@@ -1,0 +1,22 @@
+{
+  "run_kind": "single_live_workstream",
+  "source": "hn.algolia.com",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b",
+  "finished_at": "2026-11-02T05:08:26.367338+00:00",
+  "returned_hits": 15,
+  "retained_items": 15,
+  "duplicate_ids": [],
+  "errors": [],
+  "recovered_initial_transport_errors": [
+    {
+      "query": "AI agent cost",
+      "error": "public request failed: https://hn.algolia.com/api/v1/search_by_date?query=AI+agent+cost&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054: <urlopen error [Errno 11001] getaddrinfo failed>"
+    }
+  ],
+  "target_met": true,
+  "claims": 0,
+  "opportunities": [],
+  "gaps": [],
+  "output_sha256": "5cf1e8de9c8f6a8e4df3448b628d66ee3e92c4b97f0d5d68cd378b969115e8ab"
+}

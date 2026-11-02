@@ -1,0 +1,9 @@
+{
+  "state": "stopped",
+  "status": "GAP",
+  "recorded_at": "2026-11-02T05:16:18.844042+00:00",
+  "historical_t0_records": 15,
+  "historical_claims": 8,
+  "gap": "NO_LONGITUDINAL_TREND_EVIDENCE: only one historical snapshot, no T+7/T+14",
+  "completion": "Orchestrator finalized after runtime subagent usage limit and user clarification."
+}

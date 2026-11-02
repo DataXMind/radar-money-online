@@ -1,46 +1,47 @@
-# AI Money-Trend — Production v1 draft dashboard
+# AI Money-Trend — live evidence v1 dashboard
 
-Run: baseline-20261102 | Generated: 2026-11-02T04:51:26.698337+00:00
-EXECUTION_MODE: HUMAN_APPROVAL_REQUIRED | Option: B | Network: disabled
+**RESEARCH_DRAFT_ONLY**
 
-Status: **RESEARCH_DRAFT_ONLY**
+One targeted live acquisition; no qualified business opportunity.
 
-| Overview | Count |
+| Metric | Count |
 |---|---:|
-| Retained raw records | 15 |
-| Metadata claims | 8 |
-| Qualified opportunities | 0 |
+| GitHub unique issues | 14 |
+| HN stories/comments | 15 |
+| Merged live records | 29 |
+| Current source-attributed claims | 8 |
+| Opportunities | 0 |
+| Historical T0 records (separate) | 15 |
+| Historical baseline claims (not new claims) | 8 |
 
-## Verdict distribution (claims, not market classifications)
+## Verdict distribution (current claims)
 
 | Verdict | Count |
 |---|---:|
-| OBSERVED_METADATA | 8 |
+| UNVERIFIED_LEAD | 8 |
 | HYPED | 0 |
 | EMERGING | 0 |
 
-Metadata alone cannot establish EMERGING or Top 5 eligibility. HYPED is an
-upper bound for metadata, not an automatic classification.
-
 ## Top Opportunities
 
-| Opportunity | Buyer proof | Payment proof | Trend proof |
-|---|---|---|---|
-No eligible opportunities.
+No opportunity meets all BUYER + PAYMENT + TREND criteria.
 
 ## GAP summary
 
-- NO_VERIFIED_BUYER_OR_PAYMENT_EVIDENCE: public search metadata is insufficient
-- NO_LONGITUDINAL_TREND_EVIDENCE: one snapshot cannot establish growth
+- NO_VERIFIED_BUYER_OR_PAYMENT_EVIDENCE
+- NO_LONGITUDINAL_TREND_EVIDENCE
 - MISSING_BUYER_EVIDENCE
 - MISSING_PAYMENT_EVIDENCE
 - MISSING_TREND_EVIDENCE
-- OPTION_B_KEEP_DRAFT: proof verification and qualification remain unavailable
+- LOW_RELEVANCE_SEARCH_HITS: bounded query matches are not verified problem/buyer relevance
+- DISCUSSIONS_NOT_COLLECTED: anonymous REST issue search only
+- SUBAGENT_RUNTIME_USAGE_LIMIT: final merge/trend completed locally from saved artifacts
 
-Window: last 7 days of response retrieval, not story publication or proven growth.
-Original retrieval timestamps remain in evidence_ledger.json. This is an offline
-replay of archived public GitHub/HN responses, never a new live observation.
-Review run_manifest.json and opportunities.csv. Not production-ready.
+Baseline: one historical T0 only, no T+7/T+14. The lost 12 cloud cases were not reconstructed.
+New records are purposive, noisy source leads; they are not independent proof of demand, transactions or incidents.
+12 successful public GET responses; 2 earlier HN DNS failures preserved. Only api.github.com and hn.algolia.com were requested.
+Runtime subagents hit the account usage limit; saved evidence was reviewed and finalized locally. No new model workers or source requests were started afterward.
 
+[Live report](artifacts/live-evidence-v1/live_evidence_report.md) | [Ledger](artifacts/live-evidence-v1/evidence_ledger.json) | [Manifest](artifacts/live-evidence-v1/run_manifest.json) | [Opportunities CSV](artifacts/live-evidence-v1/opportunities.csv)
 
-[Production run report](artifacts/production-v1/production_run_report.md) | [Run manifest](artifacts/production-v1/baseline-20261102/run_manifest.json) | [Evidence ledger](artifacts/production-v1/baseline-20261102/evidence_ledger.json) | [Opportunities CSV](artifacts/production-v1/baseline-20261102/opportunities.csv)
+[Previous offline baseline](artifacts/production-v1/production_run_report.md). Not production-ready. Waiting for human review.

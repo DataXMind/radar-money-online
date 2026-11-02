@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent+cost&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+  "status": 200,
+  "retrieved_at": "2026-11-02T05:08:16.461271+00:00",
+  "sha256": "a627d61dca2879ecbe6dacd86e0a15820a68d2cb147914b3fbef9936aebff35a",
+  "bytes": 11096,
+  "body_file": "001_hn_query_1_1_cb947549.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

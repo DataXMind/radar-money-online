@@ -4,6 +4,14 @@ MVP Python 3.12, chỉ dùng standard library, chạy local và lưu được tr
 Đây là công cụ thu thập bằng chứng về chủ đề AI agent; chưa dùng LLM và chưa
 đủ khả năng xác nhận cơ hội kinh doanh. **Không production-ready.**
 
+Lượt LIVE evidence v1: [report](artifacts/live-evidence-v1/live_evidence_report.md),
+[ledger](artifacts/live-evidence-v1/evidence_ledger.json),
+[trend T0](artifacts/live-evidence-v1/trend_baseline.jsonl). Hai scout đã lấy
+14 GitHub issues + 15 HN records; merge 8 source-attributed claims, 0 opportunities.
+Không đủ buyer/payment/trend proof; chưa thực hiện T+7/T+14. Runtime subagents
+chạm usage limit sau khi lưu dữ liệu; orchestrator hoàn tất review từ artifact.
+Các script live là entry point cho một protocol đã duyệt, không tự chạy lại.
+
 Production v1 baseline đã chạy theo phương án B: **offline replay**, 15 records,
 8 metadata claims, 0 opportunities, RESEARCH_DRAFT_ONLY; không phải live fetch.
 Xem [run report](artifacts/production-v1/production_run_report.md),

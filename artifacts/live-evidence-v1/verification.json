@@ -1,0 +1,21 @@
+{
+  "verified_at": "2026-11-02T05:19:22.221473+00:00",
+  "status": "PASS",
+  "checks": {
+    "source_output_hashes": true,
+    "scoped_record_caps": true,
+    "raw_fields_and_provenance": true,
+    "eight_claims_exact_quotes": true,
+    "strict_empty_top5": true,
+    "historical_t0_only": true,
+    "all_eight_prior_claims_referenced": true,
+    "no_offscope_request_host": true,
+    "bounded_attempts": true,
+    "dns_failures_preserved": true,
+    "hn_frozen_thirty_day_window": true,
+    "frozen_protocols_before_network": true,
+    "offline_89_pass_and_log_hash": true,
+    "current_source_matches_tests": true,
+    "all_historical_artifacts_and_license_unchanged": true
+  }
+}

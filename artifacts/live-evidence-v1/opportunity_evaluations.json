@@ -1,0 +1,161 @@
+[
+  {
+    "hypothesis": "Quota visibility/accounting",
+    "evidence_ids": [
+      "GH07",
+      "GH08",
+      "GH09"
+    ],
+    "buyer_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "payment_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "trend_evidence": {
+      "present": false,
+      "cohort": null,
+      "t0": null,
+      "t_plus": null,
+      "metric": null
+    },
+    "eligible_for_top5": false,
+    "verdict": "RESEARCH_DRAFT_ONLY",
+    "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+  },
+  {
+    "hypothesis": "Browser permission recovery",
+    "evidence_ids": [
+      "GH10",
+      "GH11"
+    ],
+    "buyer_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "payment_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "trend_evidence": {
+      "present": false,
+      "cohort": null,
+      "t0": null,
+      "t_plus": null,
+      "metric": null
+    },
+    "eligible_for_top5": false,
+    "verdict": "RESEARCH_DRAFT_ONLY",
+    "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+  },
+  {
+    "hypothesis": "Headless browser / identity lockout",
+    "evidence_ids": [
+      "GH12"
+    ],
+    "buyer_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "payment_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "trend_evidence": {
+      "present": false,
+      "cohort": null,
+      "t0": null,
+      "t_plus": null,
+      "metric": null
+    },
+    "eligible_for_top5": false,
+    "verdict": "RESEARCH_DRAFT_ONLY",
+    "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+  },
+  {
+    "hypothesis": "Subscription quota depletion",
+    "evidence_ids": [
+      "GH13"
+    ],
+    "buyer_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "payment_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "trend_evidence": {
+      "present": false,
+      "cohort": null,
+      "t0": null,
+      "t_plus": null,
+      "metric": null
+    },
+    "eligible_for_top5": false,
+    "verdict": "RESEARCH_DRAFT_ONLY",
+    "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+  },
+  {
+    "hypothesis": "Least-privilege agent data access",
+    "evidence_ids": [
+      "HN10"
+    ],
+    "buyer_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "payment_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "trend_evidence": {
+      "present": false,
+      "cohort": null,
+      "t0": null,
+      "t_plus": null,
+      "metric": null
+    },
+    "eligible_for_top5": false,
+    "verdict": "RESEARCH_DRAFT_ONLY",
+    "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+  },
+  {
+    "hypothesis": "Internal support workflow",
+    "evidence_ids": [
+      "HN11"
+    ],
+    "buyer_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "payment_evidence": {
+      "present": false,
+      "proof_type": null,
+      "url": null
+    },
+    "trend_evidence": {
+      "present": false,
+      "cohort": null,
+      "t0": null,
+      "t_plus": null,
+      "metric": null
+    },
+    "eligible_for_top5": false,
+    "verdict": "RESEARCH_DRAFT_ONLY",
+    "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+  }
+]

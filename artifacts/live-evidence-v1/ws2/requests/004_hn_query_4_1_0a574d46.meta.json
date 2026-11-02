@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=access+denied+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+  "status": 200,
+  "retrieved_at": "2026-11-02T05:08:22.379326+00:00",
+  "sha256": "ce46e553eae20ac9c28f3467cbc193d59d58a3e88f62563301ecdc964d0a82fd",
+  "bytes": 9843,
+  "body_file": "004_hn_query_4_1_0a574d46.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

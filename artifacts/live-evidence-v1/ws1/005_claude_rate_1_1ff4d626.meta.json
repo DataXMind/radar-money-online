@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+%22rate+limit%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+  "status": 200,
+  "retrieved_at": "2026-11-02T05:08:01.838644+00:00",
+  "sha256": "39156da32d868712f558bdfd5ad449a741cc2ead7bdb865b7f5c6a6a9fef88fe",
+  "bytes": 11845,
+  "body_file": "005_claude_rate_1_1ff4d626.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "3",
+    "X-RateLimit-Reset": "1793596113"
+  }
+}

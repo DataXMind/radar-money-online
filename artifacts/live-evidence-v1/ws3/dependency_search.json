@@ -1,0 +1,16 @@
+{
+  "recorded_at": "2026-11-02T05:08:08.377167+00:00",
+  "kind": "local_dependency_search",
+  "command": "rg -n -i Cổng2/cong2/gate2/12case/twelvecase within docs README HANDOFF MVP/production artifacts",
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "",
+  "matching_dependency_found": false,
+  "not_searched": [
+    "secrets",
+    "credentials",
+    "transcripts",
+    "external domains"
+  ],
+  "gap": "MISSING_CONG_2_12_CASES"
+}

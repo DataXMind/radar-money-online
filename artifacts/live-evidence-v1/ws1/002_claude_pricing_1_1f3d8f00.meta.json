@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+  "status": 200,
+  "retrieved_at": "2026-11-02T05:07:40.871237+00:00",
+  "sha256": "abff2b936fc7934ec902e8fe14f66f14bf14ab988a37305bb7d04dc689aa7e1b",
+  "bytes": 27854,
+  "body_file": "002_claude_pricing_1_1f3d8f00.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "8",
+    "X-RateLimit-Reset": "1793596113"
+  }
+}

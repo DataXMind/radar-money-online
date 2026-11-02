@@ -1,0 +1,68 @@
+{
+  "locked_at": "2026-11-02T05:07:33.250454+00:00",
+  "workstream": "WS-1 GitHub evidence scout",
+  "source_domains": [
+    "api.github.com",
+    "github.com"
+  ],
+  "anonymous_get_only": true,
+  "max_retained_records": 15,
+  "max_response_records_requested": 15,
+  "selection": "first page, updated descending; keep API order; deduplicate by GitHub numeric issue ID; no replacement if duplicates",
+  "query_plan": [
+    {
+      "label": "agent_cost",
+      "query": "\"AI agent\" cost is:issue",
+      "per_page": 3,
+      "sort": "updated",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "label": "claude_pricing",
+      "query": "repo:anthropics/claude-code pricing is:issue",
+      "per_page": 3,
+      "sort": "updated",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "label": "codex_pricing",
+      "query": "repo:openai/codex pricing is:issue",
+      "per_page": 3,
+      "sort": "updated",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "label": "codex_access",
+      "query": "repo:openai/codex \"access denied\" is:issue",
+      "per_page": 2,
+      "sort": "updated",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "label": "claude_rate",
+      "query": "repo:anthropics/claude-code \"rate limit\" is:issue",
+      "per_page": 2,
+      "sort": "updated",
+      "order": "desc",
+      "page": 1
+    },
+    {
+      "label": "agent_incident",
+      "query": "\"AI agent\" incident is:issue",
+      "per_page": 2,
+      "sort": "updated",
+      "order": "desc",
+      "page": 1
+    }
+  ],
+  "limitations": [
+    "Issue-search metadata/body are author allegations, not verified buyer/payment proof.",
+    "No cross-time trend evidence is created by a single search snapshot.",
+    "Anonymous REST issue search is used; authenticated GraphQL discussions and third-party attachments are not fetched.",
+    "No repository, external source, credential, private receipt or environment secret is read."
+  ]
+}

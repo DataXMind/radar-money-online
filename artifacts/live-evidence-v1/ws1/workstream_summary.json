@@ -1,0 +1,65 @@
+{
+  "finished_at": "2026-11-02T05:08:09.018298+00:00",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "raw_count": 14,
+  "qualified_opportunities": 0,
+  "searches": [
+    {
+      "label": "agent_cost",
+      "url": "https://api.github.com/search/issues?q=%22AI+agent%22+cost+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "total_count": 86830,
+      "response_count": 3,
+      "sha256": "a31adc3311ab8bff1572aeea413ad2a7e03b8753dc1d0bbc4eb79b171a624314",
+      "retrieved_at": "2026-11-02T05:07:34.171032+00:00"
+    },
+    {
+      "label": "claude_pricing",
+      "url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "total_count": 622,
+      "response_count": 3,
+      "sha256": "abff2b936fc7934ec902e8fe14f66f14bf14ab988a37305bb7d04dc689aa7e1b",
+      "retrieved_at": "2026-11-02T05:07:40.871237+00:00"
+    },
+    {
+      "label": "codex_pricing",
+      "url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "total_count": 251,
+      "response_count": 3,
+      "sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "retrieved_at": "2026-11-02T05:07:47.872903+00:00"
+    },
+    {
+      "label": "codex_access",
+      "url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+%22access+denied%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "total_count": 975,
+      "response_count": 2,
+      "sha256": "1cfec6168b65ddfffce4b56ec77b9e174772d488c94a75bd5facdb20e389f54f",
+      "retrieved_at": "2026-11-02T05:07:54.956447+00:00"
+    },
+    {
+      "label": "claude_rate",
+      "url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+%22rate+limit%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "total_count": 2962,
+      "response_count": 2,
+      "sha256": "39156da32d868712f558bdfd5ad449a741cc2ead7bdb865b7f5c6a6a9fef88fe",
+      "retrieved_at": "2026-11-02T05:08:01.838644+00:00"
+    },
+    {
+      "label": "agent_incident",
+      "url": "https://api.github.com/search/issues?q=%22AI+agent%22+incident+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "total_count": 25385,
+      "response_count": 2,
+      "sha256": "07195f6bff34865a003c5b07b63f0711b9c679ac122a84aab5447cc6ea9d6e4a",
+      "retrieved_at": "2026-11-02T05:08:09.014316+00:00"
+    }
+  ],
+  "query_failures": [],
+  "gaps": [
+    "No verified buyer identity/product/payment linkage.",
+    "No authenticated receipt/invoice/contract/public filing verified.",
+    "No longitudinal same-cohort repeated measurement.",
+    "Discussions were not fetched because this implementation uses public anonymous REST issue search."
+  ],
+  "output": "artifacts/live-evidence-v1/github_evidence.jsonl",
+  "output_sha256": "c17cfa53ad6a9ac5cd532d5222be51a755b3058c3bcf3219d49cff36455c5b90"
+}

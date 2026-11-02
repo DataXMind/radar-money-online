@@ -1,0 +1,1957 @@
+{
+  "schema_version": 1,
+  "status": "RESEARCH_DRAFT_ONLY",
+  "run_kind": "single_parallel_live_evidence_run",
+  "source_policy": [
+    "api.github.com",
+    "github.com",
+    "hn.algolia.com"
+  ],
+  "scope_override": "Current user authorized up to15 acquisition records per scout (<=30 total); historical15 remain separate.",
+  "raw_items": [
+    {
+      "evidence_id": "GH01",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "6111538754",
+      "url": "https://github.com/BryceCurran86/PlanReader-3D/issues/4135",
+      "title": "PlanReader agent coordination hub continuation — #3462 reached GitHub 2,500-comment limit",
+      "author_public_handle": "BryceCurran86",
+      "excerpt": "## Why this successor coordination thread exists\nThe established agent hub [PR #3462](https://github.com/BryceCurran86/PlanReader-3D/pull/3462) has **2,500 issue comments**. On 2026-10-30 AEST GitHub rejected a new `[GPT3][RESULT]` hub comment with HTTP **403**: `Commenting is disabled on issues with more than 2500 comments`. This is an API-enforced coordination limit, not authorization to skip prior claims or owner instructions.\n\n**#3462 remains the authoritative historical record.** Before each task, agents must still read current main `AGENTS.md`, `docs/AI_ENGINEERING_PLAYBOOK.md`, #3462's existing claims, exact live PR heads and first failing authority. For **new** [JOIN]/[CLAIM]/[RESULT]/[BLOCKED]/[HANDOFF] updates that cannot be posted to #3462, use this continuation issue and cross-reference the owned PR/tracker. Never overwrite an existing claim or infer a handoff from inactivity.\n\n## Current release and lane ownership (verify live before acting)\n- **GPT3 release**: [#3796](https://github.com/BryceCurran86/PlanReader-3D/pull/3796) DRAFT exact approved head `296f48e8d89496afd96b4eda5a2e65f18285227b`. #4103/#4106/#4107 and owner/main trusted replay-pin #4116 are already merged; do not duplicate. First missing release authority: successful owner-trusted, read-only/networkless original eight/default and nine/explicit replay on **both Python3.13/3.14**, retaining all eight complete signed/customer bodies and authenticating ninth. Private run 40753178257 verified original files but failed isolated replay. Public source-missing workflows are not acceptance. Do not merge #3796, promote FIRM/customer, or claim official frozen120 score until applicable gates pass.\n- **GPT1** owns original measurement, quantity and ceiling issuer: [#4134](https://github.com/BryceCurran86/PlanReader-3D/pull/4134), latest inspected head `50f19db5a36ce59dcdfb0ad39eb019eeb16f6f64`; direct exact-head CI failure handoff [here](https://github.com/BryceCurran86/PlanReader-3D/pull/4134#issuecomment-6512713873). #3758 mixed-snapshot interaction must coordinate with GPT MAX.\n- **GPT2** owns Maryborough rooms, FT2/FT3 and source correspondence: [#4062](https://github.com/BryceCurran86/PlanReader-3D/pull/4062), latest inspected head `430b55890d77fa5ed673f57f96eec14622d0d8e8`; direct exact-head CI failure handoff [here](https://github.com/BryceCurran86/PlanReader-3D/pull/4062#issuecomment-65",
+      "excerpt_truncated": true,
+      "created_at": "2026-10-30T01:32:10Z",
+      "updated_at": "2026-11-02T05:07:12Z",
+      "retrieved_at": "2026-11-02T05:07:34.171032+00:00",
+      "comments_at_retrieval": 515,
+      "query_label": "agent_cost",
+      "query": "\"AI agent\" cost is:issue",
+      "query_url": "https://api.github.com/search/issues?q=%22AI+agent%22+cost+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=%22AI+agent%22+cost+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "raw_response_sha256": "a31adc3311ab8bff1572aeea413ad2a7e03b8753dc1d0bbc4eb79b171a624314",
+      "response_body": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "response_sha256": "a31adc3311ab8bff1572aeea413ad2a7e03b8753dc1d0bbc4eb79b171a624314",
+      "raw_locator": "items[0]",
+      "field_locators": {
+        "source_id": "items[0].id",
+        "url": "items[0].html_url",
+        "title": "items[0].title",
+        "excerpt": "items[0].body",
+        "author_public_handle": "items[0].user.login",
+        "comments_at_retrieval": "items[0].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH02",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "5800281675",
+      "url": "https://github.com/BryceCurran86/PlanReader-3D/issues/2396",
+      "title": "GPT MAX: six unresolved Lot16 raster hosts and producer lineage handoff",
+      "author_public_handle": "BryceCurran86",
+      "excerpt": "<!-- GPTMAX-20261015-AUTHORITY-REVIEW-START -->\n## Current original-source authority queue — 2026-10-15\n\n**Production remains21 physical openings /15 authenticated hosts /9 frames /EIGHT accepted signed opening-area quantities. No new accepted quantity, frozen match or accuracy percentage.**\n\nExact first-failure record for all13 existing nonquantity physical objects, isolated STACKER and all9 original raw cases: [ledger6187185325](https://github.com/BryceCurran86/PlanReader-3D/issues/2396#issuecomment-6187185325). Existing8 quantity/customer bodies, original signed lineage,20k cap and frozen truth/evaluator are preserved.\n\n| Task | Verified source outcome / first remaining gate |\n|---|---|\n| STACKER | [DRAFT #2776](https://github.com/BryceCurran86/PlanReader-3D/pull/2776), `gptmax/original-paired-wall-faces-shadow-20261015`, head08e4fc7f. Final isolated original replay COMPLETE. Actual3fcb… snapshot preserved,21→22 physical only. Figured2127/2100×2700mm/5.67m² evidence exists; host left source primitive unmapped; no frame/quantity. Strict full-state retention FAILS at hostless a68 representative119ef8…→399619…, same ABSTAIN/reasons; no waiver. All15 old positive hosts,9 frames,8 quantity/customer bodies and audit seal exact. |\n| STACKER source verification | Exact-head original source38699699963 SUCCESS, both3.13/3.14 negatives SUCCESS. Artifact11956221199 downloaded/inspected; ZIP SHA `08c03ae7a86cbc771a0fae7d8e6460b15619128db140aa1bbb34fd5cb75e1d54`; ENTIRE artifact exactly equals local fresh replay, assertions rerun. FullCI38699699972 and applicable sibling checks still being verified. Earlier genuine new b9d… root/input expansion is retained as failed retention and incomplete frame; never aliased. |\n| BIFOLD | [#2773](https://github.com/BryceCurran86/PlanReader-3D/pull/2773)8.82m² arithmetic/seal hypothesis remains **UNPUBLISHED / SEMANTIC RELEASE BLOCKED** by [GPT1 review6186538797](https://github.com/BryceCurran86/PlanReader-3D/pull/2773#issuecomment-6186538797). New [DRAFT #2779](https://github.com/BryceCurran86/PlanReader-3D/pull/2779) original native role audit authenticates6596 source words/506 queried-block receipts. Exact2142/BIFOLD trusted, but independent door/window filling role absent. Every exported p3 legend word retains `text_clip_state_unresolved` ABSTAIN. Manufacturer/energy/elevation source supplies no exact model/tag role receipt. Nati",
+      "excerpt_truncated": true,
+      "created_at": "2026-10-11T10:36:11Z",
+      "updated_at": "2026-11-02T05:07:07Z",
+      "retrieved_at": "2026-11-02T05:07:34.171032+00:00",
+      "comments_at_retrieval": 862,
+      "query_label": "agent_cost",
+      "query": "\"AI agent\" cost is:issue",
+      "query_url": "https://api.github.com/search/issues?q=%22AI+agent%22+cost+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=%22AI+agent%22+cost+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "raw_response_sha256": "a31adc3311ab8bff1572aeea413ad2a7e03b8753dc1d0bbc4eb79b171a624314",
+      "response_body": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "response_sha256": "a31adc3311ab8bff1572aeea413ad2a7e03b8753dc1d0bbc4eb79b171a624314",
+      "raw_locator": "items[1]",
+      "field_locators": {
+        "source_id": "items[1].id",
+        "url": "items[1].html_url",
+        "title": "items[1].title",
+        "excerpt": "items[1].body",
+        "author_public_handle": "items[1].user.login",
+        "comments_at_retrieval": "items[1].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH03",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "6001055892",
+      "url": "https://github.com/KAVentures/openworkgraph/issues/326",
+      "title": "Roadmap 2: from first slices to competitor-depth process and task intelligence",
+      "author_public_handle": "KAVentures",
+      "excerpt": "## Why a second roadmap\nEvery item in #264 now has a first implementation in `main`. That is not parity with Mimica, UiPath (Task Mining, Process Mining, Task Capture, Automation Hub, Communications Mining), Celonis, Soroco, Microsoft Power Automate Process Mining, SAP Signavio or Skan.ai. #264's own gate (\"test competitor-style UX against realistic consenting datasets before calling it parity\") has not been met, and most items are breadth, not depth.\n\nThis issue tracks the depth needed for an all-encompassing open-source OWG. It keeps OWG's foundations: local-first capture, consent, evidence/policy/permission separation, agent handoff over MCP, Discovery Mode, and no hidden upload or productivity scoring. It is capability parity, not copying proprietary code, branding or UI.\n\n## Current state vs competitors (honest baseline)\n| Area | Competitors | OWG in `main` |\n|---|---|---|\n| Source connectors | Continuous extraction from SAP, Oracle, Salesforce, ServiceNow, Workday… | CSV (now with chosen extra columns kept as attributes, #366); selected Jira/GitHub/Zendesk/Stripe cases; append newer exports to saved logs (#360) |\n| Scale | Billions of events, columnar engines | Local SQLite; DuckDB event-log workspace with 10M-event acceptance (#327) |\n| Object-centric mining | Linked order/invoice/delivery objects | OCEL 2.0 JSON and XML import/export with per-object-type case notions and literal identities (#327, #331, #338); object-centric maps (#336, #345) |\n| Analytics | Root cause, KPIs, benchmarks, simulation, token-replay conformance | Variants, case evidence, KPIs with cohort filters/exports, benchmarks, what-if simulation, root-cause associations, path and saved-graph alignment conformance with fitness/precision, classic token replay (#328, #330, #332, #333, #335, #339, #350) |\n| Performance and change | Disco/ProM processing vs waiting, dotted chart, Apromore compare and drift | Processing vs waiting time from lifecycle or end-time data (#366), dotted chart (#367), side-by-side map comparison (#368), concept drift change points (#369) |\n| Organizational mining | Handover-of-work and working-together networks, activity/resource views | Pseudonymous handovers, shared cases and activity × resource matrix (#352) |\n| Signals and actions | Celonis Action Engine / UiPath process alerts on KPI thresholds | Saved KPI, case and compliance signal rules with evidence ca",
+      "excerpt_truncated": true,
+      "created_at": "2026-10-23T15:55:27Z",
+      "updated_at": "2026-11-02T05:06:54Z",
+      "retrieved_at": "2026-11-02T05:07:34.171032+00:00",
+      "comments_at_retrieval": 559,
+      "query_label": "agent_cost",
+      "query": "\"AI agent\" cost is:issue",
+      "query_url": "https://api.github.com/search/issues?q=%22AI+agent%22+cost+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=%22AI+agent%22+cost+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "raw_response_sha256": "a31adc3311ab8bff1572aeea413ad2a7e03b8753dc1d0bbc4eb79b171a624314",
+      "response_body": "artifacts/live-evidence-v1/ws1/001_agent_cost_1_327e29b5.body",
+      "response_sha256": "a31adc3311ab8bff1572aeea413ad2a7e03b8753dc1d0bbc4eb79b171a624314",
+      "raw_locator": "items[2]",
+      "field_locators": {
+        "source_id": "items[2].id",
+        "url": "items[2].html_url",
+        "title": "items[2].title",
+        "excerpt": "items[2].body",
+        "author_public_handle": "items[2].user.login",
+        "comments_at_retrieval": "items[2].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH04",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "5853112007",
+      "url": "https://github.com/anthropics/claude-code/issues/102129",
+      "title": "[Desktop 2.37337.1] Sidebar structure changed to nested sessions without any notice or reason",
+      "author_public_handle": "Rwy26",
+      "excerpt": "### What changed\n\nAfter the Claude desktop app updated to **2.37337.1.0** (Windows 11, installed 2026-10-14), the Code tab sidebar started nesting sessions under the session that started them (`parentSessionId`). Sessions whose parent was archived now float at the top level, so related sessions are split into two places. Long-running work sessions now hang as a long list of children under one parent.\n\nI could not find this change in the [desktop changelog](https://code.claude.com/docs/en/desktop-changelog) or anywhere else. There was no notice in the app and no explanation of why it was done.\n\n### Feedback (user's words)\n\nOriginal (Korean):\n> 설명 없이 구조를 바꾸고 이유도 밝히지 않는 앤트로픽의 정책을 이해할 수 없다\n\nTranslation:\n> I cannot understand Anthropic's policy of changing the structure without explanation and without disclosing the reason.\n\n### Requests\n\n1. When the structure of the UI changes, announce it in the release notes together with the reason.\n2. Provide a setting to turn off nesting and keep the flat, most-recent-first session list.\n\nRelated: #100216 (show forks as top-level instead of nested), #102088 (\"Group by\" option removed in 2.37337.1).\n",
+      "excerpt_truncated": false,
+      "created_at": "2026-10-14T18:12:54Z",
+      "updated_at": "2026-11-02T01:09:34Z",
+      "retrieved_at": "2026-11-02T05:07:40.871237+00:00",
+      "comments_at_retrieval": 12,
+      "query_label": "claude_pricing",
+      "query": "repo:anthropics/claude-code pricing is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "raw_response_sha256": "abff2b936fc7934ec902e8fe14f66f14bf14ab988a37305bb7d04dc689aa7e1b",
+      "response_body": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "response_sha256": "abff2b936fc7934ec902e8fe14f66f14bf14ab988a37305bb7d04dc689aa7e1b",
+      "raw_locator": "items[0]",
+      "field_locators": {
+        "source_id": "items[0].id",
+        "url": "items[0].html_url",
+        "title": "items[0].title",
+        "excerpt": "items[0].body",
+        "author_public_handle": "items[0].user.login",
+        "comments_at_retrieval": "items[0].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH05",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "5444554494",
+      "url": "https://github.com/anthropics/claude-code/issues/94177",
+      "title": "Prompt-cache forensics from 30 real sessions: 68% of cache writes come from 36 events (TTL expiry, microcompact, resume) — with paper-backed mitigations",
+      "author_public_handle": "edubraqd",
+      "excerpt": "*Measured 13/09/2026 by one user: Windows 11, Claude desktop app, Claude Code 2.1.266, Opus 5 / Fable 5.1, 1M context enabled. Version numbers as reported by the app.*\r\n\r\n## TL;DR\r\n\r\n- Across 30 sessions (3,203 API calls), **cache reads are 64% of API-equivalent cost**, cache writes 28%, output 9%. Average context per call is **320k tokens** (median 239k, p90 707k). The system-prompt prefix is ~83k of that (49k shared across projects + ~34k project-specific); **the rest is conversation history**.\r\n- **68% of all cache-write tokens (14.8M of 21.7M) come from 36 events**, not from steady-state growth. Three causes, all client-observable:\r\n  1. **1h TTL expiry** — 19 events, 9.4M tokens. Expected, but each one re-writes 300–860k of history.\r\n  2. **Mid-history pruning (microcompact)** — 4 events in one session, 3.0M tokens. Each time ~83k of old tool results were cleared, `cache_read` fell to the shared prefix (47,638) and 620–830k were re-written. Once it happened **two calls after** a TTL re-write: 1.3M tokens written inside one minute, where a prune aligned to the cold miss would have cost nothing extra.\r\n  3. **Resume / model switch** — ~6 events, ~1.9M tokens. On resume `cache_read` equals the *shared* prefix only (49,043), so the project part of the system prompt is not byte-stable across sessions and the whole history is re-written behind it.\r\n- The suggestions below are small and mostly scheduling: prune when the cache is already cold, prune in bigger batches, keep the project prefix byte-stable on resume, and consider a bounded-history default. Each has a paper behind it (section 4).\r\n- A measurement pitfall worth documenting: **the session `.jsonl` writes one `assistant` line per content block (thinking / text / tool_use), each carrying the same `usage`.** Summing usage per line overstates everything ~1.7×. Dedup by `(message.id, requestId)`.\r\n\r\n## 1. Method\r\n\r\n- Source: `~/.claude/projects/*/*.jsonl`, the 30 most recently modified sessions (25 with ≥5 calls). Only `type == \"assistant\"` entries with `message.usage`.\r\n- Dedup by `(message.id, requestId)` → 5,568 lines become 3,203 calls.\r\n- \"Cache break\" = a call whose `cache_creation_input_tokens` exceeds 20% of the previous call's total context and 20k tokens. Classified by wall-clock gap to the previous call (>60 min → TTL), by whether the context shrank, and by what happened between the two calls (",
+      "excerpt_truncated": true,
+      "created_at": "2026-09-14T02:42:22Z",
+      "updated_at": "2026-11-02T00:55:19Z",
+      "retrieved_at": "2026-11-02T05:07:40.871237+00:00",
+      "comments_at_retrieval": 2,
+      "query_label": "claude_pricing",
+      "query": "repo:anthropics/claude-code pricing is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "raw_response_sha256": "abff2b936fc7934ec902e8fe14f66f14bf14ab988a37305bb7d04dc689aa7e1b",
+      "response_body": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "response_sha256": "abff2b936fc7934ec902e8fe14f66f14bf14ab988a37305bb7d04dc689aa7e1b",
+      "raw_locator": "items[1]",
+      "field_locators": {
+        "source_id": "items[1].id",
+        "url": "items[1].html_url",
+        "title": "items[1].title",
+        "excerpt": "items[1].body",
+        "author_public_handle": "items[1].user.login",
+        "comments_at_retrieval": "items[1].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH06",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "4372629980",
+      "url": "https://github.com/anthropics/claude-code/issues/55842",
+      "title": "[Feature Request] Unified user state across Cowork and Claude chat — shared memory, files, skills, connectors",
+      "author_public_handle": "crux311",
+      "excerpt": "## Problem\n\nClaude Cowork (Desktop research preview) and Claude chat (web + iOS + Android) operate as siloed surfaces despite serving the same authenticated user:\n\n- Cowork can read/write a scoped folder on my Mac, run skills, use plugins, and execute multi-step file-centric work — but only at my desk, with no mobile equivalent.\n- Chat (especially the iOS app) is where I actually spend time when I'm away from my desk. It has its own memory, its own connectors, its own thread history.\n\nWhen I shift surfaces during a workflow, context resets. Memory doesn't follow. Files I worked on in Cowork aren't visible in chat on the go. Connector state and authentications don't carry. Skills configured for one don't appear in the other (related: #20697).\n\n## Use case\n\nTypical day: morning at desk → Cowork on a project folder → commute → continue thinking in iOS chat → evening back at desk → Cowork to execute. Today this requires manual context-passing. I use Claude Code Dispatch from iOS to route specific tasks to a Claude Code session on my Mac, which works well, but it doesn't solve the underlying memory and file split — it just routes a single task across.\n\nI've worked around this by making Obsidian Sync my canonical file backend (Claude Code reads it directly on Mac, Obsidian Sync handles mobile access), but that only partially closes the gap and doesn't address memory or connector state.\n\n## Suggested approach\n\nTreat Cowork and chat as two surfaces over a single unified user state:\n\n1. **Shared memory** — claude.ai memory, Cowork auto-memory, and Claude Code CLAUDE.md should converge into one coherent layer the user can read/write from any surface.\n2. **Shared file workspace** — when Cowork has a folder scoped, that folder (or selected artifacts) should be reachable from chat as a viewable/searchable resource. From iOS I should be able to ask \"what's the latest on the X analysis I was working on in Cowork?\" and get an answer grounded in Cowork's actual files.\n3. **Shared skills and connectors** — already requested for skills in #20697; extend to connectors and authentication state.\n4. **Surface handoff affordances** — explicit \"continue this in Cowork\" / \"continue this in chat\" actions, analogous to Claude Code's `/desktop` and `--teleport` for the coding case.\n\n## Related\n\n- #15542 — Claude Code ↔ Claude App chat history\n- #2511 — Claude Code ↔ Claude Projects\n- #2",
+      "excerpt_truncated": true,
+      "created_at": "2026-05-03T18:36:18Z",
+      "updated_at": "2026-11-02T00:38:28Z",
+      "retrieved_at": "2026-11-02T05:07:40.871237+00:00",
+      "comments_at_retrieval": 10,
+      "query_label": "claude_pricing",
+      "query": "repo:anthropics/claude-code pricing is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "raw_response_sha256": "abff2b936fc7934ec902e8fe14f66f14bf14ab988a37305bb7d04dc689aa7e1b",
+      "response_body": "artifacts/live-evidence-v1/ws1/002_claude_pricing_1_1f3d8f00.body",
+      "response_sha256": "abff2b936fc7934ec902e8fe14f66f14bf14ab988a37305bb7d04dc689aa7e1b",
+      "raw_locator": "items[2]",
+      "field_locators": {
+        "source_id": "items[2].id",
+        "url": "items[2].html_url",
+        "title": "items[2].title",
+        "excerpt": "items[2].body",
+        "author_public_handle": "items[2].user.login",
+        "comments_at_retrieval": "items[2].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH07",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "4503251604",
+      "url": "https://github.com/openai/codex/issues/24080",
+      "title": "Expose rate-limit reset times, balance, plan as status_line tokens",
+      "author_public_handle": "NavinAgrawal",
+      "excerpt": "## Summary\n\nThe CLI status_line exposes `five-hour-limit` and `weekly-limit` as percentages only. The underlying rate-limit data is richer — `account/rateLimits/read` returns `resetsAt`, `windowDurationMins`, `credits.balance`, `planType` — but those fields aren't reachable via status_line tokens.\n\n## Missing tokens (as of 0.133.0)\n\n1. `five-hour-limit-reset` — formatted local time of `primary.resetsAt`\n2. `weekly-limit-reset` — formatted local time of `secondary.resetsAt`\n3. `credits-balance` — `credits.balance` (e.g. `$766.76`) when `credits.hasCredits && !credits.unlimited`\n4. `plan-type` — `planType` (e.g. `prolite`)\n5. (optional) `rate-limit-window-primary` / `-secondary` — `windowDurationMins` formatted\n\n## Use case\n\nMirrors Claude Code's statusline which shows percentage + reset time. Without reset times the bare percentage is hard to act on — \"5h 80%\" doesn't tell you whether you have 10 minutes or 3 hours of breathing room. With it:\n\n```\n... · 5h 80% @11:36pm · weekly 83% @5/27 5:40am · ...\n```\n\n## Workaround\n\nSpawn `codex app-server` from outside, JSON-RPC handshake, call `account/rateLimits/read`, parse, render. Works but adds ~3-5s subprocess startup per query and requires users to build their own caching layer. The data is already there inside the running CLI; surfacing it as a token is a small change.\n\n## Verified data shape (0.133.0)\n\n`account/rateLimits/read` returns:\n\n```json\n{\n  \"rateLimits\": {\n    \"limitId\": \"codex\",\n    \"primary\": { \"usedPercent\": 25, \"windowDurationMins\": 300, \"resetsAt\": 1779459394 },\n    \"secondary\": { \"usedPercent\": 18, \"windowDurationMins\": 10080, \"resetsAt\": 1779826837 },\n    \"credits\": { \"hasCredits\": true, \"unlimited\": false, \"balance\": \"766.76...\" },\n    \"planType\": \"prolite\",\n    \"rateLimitReachedType\": null\n  },\n  \"rateLimitsByLimitId\": { ... }\n}\n```\n\n## Acceptance\n\nAdding these to the existing config:\n\n```toml\nstatus_line = [\"model-with-reasoning\", \"codex-version\", \"context-remaining\",\n               \"five-hour-limit\", \"five-hour-limit-reset\",\n               \"weekly-limit\", \"weekly-limit-reset\",\n               \"credits-balance\", \"project\", \"git-branch\"]\n```\n\nProduces:\n\n```\ngpt-5.5 high · 0.133.0 · Context 28% left · 5h 25% @11:36pm · weekly 18% @5/27 5:40am · $766.76 · self-service-workbench · main\n```\n\nThanks for the great CLI.\n",
+      "excerpt_truncated": false,
+      "created_at": "2026-05-22T14:07:21Z",
+      "updated_at": "2026-11-02T01:29:54Z",
+      "retrieved_at": "2026-11-02T05:07:47.872903+00:00",
+      "comments_at_retrieval": 13,
+      "query_label": "codex_pricing",
+      "query": "repo:openai/codex pricing is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "raw_response_sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "response_body": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "response_sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "raw_locator": "items[0]",
+      "field_locators": {
+        "source_id": "items[0].id",
+        "url": "items[0].html_url",
+        "title": "items[0].title",
+        "excerpt": "items[0].body",
+        "author_public_handle": "items[0].user.login",
+        "comments_at_retrieval": "items[0].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH08",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "6023184493",
+      "url": "https://github.com/openai/codex/issues/56866",
+      "title": "Codex 5h Limit drained in 10 minutes ",
+      "author_public_handle": "Blizz606",
+      "excerpt": "My whole Codex 5 hour Limit hot drained in 10 minutes with gpt 5.6 Terra. Hast someone adjustet the Limits ",
+      "excerpt_truncated": false,
+      "created_at": "2026-10-25T09:59:13Z",
+      "updated_at": "2026-11-01T18:15:26Z",
+      "retrieved_at": "2026-11-02T05:07:47.872903+00:00",
+      "comments_at_retrieval": 5,
+      "query_label": "codex_pricing",
+      "query": "repo:openai/codex pricing is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "raw_response_sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "response_body": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "response_sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "raw_locator": "items[1]",
+      "field_locators": {
+        "source_id": "items[1].id",
+        "url": "items[1].html_url",
+        "title": "items[1].title",
+        "excerpt": "items[1].body",
+        "author_public_handle": "items[1].user.login",
+        "comments_at_retrieval": "items[1].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH09",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "5273031773",
+      "url": "https://github.com/openai/codex/issues/41220",
+      "title": "[Meta] Abnormal Codex usage/quota depletion and usage-accounting inconsistencies — cross-report tracker",
+      "author_public_handle": "FromAriel",
+      "excerpt": "## Summary\n\nThere are now many open Codex reports describing a common **user-visible symptom family**:\n\n> Codex subscription quota or purchased credits are depleted materially faster than the user's prior baseline or local/token evidence would predict, sometimes with abrupt changes during an unchanged usage window, passive/background consumption, or usage records that do not reconcile with the meter.\n\nThis meta issue is intended to **link and compare those reports in one place**.\n\n**This does not assume they all have one root cause.** The evidence already points to several potentially independent mechanisms: entitlement/provisioning, server-side weighting/accounting, background activity, retries/polling, context replay, analytics/ledger gaps, and client-side workflow amplification. The purpose is to stop treating each report as an isolated anecdote and give maintainers a single place to correlate timelines, fixes, regressions, and account-side reconciliation.\n\n## Why a tracker is warranted\n\nSeveral reports contain controlled or unusually strong evidence rather than only subjective impressions:\n\n| Issue | Evidence / symptom | Why it matters |\n|---|---|---|\n| #28879 | Same GPT-5.5 plan/app: reported limit cost per token jumps ~10–20x between June 12 and June 18 despite smaller prompts and near-zero reasoning | Strong pre/post comparison; not Sol-specific |\n| #30939 | Usage reported 5–10x faster since mid-June; one message consumed 46% of a 5-hour window | Early recurring report; `bug` + `rate-limits` |\n| #31322 | Usage normalized, then regressed to ~5x faster later the same day without a matching workflow change | Suggests transient/server-side state rather than only task complexity |\n| #33685 | Weekly allowance draining like the former 5-hour limit on GPT-5.5 High | Important evidence that the symptom is not limited to GPT-5.6 Sol/Ultra |\n| #34971 | Long sessions repeatedly reprocess massive cached context; July smaller operational workload generated far more token processing than earlier larger projects | Concrete workload-amplification mechanism |\n| #35259 | Corrected rollout audit attributes 19.8% of raw local token volume to model turns whose only action was wait/status polling | Concrete avoidable-consumption mechanism |\n| #37445 | Controlled experiment: 103h47m with clients closed = 0% drain; launching ChatGPT desktop/background activity triggered a fix",
+      "excerpt_truncated": true,
+      "created_at": "2026-08-27T23:24:40Z",
+      "updated_at": "2026-11-01T11:22:22Z",
+      "retrieved_at": "2026-11-02T05:07:47.872903+00:00",
+      "comments_at_retrieval": 80,
+      "query_label": "codex_pricing",
+      "query": "repo:openai/codex pricing is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+pricing+is%3Aissue&sort=updated&order=desc&per_page=3&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "raw_response_sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "response_body": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "response_sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "raw_locator": "items[2]",
+      "field_locators": {
+        "source_id": "items[2].id",
+        "url": "items[2].html_url",
+        "title": "items[2].title",
+        "excerpt": "items[2].body",
+        "author_public_handle": "items[2].user.login",
+        "comments_at_retrieval": "items[2].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH10",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "6156082719",
+      "url": "https://github.com/openai/codex/issues/58809",
+      "title": "macOS: browser access silently stops mid-chat; approval changes never re-prompt, Work toggle restores access",
+      "author_public_handle": "RicardoMiles",
+      "excerpt": "### What version of the Codex App are you using (From “About Codex” dialog)?\n\nThe incident desktop logs report `release=26.1023.51421`. The About-dialog version was not captured at the time; I am identifying this as the log release value rather than substituting today's installed version.\n\n### What subscription do you have?\n\nNot recorded in the incident evidence.\n\n### What platform is your computer?\n\nmacOS host, controlling an existing Google Chrome session through Codex browser tools. Part of the later troubleshooting was conducted from a phone through the remote chat. The incident OS build was not captured.\n\n### What issue are you seeing?\n\nBrowser access stopped during an established, explicitly authorized workflow. I had been using it successfully in the same conversation earlier that evening. I had selected **Full access**, never manually turned off local browser use, and saw no notification that browser access or its effective authorization had changed.\n\nFull access was the UI mode I selected; the effective browser authorization for each failed turn was not independently captured.\n\nAfter the failure, I switched to **Approve for me** and then **Ask for approval** to try to get an authorization prompt back. Neither gave me a new prompt or a usable recovery path. New conversations were also affected.\n\nThe initial tool errors pointed to a declined action and then a saved website-permission block. The website permission UI showed allowance, and the Chrome extension had access to all sites. Troubleshooting consequently kept focusing on website authorization and a saved conversation-level denial.\n\nOnly later did a fresh conversation report:\n\n```text\nLocal browser use is disabled in Work settings\n```\n\nI eventually recovered browser access by setting:\n\n**Settings → Work preferences → Local browser use → On**\n\nI can confirm that recovery action. I cannot identify when or why the effective Work browser permission changed. There is no captured setting-write event establishing an On → Off transition or its source.\n\nThe problem I want investigated is the complete transition and recovery experience: a working browser became unavailable without an action from me, the failure was initially presented as website authorization, and changing the approval mode did not let me authorize it again. Finding the separate Work control took substantial troubleshooting.\n\n### What ste",
+      "excerpt_truncated": true,
+      "created_at": "2026-11-02T04:17:02Z",
+      "updated_at": "2026-11-02T04:56:05Z",
+      "retrieved_at": "2026-11-02T05:07:54.956447+00:00",
+      "comments_at_retrieval": 3,
+      "query_label": "codex_access",
+      "query": "repo:openai/codex \"access denied\" is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+%22access+denied%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+%22access+denied%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/004_codex_access_1_b72483cf.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/004_codex_access_1_b72483cf.body",
+      "raw_response_sha256": "1cfec6168b65ddfffce4b56ec77b9e174772d488c94a75bd5facdb20e389f54f",
+      "response_body": "artifacts/live-evidence-v1/ws1/004_codex_access_1_b72483cf.body",
+      "response_sha256": "1cfec6168b65ddfffce4b56ec77b9e174772d488c94a75bd5facdb20e389f54f",
+      "raw_locator": "items[0]",
+      "field_locators": {
+        "source_id": "items[0].id",
+        "url": "items[0].html_url",
+        "title": "items[0].title",
+        "excerpt": "items[0].body",
+        "author_public_handle": "items[0].user.login",
+        "comments_at_retrieval": "items[0].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH11",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "6127478369",
+      "url": "https://github.com/openai/codex/issues/58439",
+      "title": "Desktop browser origin remains denied for a chat after website permission is explicitly allowed",
+      "author_public_handle": "LIBREYLOCO",
+      "excerpt": "Environment\n- macOS desktop app version 26.1023.51421, build22530.\n- Browser Use through built-in browser and Chrome extension.\n\nReproduction\n1. A website origin was previously denied in an existing chat.\n2. User explicitly changes Settings > Browser > website navigation permission to Always allow for the exact origin.\n3. Read-only diagnostics show the origin allowed in ~/.codex/config.toml and ~/.codex/browser/config.toml, while ~/.codex/browser/sessions/<chat-id>.toml still contains the same origin in origins.denied.\n4. Retrying Browser Use in that chat returns: “A saved user permission setting blocks this action” and “The origin approval gate did not grant access”. No new approval prompt appears.\n5. Removing the site exception to restore Requires approval and retrying did not produce a new approval prompt. Resetting the browser REPL did not resolve it. Both built-in browser and Chrome requests are rejected before navigation.\n\nExpected\nAn explicit user permission change should provide a supported way to revoke a chat-specific denial, or the UI should clearly expose the overriding session decision and offer reauthorization.\n\nActual\nVisible website permissions and stored global allow rules disagree with the chat-scoped denial. The user cannot complete authorized desktop/mobile QA of their website.\n\nDiagnosis scope\nThe files confirm conflicting global and session permissions. This suggests precedence or invalidation behavior, but the exact application-level cause has not been established. No permission files were modified, no policy bypass attempted. No credentials, customer data, chat ID, or raw transcripts are included.\n\nRequest\nPlease document a supported session-denial reset or fix invalidation of stale per-chat origin decisions when the user explicitly changes website permissions.\n",
+      "excerpt_truncated": false,
+      "created_at": "2026-10-30T21:48:52Z",
+      "updated_at": "2026-11-02T04:56:01Z",
+      "retrieved_at": "2026-11-02T05:07:54.956447+00:00",
+      "comments_at_retrieval": 4,
+      "query_label": "codex_access",
+      "query": "repo:openai/codex \"access denied\" is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+%22access+denied%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aopenai%2Fcodex+%22access+denied%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/004_codex_access_1_b72483cf.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/004_codex_access_1_b72483cf.body",
+      "raw_response_sha256": "1cfec6168b65ddfffce4b56ec77b9e174772d488c94a75bd5facdb20e389f54f",
+      "response_body": "artifacts/live-evidence-v1/ws1/004_codex_access_1_b72483cf.body",
+      "response_sha256": "1cfec6168b65ddfffce4b56ec77b9e174772d488c94a75bd5facdb20e389f54f",
+      "raw_locator": "items[1]",
+      "field_locators": {
+        "source_id": "items[1].id",
+        "url": "items[1].html_url",
+        "title": "items[1].title",
+        "excerpt": "items[1].body",
+        "author_public_handle": "items[1].user.login",
+        "comments_at_retrieval": "items[1].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH12",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "6105330665",
+      "url": "https://github.com/anthropics/claude-code/issues/106003",
+      "title": "[BUG] Headless chrome.exe launched by Claude Code on Windows triggers failed logons and locks IdP-managed accounts",
+      "author_public_handle": "fabiane-ferrarezi",
+      "excerpt": "## Summary\n\nOn Windows 11 devices managed by an identity provider (JumpCloud), each time Claude Code launches `chrome.exe` (or `msedge.exe`) in headless mode from the shell to convert local HTML into PDF/PNG, Windows records a burst of failed logon attempts attributed to the browser process. The identity provider counts them as wrong-password attempts and locks the user's account. No password is being typed; the only trigger is the headless browser launch.\n\n## Environment\n\n- Claude Code desktop app on Windows 11 Pro, devices bound to JumpCloud\n- Users who ask Claude Code for PDFs/images rendered from HTML get locked out; users with the same software who never ask for that never do\n- Does not reproduce on macOS with the same workflow\n\n## Evidence\n\nOn one affected machine, 6 of 7 failed-login bursts over two days match, to the minute, a headless Chrome launch by a Claude Code session (screenshots of a local HTML deck, HTML to PDF, a script rendering images). Attempts inside a burst are 1.5 to 3 s apart and keep going after the account is already locked. JumpCloud's troubleshooting docs note that browser automation tools can trigger a Chromium defect that produces failed logins per session, which matches.\n\n## Expected\n\nRendering a local HTML file with headless Chrome should not generate Windows credential validation attempts.\n\n## Workaround applied\n\nGlobal CLAUDE.md rule for Windows users: never invoke `chrome.exe`/`msedge.exe` headless to convert HTML; hand the HTML to the user or produce .docx/.pptx instead.\n\n## Asks\n\n1. Does the default HTML to PDF/PNG path on Windows launch headless Chrome with the user's default profile? A temporary `--user-data-dir` plus `--no-first-run --disable-sync` may avoid whatever triggers the credential check.\n2. A built-in renderer or a documented safe set of flags for Windows would prevent silent lockouts on SSO-managed devices.\n\nHappy to share Windows Security event 4625 details (LogonType/SubStatus) once collected.\n",
+      "excerpt_truncated": false,
+      "created_at": "2026-10-29T17:44:14Z",
+      "updated_at": "2026-11-02T04:39:13Z",
+      "retrieved_at": "2026-11-02T05:08:01.838644+00:00",
+      "comments_at_retrieval": 2,
+      "query_label": "claude_rate",
+      "query": "repo:anthropics/claude-code \"rate limit\" is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+%22rate+limit%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+%22rate+limit%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/005_claude_rate_1_1ff4d626.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/005_claude_rate_1_1ff4d626.body",
+      "raw_response_sha256": "39156da32d868712f558bdfd5ad449a741cc2ead7bdb865b7f5c6a6a9fef88fe",
+      "response_body": "artifacts/live-evidence-v1/ws1/005_claude_rate_1_1ff4d626.body",
+      "response_sha256": "39156da32d868712f558bdfd5ad449a741cc2ead7bdb865b7f5c6a6a9fef88fe",
+      "raw_locator": "items[0]",
+      "field_locators": {
+        "source_id": "items[0].id",
+        "url": "items[0].html_url",
+        "title": "items[0].title",
+        "excerpt": "items[0].body",
+        "author_public_handle": "items[0].user.login",
+        "comments_at_retrieval": "items[0].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH13",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "6125606652",
+      "url": "https://github.com/anthropics/claude-code/issues/106274",
+      "title": "[BUG] Ultra plan: one 5-hour session consumes ~50% of the weekly limit (27% of week gone ~6h after reset)",
+      "author_public_handle": "mubarismubi",
+      "excerpt": "### Preflight Checklist\n\n- [x] I have searched [existing issues](https://github.com/anthropics/claude-code/issues?q=is%3Aissue%20state%3Aopen%20label%3Abug) and this hasn't been reported yet\n- [x] This is a single bug report (please file separate reports for different bugs)\n- [x] I am using the latest version of Claude Code\n\n### What's Wrong?\n\nOn the **Ultra** plan, the weekly limit is being consumed far faster than the 5-hour session usage would suggest.\n\nWeekly reset: Fri 30 Oct 2026, 6:30 PM IST. About 6 hours later, 27% of the weekly limit was already used, even though I had used only one earlier 5-hour session (never above ~50%) plus the current one.\n\nReadings from Settings → Usage:\n\n| Time (IST) | This week | Current session |\n|---|---|---|\n| Sat 31 Oct, 12:12 AM | 26% | 5% |\n| Sat 31 Oct, 12:32 AM | 27% | 7% |\n\nBetween the two readings, session usage rose 2 points while weekly rose 1 point. Allowing for rounding, one full 5-hour session costs roughly **half** the weekly limit, so the week would run out after about two sessions.\n\nNo scheduled tasks are running on the account.\n\nRelated: #90816 (same symptom on Max 20x, reporting ~20% of the week per session). My ratio on Ultra is substantially worse, so I'm filing it separately.\n\n### What Should Happen?\n\nA single 5-hour session should consume a small, predictable fraction of the weekly limit, consistent with how the Ultra plan is described. Please publish the intended session-to-weekly ratio, and if ~50% per session isn't intended, treat this as a metering bug and correct the affected weekly usage.\n\n<img width=\"1684\" height=\"868\" alt=\"Image\" src=\"https://github.com/user-attachments/assets/21ab63a7-4503-4437-b201-9a2086655841\" />\n\n### Error Messages/Logs\n\n```shell\nNo error messages. The figures come from the Settings → Usage panel in the Claude desktop app.\n```\n\n### Steps to Reproduce\n\n1. Start from a fresh weekly reset on the Ultra plan.\n2. Use Claude normally with Opus 5.5 (High) for less than one full 5-hour session.\n3. Open Settings → Usage and compare \"This week\" against \"Current session\".\n4. Weekly usage climbs at roughly half the rate of session usage (e.g. session +2 points → weekly +1 point).\n\n### Claude Model\n\nOpus\n\n### Is this a regression?\n\nI don't know\n\n### Last Working Version\n\n_No response_\n\n### Claude Code Version\n\n2.1.314\n\n### Platform\n\nAnthropic API\n\n### Operating System\n\nmacOS\n\n### Ter",
+      "excerpt_truncated": true,
+      "created_at": "2026-10-30T19:23:04Z",
+      "updated_at": "2026-11-02T04:18:56Z",
+      "retrieved_at": "2026-11-02T05:08:01.838644+00:00",
+      "comments_at_retrieval": 5,
+      "query_label": "claude_rate",
+      "query": "repo:anthropics/claude-code \"rate limit\" is:issue",
+      "query_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+%22rate+limit%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=repo%3Aanthropics%2Fclaude-code+%22rate+limit%22+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/005_claude_rate_1_1ff4d626.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/005_claude_rate_1_1ff4d626.body",
+      "raw_response_sha256": "39156da32d868712f558bdfd5ad449a741cc2ead7bdb865b7f5c6a6a9fef88fe",
+      "response_body": "artifacts/live-evidence-v1/ws1/005_claude_rate_1_1ff4d626.body",
+      "response_sha256": "39156da32d868712f558bdfd5ad449a741cc2ead7bdb865b7f5c6a6a9fef88fe",
+      "raw_locator": "items[1]",
+      "field_locators": {
+        "source_id": "items[1].id",
+        "url": "items[1].html_url",
+        "title": "items[1].title",
+        "excerpt": "items[1].body",
+        "author_public_handle": "items[1].user.login",
+        "comments_at_retrieval": "items[1].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "evidence_id": "GH14",
+      "workstream": "WS-1",
+      "source": "github_issue",
+      "source_id": "5922252558",
+      "url": "https://github.com/Agora-Build/Atem/issues/81",
+      "title": "Astation handoff: independent remote clients, staged approvals, rich chat",
+      "author_public_handle": "guohai",
+      "excerpt": "This is the latest Astation-to-Atem handoff for independent remote clients. Please review the joint contract decisions before implementing admission or emitting new signed push fields.\n\nSources:\n- Astation draft PR #58: https://github.com/Agora-Build/Astation/pull/58\n- Reviewed handoff snapshot: Astation commit a9e850a0a76e81b131697fe1ce8ee8fb076be108.\n- Remote/API design: https://github.com/Agora-Build/Astation/blob/a9e850a0a76e81b131697fe1ce8ee8fb076be108/designs/protocol/remote-agent-api.md\n- Signed push/scheduler proposal: https://github.com/Agora-Build/Astation/blob/a9e850a0a76e81b131697fe1ce8ee8fb076be108/designs/protocol/approval-push-proof.md\n- Current readable copies (VPN): https://truck.netbird.cloud:58310/protocol/remote-agent-api.md and https://truck.netbird.cloud:58310/protocol/approval-push-proof.md\n\n## Product requirements\n\n1. Mobile/native Astation connects independently to the original Atem host, whether Mac Astation is online or offline. Mac and mobile can view the same original agent sessions concurrently. The Atem host itself must remain running/reachable. Each controller has its own enrolled keys and attachment; no dependency on the Mac's local API or borrowed credentials.\n2. Keep r8 operation semantics: one terminal/control lease per agent session; prompt Send atomically acquires an unowned lease, and taking another holder requires confirmed expected-controller takeover. Approval answers and rule revocation are lease-free with control permission and the exact request/rule. Reading or approving on mobile must not disturb the Mac's lease. Reconnect never silently regains control.\n3. Use WSS first. A later Agora Signaling adapter may improve end-user connectivity, but must preserve endpoint proof, encryption, ordering, target/lease fencing and durable receipts. Verify runtime/platform and network support before enabling it. Whole-message responses are sufficient; token-by-token streaming is not required.\n4. Preserve rich response content. Existing text parts already carry Markdown; retain original source, typed tool/approval parts, IDs and ordering in live/history/API delivery. Mobile will render paragraphs, headings, bold/italic, highlighted links, lists, code blocks with highlighting/copy, and tables. Basic formatting needs no new host message type. Images/audio/PDF/files are separate capabilities and must not be implied by Markdown supp",
+      "excerpt_truncated": true,
+      "created_at": "2026-10-19T10:32:51Z",
+      "updated_at": "2026-11-02T05:07:48Z",
+      "retrieved_at": "2026-11-02T05:08:09.014316+00:00",
+      "comments_at_retrieval": 333,
+      "query_label": "agent_incident",
+      "query": "\"AI agent\" incident is:issue",
+      "query_url": "https://api.github.com/search/issues?q=%22AI+agent%22+incident+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "source_request_url": "https://api.github.com/search/issues?q=%22AI+agent%22+incident+is%3Aissue&sort=updated&order=desc&per_page=2&page=1",
+      "raw_response": "artifacts/live-evidence-v1/ws1/006_agent_incident_1_deeff617.body",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/006_agent_incident_1_deeff617.body",
+      "raw_response_sha256": "07195f6bff34865a003c5b07b63f0711b9c679ac122a84aab5447cc6ea9d6e4a",
+      "response_body": "artifacts/live-evidence-v1/ws1/006_agent_incident_1_deeff617.body",
+      "response_sha256": "07195f6bff34865a003c5b07b63f0711b9c679ac122a84aab5447cc6ea9d6e4a",
+      "raw_locator": "items[0]",
+      "field_locators": {
+        "source_id": "items[0].id",
+        "url": "items[0].html_url",
+        "title": "items[0].title",
+        "excerpt": "items[0].body",
+        "author_public_handle": "items[0].user.login",
+        "comments_at_retrieval": "items[0].comments"
+      },
+      "evidence_level": "SOURCE_ALLEGATION_OR_SELF_REPORT_UNVERIFIED",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "assessment_limits": [
+        "Public author handle is not a verified buyer identity.",
+        "Body/price/paid-plan allegations do not establish authenticated payment proof.",
+        "Single current snapshot; no same-cohort T+7/T+14 observation."
+      ]
+    },
+    {
+      "source": "hn",
+      "source_id": "50333096",
+      "kind": "story",
+      "url": "https://news.ycombinator.com/item?id=50333096",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": "https://github.com/stass/awklog",
+      "external_urls_are_data_only": true,
+      "title": "Show HN: AWKLog – a minimalist Datalog interpreter in Awk",
+      "author": "stass",
+      "story_id": 50333096,
+      "created_at": "2026-11-02T04:25:07Z",
+      "created_at_i": 1793593507,
+      "updated_at": "2026-11-02T04:29:27Z",
+      "content_field": "story_text",
+      "content_excerpt": "For many of the projects I work on I found myself wanting to use a relational language like Datalog to generate C source from specifications, do verification during build or maintain a task database.<p>However pulling a full blown Souffle or SWI-PL as a build dependency is always a PITA and also an overkill.<p>So I (with the help of Claude) built awklog, a pure POSIX awk based interpreter.  Copy it to your project and use during build stage or test stage with no extra dependencies.<p>It&#x27;s a semi-naive interpreter, so decently fast, and certainly fast enough for anything you might need to do as a dev tool.<p>One cool usecase in particular I&#x27;ve been a heavy user of is a task system maintained directly in the project git repo.  Just create a text file with tuples describing your tasks, their states, dependencies, hypotheses and so on.  AWKLog will be able to query it for you, even recursively, and provide instant answers.  Easy for AI agents to query too and no remote infrastructure dependencies at all.  Everything stays in GIT, version controlled.<p>I hope other people will find this tool useful too.",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {
+        "points": 1,
+        "num_comments": 0
+      },
+      "raw_locator": "hits[0]",
+      "field_locators": {
+        "objectID": "hits[0].objectID",
+        "author": "hits[0].author",
+        "created_at": "hits[0].created_at",
+        "created_at_i": "hits[0].created_at_i",
+        "story_text": "hits[0].story_text",
+        "points": "hits[0].points",
+        "num_comments": "hits[0].num_comments"
+      },
+      "query": "AI agent cost",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN01",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent+cost&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:16.461271+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/001_hn_query_1_1_cb947549.body",
+      "raw_response_sha256": "a627d61dca2879ecbe6dacd86e0a15820a68d2cb147914b3fbef9936aebff35a",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50332690",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50332690",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Mathematics has changed. Let's act like it",
+      "author": "dataflow",
+      "story_id": 50328251,
+      "created_at": "2026-11-02T03:07:51Z",
+      "created_at_i": 1793588871,
+      "updated_at": "2026-11-02T04:49:57Z",
+      "content_field": "comment_text",
+      "content_excerpt": "&gt; understands it thoroughly, and uses it to develop interesting further questions or directions<p>He phrases it like these criteria are requirements, but they really aren&#x27;t for every problem. They make sense for those theoretical problems whose solutions&#x27; main values lie in their understandability and further development, but not every problem is like that. Some problems&#x27; solutions are just revolutionary on their own even if you contribute or understand absolutely nothing else. AI technology itself is an example of this!<p>To give a trivial hypothetical counterexample: if you came up with a solution for the traveling salesman problem that is both empirically sufficiently faster than the state of the art, that is an immense contribution and you absolutely deserve the credit for it regardless of whether you or anyone else understands how&#x2F;why it works. It could literally even produce wrong results 50% of the time and still revolutionize humanity if it&#x27;s efficient enough when it&#x27;s correct. Denying them credit because they didn&#x27;t understand the algorithm would be ludicrous - the results stand &amp; speak for themselves.<p>Statisticians, traditional-AI researchers, etc. had to learn this the hard way when (basically black-box) neural nets became so good that their otherwise-elegant &amp; explainable classical algorithms just stopped being able to compete in more and more applications, and got left behind. Are mathematicians looking to repeat that history?",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[1]",
+      "field_locators": {
+        "objectID": "hits[1].objectID",
+        "author": "hits[1].author",
+        "created_at": "hits[1].created_at",
+        "created_at_i": "hits[1].created_at_i",
+        "comment_text": "hits[1].comment_text"
+      },
+      "query": "AI agent cost",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN02",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent+cost&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:16.461271+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/001_hn_query_1_1_cb947549.body",
+      "raw_response_sha256": "a627d61dca2879ecbe6dacd86e0a15820a68d2cb147914b3fbef9936aebff35a",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50332614",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50332614",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "AI Can Write More of the Code. We Still Have to Engineer the System",
+      "author": "bitwize",
+      "story_id": 50331998,
+      "created_at": "2026-11-02T02:56:17Z",
+      "created_at_i": 1793588177,
+      "updated_at": "2026-11-02T03:06:25Z",
+      "content_field": "comment_text",
+      "content_excerpt": "...For now.<p>Frontier models are generating sensible abstract engineering decisions for nontrivial code bases. Phase 1 (GPT 4 era) was &quot;fancy autocomplete&quot;: it could generate a function or complete a clause before losing the plot. Phase 2 (Opus 4.x era) was the spec-driven development era, involving careful construction of guardrails and guidelines and steering the agents as they worked. Phase 3 is the beginning of the &quot;software factory&quot; era. You can now one-shot nontrivial apps with a prompt that leaves most of the specifics up to the agents. You just can&#x27;t do this for like, a whole enterprise—maybe a microservice.<p>Another phase or two, and you can pretty much say goodbye to 95% of SWE jobs. The only people left involved in the software development process will be business analysts, product managers, and perhaps designers if they don&#x27;t want the UI to look all &quot;AI ass-ugly&quot;. A handful of trillion-dollar companies will retain a few really smart people who <i>could</i> code by hand if they wanted to, to keep the models trained and topped up on good practices. But line-of-business, which was the bread and butter for software engineers for going on 70 years now, will be done by machine. Humans will specify, and humans will QA the results, and that&#x27;s it.",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[2]",
+      "field_locators": {
+        "objectID": "hits[2].objectID",
+        "author": "hits[2].author",
+        "created_at": "hits[2].created_at",
+        "created_at_i": "hits[2].created_at_i",
+        "comment_text": "hits[2].comment_text"
+      },
+      "query": "AI agent cost",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN03",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent+cost&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:16.461271+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/001_hn_query_1_1_cb947549.body",
+      "raw_response_sha256": "a627d61dca2879ecbe6dacd86e0a15820a68d2cb147914b3fbef9936aebff35a",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50330163",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50330163",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Ask HN: What are you working on? (November 2026)",
+      "author": "srid68",
+      "story_id": 50328340,
+      "created_at": "2026-11-01T21:37:31Z",
+      "created_at_i": 1793569051,
+      "updated_at": "2026-11-01T23:03:10Z",
+      "content_field": "comment_text",
+      "content_excerpt": "1-year part-time experiment: can you build a large project with AI writing the code and AI plus deterministic tools verifying&#x2F;guiding&#x2F;enforcing it for structural and behavior consistency, without a human reading the code?<p>I&#x27;m building a polyglot web framework in 15 languages, with C# and Lean4 as the reference implementations. Structural and behavioral audits using deterministic tools check that every port stays consistent with the reference. It&#x27;s about 1.8M lines now. I have not reviewed the code&#x2F;neither have i verified the behavior tests except at the time of giving requirement and never seen some of the language code at all.<p>The question is how far can we produce &quot;working code → correct code [Possible] → good code [Unknown]&quot; with deterministic audits correcting structure, ai mistakes and behavior validation.<p>So far the quality looks acceptable with lots of correction of AI output done without looking, but it isn&#x27;t fully verified.<p>Line counts per language, with changes since August: <a href=\"https:&#x2F;&#x2F;claude.ai&#x2F;artifact&#x2F;5f1m1pTM7tZ4boQzwsoAG7\" rel=\"nofollow\">https:&#x2F;&#x2F;claude.ai&#x2F;artifact&#x2F;5f1m1pTM7tZ4boQzwsoAG7</a>",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[0]",
+      "field_locators": {
+        "objectID": "hits[0].objectID",
+        "author": "hits[0].author",
+        "created_at": "hits[0].created_at",
+        "created_at_i": "hits[0].created_at_i",
+        "comment_text": "hits[0].comment_text"
+      },
+      "query": "Claude Code pricing",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN04",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=Claude+Code+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:18.384291+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/002_hn_query_2_1_f6701b5b.body",
+      "raw_response_sha256": "1c2b63d7bc8f2d556a61a8fb72846108f4c61d2189c73107500e22c6448dc540",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50327486",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50327486",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Pi Is the Last Harness",
+      "author": "minraws",
+      "story_id": 50326025,
+      "created_at": "2026-11-01T17:08:31Z",
+      "created_at_i": 1793552911,
+      "updated_at": "2026-11-01T19:15:10Z",
+      "content_field": "comment_text",
+      "content_excerpt": "As much as I would like to say I agree, I don&#x27;t really like the LLM ui replacements. I absolutely hate them, they are just horrible, claude code itself is a horrible way of producing code&#x2F;output you aren&#x27;t seeing the logical pieces of your project you are largely stuck in a text box with a diff viewer and unable to parse what&#x27;s happening.<p>Something like codex desktop is slightly better but still a horrible interface for developing software in any form of serious capacity.<p>Sure it works because the friction of manually working is just so damn high. And there aren&#x27;t good alternatives, the jump from pi to claude to codex being almost negligible for most folks is a very high signal this entire pattern just doesn&#x27;t really work.<p>I don&#x27;t yet know where we will land or will we suffer with the current bad type text in a box ux for the next few years but I am certain this is not it.<p>I am still trying to work out what is it though, so well we will see when we get there.<p>Not using tools is a good example of the issue, you give up a lot of control to do that, sometimes it&#x27;s good enough often it&#x27;s not, and often it&#x27;s worse because you don&#x27;t even realize how much control you have given up.<p>I don&#x27;t think we will do natural language interactions with our computers, I honestly feel like we will do something more intent based. If LLMs can know from our words what we want to do, then they can certain infer from what we are doing stuff we are about to do.<p>Think auto complete but for user actions, without taking away user ",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[1]",
+      "field_locators": {
+        "objectID": "hits[1].objectID",
+        "author": "hits[1].author",
+        "created_at": "hits[1].created_at",
+        "created_at_i": "hits[1].created_at_i",
+        "comment_text": "hits[1].comment_text"
+      },
+      "query": "Claude Code pricing",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN05",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=Claude+Code+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:18.384291+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/002_hn_query_2_1_f6701b5b.body",
+      "raw_response_sha256": "1c2b63d7bc8f2d556a61a8fb72846108f4c61d2189c73107500e22c6448dc540",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50327183",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50327183",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Anthropic blocks users for anything touching training larger models",
+      "author": "Wowfunhappy",
+      "story_id": 50319358,
+      "created_at": "2026-11-01T16:36:13Z",
+      "created_at_i": 1793550973,
+      "updated_at": "2026-11-01T16:41:25Z",
+      "content_field": "comment_text",
+      "content_excerpt": "&gt; They have made a pragmatic decision already to cut loose a whole swathe of users so they can pursue areas higher up the value chain. that was essentially the original decision they made when they went after software engineering instead of general users.<p>...I don&#x27;t think I agree that this happened. Claude Cowork exists, as does Claude Design.<p>My read of Anthropic&#x27;s strategy is to focus on coding as a means of achieving capability in other domains, via writing code. I would say that&#x27;s paying off: see Claude Opus 5.5 creating a music video, via building animations in Javascript. <a href=\"https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=CS8ro03rJOM\" rel=\"nofollow\">https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=CS8ro03rJOM</a><p>By writing bits of code, Claude can organize your calendar, create vector graphics, organize your tasks, and so on.<p>If what you mean is that newer Claude models are worse at creative writing—okay, but to what extent were LLMs ever seriously useful for this, beyond generating slop no one actually wants to read? Opus 3 is still available in claude.ai if you want to use it.<p>---<p>Now, separately, I do think that Anthropic is internally <i>obsessed</i> with &quot;existential risk&quot;, to the point where they will cut off users. I do think this is genuine based on everything we&#x27;ve heard from Anthropic employees.<p>And of course, this safety culture likely persists in part because it&#x27;s <i>also</i> useful to the company&#x27;s overall strategy, in the same way Apple&#x27;s focus on user privacy, while likely genuine, conven",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[2]",
+      "field_locators": {
+        "objectID": "hits[2].objectID",
+        "author": "hits[2].author",
+        "created_at": "hits[2].created_at",
+        "created_at_i": "hits[2].created_at_i",
+        "comment_text": "hits[2].comment_text"
+      },
+      "query": "Claude Code pricing",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN06",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=Claude+Code+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:18.384291+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/002_hn_query_2_1_f6701b5b.body",
+      "raw_response_sha256": "1c2b63d7bc8f2d556a61a8fb72846108f4c61d2189c73107500e22c6448dc540",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50332969",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50332969",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Postgres 19 is late because so many more bugs are being found now",
+      "author": "adwn",
+      "story_id": 50312408,
+      "created_at": "2026-11-02T03:58:14Z",
+      "created_at_i": 1793591894,
+      "updated_at": "2026-11-02T04:04:41Z",
+      "content_field": "comment_text",
+      "content_excerpt": "Do you mean &quot;created&quot; as in <i>LLMs were used to discover existing vulnerabilities</i>, or as in <i>LLMs wrote unsecure code</i>? If it&#x27;s the latter, then the answer probably is &quot;very few&quot;. Frontier models have been better than the average programmer at writing secure code that follows up-to-date best-practices for some time now.",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[0]",
+      "field_locators": {
+        "objectID": "hits[0].objectID",
+        "author": "hits[0].author",
+        "created_at": "hits[0].created_at",
+        "created_at_i": "hits[0].created_at_i",
+        "comment_text": "hits[0].comment_text"
+      },
+      "query": "Codex pricing",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN07",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=Codex+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:20.343697+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/003_hn_query_3_1_3136f1b0.body",
+      "raw_response_sha256": "c6ec5bc28b2360026720921189c367056d2a90f6db986f5e6a565e7c6a997d35",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50332728",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50332728",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "No AI, 52 min. Build all Linux Files utils in C by Hand [video]",
+      "author": "tjpnz",
+      "story_id": 50290480,
+      "created_at": "2026-11-02T03:12:01Z",
+      "created_at_i": 1793589121,
+      "updated_at": "2026-11-02T03:16:11Z",
+      "content_field": "comment_text",
+      "content_excerpt": "This is me most days at work, writing code that will be shipped in a mass market product. So long as I&#x27;m getting my work done nobody gets to tell me how to do my job.",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[1]",
+      "field_locators": {
+        "objectID": "hits[1].objectID",
+        "author": "hits[1].author",
+        "created_at": "hits[1].created_at",
+        "created_at_i": "hits[1].created_at_i",
+        "comment_text": "hits[1].comment_text"
+      },
+      "query": "Codex pricing",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN08",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=Codex+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:20.343697+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/003_hn_query_3_1_3136f1b0.body",
+      "raw_response_sha256": "c6ec5bc28b2360026720921189c367056d2a90f6db986f5e6a565e7c6a997d35",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50332716",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50332716",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "AI Can Write More of the Code. We Still Have to Engineer the System",
+      "author": "lnkdinsuxs",
+      "story_id": 50331998,
+      "created_at": "2026-11-02T03:10:48Z",
+      "created_at_i": 1793589048,
+      "updated_at": "2026-11-02T04:03:41Z",
+      "content_field": "comment_text",
+      "content_excerpt": "&gt; It&#x27;s going to enable me to do less software development and more marketing? Goodie, I&#x27;m so happy I could puke.<p>If you hate marketing, <i>don&#x27;t do it</i>. If you enjoy software development, have fun <i>doing it</i>.<p>However, you will remain an employee and you have to appreciate the pros and cons of being an employee. The other thing you have to appreciate is that the number of employees writing code who are AI, are cheaper than any human on the planet and works 24x7 without complaining or asking for a raise is going to go up. Likely exponentially.<p>This doesn&#x27;t mean demand for good software developers is going to go down, but increasingly, software development is likely going to look like how one human Amazon warehouse worker wears special harnesses that allow them to lift far more weight, walk longer distances and interact with dozens of robots in the warehouse.<p>As I said in the parent it&#x27;s not for everyone but a lot more people who were struggling to start their own venture will now be more capable of and have more freedom.<p>It might very well turn out that in a few years, the only way to enjoy software development the way <i>you</i> like it, is to establish your own boutique software development company.",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[2]",
+      "field_locators": {
+        "objectID": "hits[2].objectID",
+        "author": "hits[2].author",
+        "created_at": "hits[2].created_at",
+        "created_at_i": "hits[2].created_at_i",
+        "comment_text": "hits[2].comment_text"
+      },
+      "query": "Codex pricing",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN09",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=Codex+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:20.343697+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/003_hn_query_3_1_3136f1b0.body",
+      "raw_response_sha256": "c6ec5bc28b2360026720921189c367056d2a90f6db986f5e6a565e7c6a997d35",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50330213",
+      "kind": "story",
+      "url": "https://news.ycombinator.com/item?id=50330213",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": "https://www.anonce.io/",
+      "external_urls_are_data_only": true,
+      "title": "Show HN: Nonce – Open-source, least-privilege Gmail access for AI agents",
+      "author": "richardmeng",
+      "story_id": 50330213,
+      "created_at": "2026-11-01T21:44:21Z",
+      "created_at_i": 1793569461,
+      "updated_at": "2026-11-02T02:02:12Z",
+      "content_field": "story_text",
+      "content_excerpt": "Hi HN! We built nonce, an open-source tool that sits between personal AI agents (Muse, Grok, ChatGPT, Claude) and your personal data in Gmail, Calendar, Drive and more.<p>Today, if you connect Gmail to an AI agent like Muse, it can read your entire inbox. Whether on purpose or not, they can read far more emails than needed. This poses a huge data-privilege risk, in which personal data is accessed without limits.<p>With nonce, the AI will no longer hold your Google or Slack tokens. To read anything, it has to show its intent first:<p>User&#x27;s question: When does my flight to Tokyo leave?\nAgent&#x27;s justification: Need the airline confirmation email\nAgent&#x27;s search query: from:united.com Tokyo\nAccess needed: 10 minutes<p>If the justification and search query are reasonable, nonce issues a scoped token to the AI Agent. AI Agent can only query data using a token.<p>If something looks fishy, i.e the AI is acting on its own, wants too much, or wants sensitive emails like bank statements, medical results, or password resets. nonce sends you a notification to approve or deny.<p>By default, nonce denies massive crawling behaviors<p>How it works\n1. nonce scores each search against your original question before running it, to ensure its relevance.\n2. Every search is combined with the token&#x27;s search. If the AI searches &quot;bank statement&quot;, nonce runs (from:united.com Tokyo) AND (bank statement). It can narrow its access, but not widen it.\n3. The token is scoped to that agent only, with a TTL for X minutes.<p>Limitations: nonce can&#x27;t see your chat with the AI, ",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {
+        "points": 1,
+        "num_comments": 0
+      },
+      "raw_locator": "hits[0]",
+      "field_locators": {
+        "objectID": "hits[0].objectID",
+        "author": "hits[0].author",
+        "created_at": "hits[0].created_at",
+        "created_at_i": "hits[0].created_at_i",
+        "story_text": "hits[0].story_text",
+        "points": "hits[0].points",
+        "num_comments": "hits[0].num_comments"
+      },
+      "query": "access denied agent",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN10",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=access+denied+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:22.379326+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/004_hn_query_4_1_0a574d46.body",
+      "raw_response_sha256": "ce46e553eae20ac9c28f3467cbc193d59d58a3e88f62563301ecdc964d0a82fd",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50166597",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50166597",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Show HN: Doozy – an AI coworker in Slack that works in prod without your keys",
+      "author": "shivsarthak",
+      "story_id": 50166515,
+      "created_at": "2026-10-20T13:59:49Z",
+      "created_at_i": 1792504789,
+      "updated_at": "2026-10-20T23:19:20Z",
+      "content_field": "comment_text",
+      "content_excerpt": "I built Doozy because support at my company (Spur) is understaffed and kept waiting on engineering to run a query for a customer, or to check whether something was a bug. The first version was a Slack bot with read access to our Postgres and Stripe, and it was very hacky. It could barely read files sent in a thread, but the agent was smart enough to find them through Slack search and finish the task anyway. It got used far more by support and success than by engineers, which surprised me. 13 people at Spur use it every day; it&#x27;s basically a critical part of the team now.<p>Doozy is the rebuilt, multi-tenant version. You mention it in a thread with a task, it runs the task against your systems (database, Stripe, GitHub, Linear, PostHog, any MCP server, the web) in its own isolated environment, and posts the result and files in the thread.<p>How it touches production:<p>- Every job runs in a fresh sandbox (E2B today) with no credentials in it. Model calls, tool calls and git go through gateways outside the sandbox that add credentials per request. A prompt injection can make the agent misuse the tools it has, but it can&#x27;t exfiltrate a key, because there isn&#x27;t one to read.\n- Secrets the agent genuinely needs inside the sandbox (an SSH key, a CLI token) are handed over only when it asks for a named secret with a reason, and that request is logged.\n- Tools marked destructive start denied. Owners turn them on per tool.\n- Every external action writes a receipt in the thread and an append-only audit log.<p>Per-workspace pricing, no seats. 14-day trial, no card, insta",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[1]",
+      "field_locators": {
+        "objectID": "hits[1].objectID",
+        "author": "hits[1].author",
+        "created_at": "hits[1].created_at",
+        "created_at_i": "hits[1].created_at_i",
+        "comment_text": "hits[1].comment_text"
+      },
+      "query": "access denied agent",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN11",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=access+denied+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:22.379326+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/004_hn_query_4_1_0a574d46.body",
+      "raw_response_sha256": "ce46e553eae20ac9c28f3467cbc193d59d58a3e88f62563301ecdc964d0a82fd",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50326315",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50326315",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Electrification Could Cut Global Energy Use in Half",
+      "author": "jonhohle",
+      "story_id": 50319110,
+      "created_at": "2026-11-01T15:00:53Z",
+      "created_at_i": 1793545253,
+      "updated_at": "2026-11-02T04:38:12Z",
+      "content_field": "comment_text",
+      "content_excerpt": "Most people aren’t familiar with a peak demand rate because it’s not common in many markets. Take the highest kW use period of the month, and multiply kW demand by $20. Run the oven; pulls 3kW; $60. Run the oven and the stove top (1.8kW) at the same time $96. Screw up one time during the month and you might as well not care about the rest of the month.<p>I’m being a bit hyperbolic - it’s averaged over the highest 1 hour peak demand period (4pm-7pm, M-F), but it does limit what things can be run simultaneously (no dryer, oven and AC at the same time, for example). We schedule things around that, Our peak demand for this past month was 2.3kW. That single line item charge is higher than our entire gas bill.<p>There’s a separate use charge as well, but per kWh that’s pretty low. Then, of course, there’s the dozens of other random charges and fees ($86) that have nothing to do with electricity generation and everything to do with being a monopoly (court resolution surcharge: $3.58). The idea of moving more things to electric is nauseating.",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[0]",
+      "field_locators": {
+        "objectID": "hits[0].objectID",
+        "author": "hits[0].author",
+        "created_at": "hits[0].created_at",
+        "created_at_i": "hits[0].created_at_i",
+        "comment_text": "hits[0].comment_text"
+      },
+      "query": "rate limit agent",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN12",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=rate+limit+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:24.378951+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/005_hn_query_5_1_ebc62253.body",
+      "raw_response_sha256": "2b6b7adc549338c2915bf675a36ba83f78dcd996f8c92748b1297c76708590f5",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50314610",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50314610",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Breaking the open web won't stop the bad bots",
+      "author": "thaumasiotes",
+      "story_id": 50263837,
+      "created_at": "2026-10-31T10:12:25Z",
+      "created_at_i": 1793441545,
+      "updated_at": "2026-10-31T18:57:21Z",
+      "content_field": "comment_text",
+      "content_excerpt": "No, the definition of &#x27;stealth bot&#x27; is a disaster. The proposed text criminalizes altering your user-agent string. It arguably criminalizes all existing user-agent strings, since their whole purpose is to lie about which browser you are.<p>Taking the first thing I could find, geekflare.com informs me that the current user-agent string for Google Chrome running on Windows 11 is<p><pre><code>    Mozilla&#x2F;5.0 (Windows NT 10.0; Win64; x64) AppleWebKit&#x2F;537.36 (KHTML, like Gecko) Chrome&#x2F;155.0.0.0 Safari&#x2F;537.36\n</code></pre>\nWhat&#x27;s doing the work in the proposed text is the prohibition on using software &quot;in a manner that is reasonably likely to damage, impair, or burden the technical or commercial operation of&quot; a service.<p>&gt; Someone who is using a residential proxy network, headless browsing, and&#x2F;or TLS fingerprint manipulation to evade rate limits and other controls to issue large volumes of automated requests under a deceptive UserAgent string isn&#x27;t difficult to describe and differentiate versus a normal user using a UA.<p>Note that someone who&#x27;s scripting a headless browser doesn&#x27;t need to use a deceptive user-agent string. They can use the user-agent string for their browser, which isn&#x27;t deceptive except to the degree that all user-agent strings are 90+% lies.",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[1]",
+      "field_locators": {
+        "objectID": "hits[1].objectID",
+        "author": "hits[1].author",
+        "created_at": "hits[1].created_at",
+        "created_at_i": "hits[1].created_at_i",
+        "comment_text": "hits[1].comment_text"
+      },
+      "query": "rate limit agent",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN13",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=rate+limit+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:24.378951+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/005_hn_query_5_1_ebc62253.body",
+      "raw_response_sha256": "2b6b7adc549338c2915bf675a36ba83f78dcd996f8c92748b1297c76708590f5",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50333025",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50333025",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "Frontier Airlines Likely Breached",
+      "author": "AlexErrant",
+      "story_id": 50327266,
+      "created_at": "2026-11-02T04:09:34Z",
+      "created_at_i": 1793592574,
+      "updated_at": "2026-11-02T04:56:26Z",
+      "content_field": "comment_text",
+      "content_excerpt": "If doing the right thing were easy, it wouldn&#x27;t be what gives you character.<p>I agree: having charges brought against you is a life-changing event. FWIW neither Chan Tsz-yan nor Josh Renaud were arrested, and in both cases the charges were dropped. <a href=\"https:&#x2F;&#x2F;pressfreedomtracker.us&#x2F;all-incidents&#x2F;missouri-governor-labels-reporter-a-hacker-threatens-criminal-prosecution&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;pressfreedomtracker.us&#x2F;all-incidents&#x2F;missouri-govern...</a> <a href=\"https:&#x2F;&#x2F;missouriindependent.com&#x2F;2022&#x2F;02&#x2F;11&#x2F;prosecutor-isnt-pressing-charges-against-reporter-who-found-flaw-in-state-website&#x2F;\" rel=\"nofollow\">https:&#x2F;&#x2F;missouriindependent.com&#x2F;2022&#x2F;02&#x2F;11&#x2F;prosecutor-isnt-p...</a><p>The system sucks, and will always suck.<p>If you think these two cases out of umpteen billion CVE&#x2F;security incident reports are odds enough to hide your face and turn away because the risk is too much... I apologize for being crass, but frankly you&#x27;re being a little bitch.<p>If these odds aren&#x27;t good enough for you to live up to your values, what are?",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[0]",
+      "field_locators": {
+        "objectID": "hits[0].objectID",
+        "author": "hits[0].author",
+        "created_at": "hits[0].created_at",
+        "created_at_i": "hits[0].created_at_i",
+        "comment_text": "hits[0].comment_text"
+      },
+      "query": "incident agent",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN14",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=incident+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:26.365339+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/006_hn_query_6_1_eca023e6.body",
+      "raw_response_sha256": "e21410e5eb398f9b7968dea4d8570662eded906586b4195d5d6b994aa8539ea3",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    },
+    {
+      "source": "hn",
+      "source_id": "50328816",
+      "kind": "comment",
+      "url": "https://news.ycombinator.com/item?id=50328816",
+      "url_provenance": "derived canonical URL from response objectID; not fetched",
+      "source_url_from_response": null,
+      "external_urls_are_data_only": true,
+      "title": "UK Green party drops longstanding opposition to nuclear power",
+      "author": "hunterpayne",
+      "story_id": 50318189,
+      "created_at": "2026-11-01T19:27:38Z",
+      "created_at_i": 1793561258,
+      "updated_at": "2026-11-01T22:14:41Z",
+      "content_field": "comment_text",
+      "content_excerpt": "The only real (ie large) nuclear accident happened under communism.  And the reason why we don&#x27;t have even safer nuclear designs is because of regulation.  This entire discussion is entirely backwards and isn&#x27;t looking at the data.  Look where and why incidents happened.  When you do, you will find various causes, none of which are fixed by political ideology.  They are fixed by engineering and insurance costs.<p>Chernobyl happened because the son of a central committee member needed data from a dangerous experiment that was conducted at the powerplant.  They literally disabled safety systems with wrenches.  Both the design itself would have never allowed in the west nor would the experiment that caused the accident.  Also, the HBO movie was very inaccurate so please don&#x27;t bring up something you saw there, many of the things in the movie aren&#x27;t even scientifically possible.",
+      "content_excerpt_policy": "exact prefix of raw field; HTML is retained as untrusted text",
+      "metrics": {},
+      "raw_locator": "hits[1]",
+      "field_locators": {
+        "objectID": "hits[1].objectID",
+        "author": "hits[1].author",
+        "created_at": "hits[1].created_at",
+        "created_at_i": "hits[1].created_at_i",
+        "comment_text": "hits[1].comment_text"
+      },
+      "query": "incident agent",
+      "post_verification": "UNVERIFIED_PUBLIC_POST",
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "gaps": [
+        "Public author/post identity is not independently verified buyer identity.",
+        "No verified receipt/invoice/contract/public filing linked to buyer/product/time.",
+        "One retrieval is provisional T0 only; no comparable T+7/T+14."
+      ],
+      "evidence_id": "HN15",
+      "source_request_url": "https://hn.algolia.com/api/v1/search_by_date?query=incident+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054",
+      "retrieved_at": "2026-11-02T05:08:26.365339+00:00",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/006_hn_query_6_1_eca023e6.body",
+      "raw_response_sha256": "e21410e5eb398f9b7968dea4d8570662eded906586b4195d5d6b994aa8539ea3",
+      "protocol_sha256": "c8df87baa4578624aa0d7d16c1d85e943d2d8c5485659e141084063b6d4ced8b"
+    }
+  ],
+  "claims": [
+    {
+      "claim_id": "L01",
+      "kind": "observed_unverified_source_statement",
+      "statement": "Captured public record contains this source statement; not independently verified.",
+      "evidence_ids": [
+        "GH07"
+      ],
+      "quote": "Expose rate-limit reset times, balance, plan as status_line tokens",
+      "raw_locator": "items[0].title",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "raw_response_sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "verdict": "UNVERIFIED_LEAD",
+      "limits": "Not verified buyer, transaction, incident, product behavior, or growth."
+    },
+    {
+      "claim_id": "L02",
+      "kind": "observed_unverified_source_statement",
+      "statement": "Captured public record contains this source statement; not independently verified.",
+      "evidence_ids": [
+        "GH08"
+      ],
+      "quote": "Codex 5h Limit drained in 10 minutes ",
+      "raw_locator": "items[1].title",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/003_codex_pricing_1_2b136ea1.body",
+      "raw_response_sha256": "c84202d95773e3256814cfb90c7b514f3371e0f8af1bb7beef90d8305d707a47",
+      "verdict": "UNVERIFIED_LEAD",
+      "limits": "Not verified buyer, transaction, incident, product behavior, or growth."
+    },
+    {
+      "claim_id": "L03",
+      "kind": "observed_unverified_source_statement",
+      "statement": "Captured public record contains this source statement; not independently verified.",
+      "evidence_ids": [
+        "GH10"
+      ],
+      "quote": "macOS: browser access silently stops mid-chat; approval changes never re-prompt, Work toggle restores access",
+      "raw_locator": "items[0].title",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/004_codex_access_1_b72483cf.body",
+      "raw_response_sha256": "1cfec6168b65ddfffce4b56ec77b9e174772d488c94a75bd5facdb20e389f54f",
+      "verdict": "UNVERIFIED_LEAD",
+      "limits": "Not verified buyer, transaction, incident, product behavior, or growth."
+    },
+    {
+      "claim_id": "L04",
+      "kind": "observed_unverified_source_statement",
+      "statement": "Captured public record contains this source statement; not independently verified.",
+      "evidence_ids": [
+        "GH12"
+      ],
+      "quote": "[BUG] Headless chrome.exe launched by Claude Code on Windows triggers failed logons and locks IdP-managed accounts",
+      "raw_locator": "items[0].title",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/005_claude_rate_1_1ff4d626.body",
+      "raw_response_sha256": "39156da32d868712f558bdfd5ad449a741cc2ead7bdb865b7f5c6a6a9fef88fe",
+      "verdict": "UNVERIFIED_LEAD",
+      "limits": "Not verified buyer, transaction, incident, product behavior, or growth."
+    },
+    {
+      "claim_id": "L05",
+      "kind": "observed_unverified_source_statement",
+      "statement": "Captured public record contains this source statement; not independently verified.",
+      "evidence_ids": [
+        "GH13"
+      ],
+      "quote": "[BUG] Ultra plan: one 5-hour session consumes ~50% of the weekly limit (27% of week gone ~6h after reset)",
+      "raw_locator": "items[1].title",
+      "raw_response_path": "artifacts/live-evidence-v1/ws1/005_claude_rate_1_1ff4d626.body",
+      "raw_response_sha256": "39156da32d868712f558bdfd5ad449a741cc2ead7bdb865b7f5c6a6a9fef88fe",
+      "verdict": "UNVERIFIED_LEAD",
+      "limits": "Not verified buyer, transaction, incident, product behavior, or growth."
+    },
+    {
+      "claim_id": "L06",
+      "kind": "observed_unverified_source_statement",
+      "statement": "Captured public record contains this source statement; not independently verified.",
+      "evidence_ids": [
+        "HN05"
+      ],
+      "quote": "claude code itself is a horrible way",
+      "raw_locator": "hits[1].comment_text",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/002_hn_query_2_1_f6701b5b.body",
+      "raw_response_sha256": "1c2b63d7bc8f2d556a61a8fb72846108f4c61d2189c73107500e22c6448dc540",
+      "verdict": "UNVERIFIED_LEAD",
+      "limits": "Not verified buyer, transaction, incident, product behavior, or growth."
+    },
+    {
+      "claim_id": "L07",
+      "kind": "observed_unverified_source_statement",
+      "statement": "Captured public record contains this source statement; not independently verified.",
+      "evidence_ids": [
+        "HN10"
+      ],
+      "quote": "Show HN: Nonce – Open-source, least-privilege Gmail access for AI agents",
+      "raw_locator": "hits[0].title",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/004_hn_query_4_1_0a574d46.body",
+      "raw_response_sha256": "ce46e553eae20ac9c28f3467cbc193d59d58a3e88f62563301ecdc964d0a82fd",
+      "verdict": "UNVERIFIED_LEAD",
+      "limits": "Not verified buyer, transaction, incident, product behavior, or growth."
+    },
+    {
+      "claim_id": "L08",
+      "kind": "observed_unverified_source_statement",
+      "statement": "Captured public record contains this source statement; not independently verified.",
+      "evidence_ids": [
+        "HN11"
+      ],
+      "quote": "I built Doozy because support at my company (Spur) is understaffed",
+      "raw_locator": "hits[1].comment_text",
+      "raw_response_path": "artifacts/live-evidence-v1/ws2/requests/004_hn_query_4_1_0a574d46.body",
+      "raw_response_sha256": "ce46e553eae20ac9c28f3467cbc193d59d58a3e88f62563301ecdc964d0a82fd",
+      "verdict": "UNVERIFIED_LEAD",
+      "limits": "Not verified buyer, transaction, incident, product behavior, or growth."
+    }
+  ],
+  "opportunities": [],
+  "hypothesis_evaluations": [
+    {
+      "hypothesis": "Quota visibility/accounting",
+      "evidence_ids": [
+        "GH07",
+        "GH08",
+        "GH09"
+      ],
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "eligible_for_top5": false,
+      "verdict": "RESEARCH_DRAFT_ONLY",
+      "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+    },
+    {
+      "hypothesis": "Browser permission recovery",
+      "evidence_ids": [
+        "GH10",
+        "GH11"
+      ],
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "eligible_for_top5": false,
+      "verdict": "RESEARCH_DRAFT_ONLY",
+      "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+    },
+    {
+      "hypothesis": "Headless browser / identity lockout",
+      "evidence_ids": [
+        "GH12"
+      ],
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "eligible_for_top5": false,
+      "verdict": "RESEARCH_DRAFT_ONLY",
+      "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+    },
+    {
+      "hypothesis": "Subscription quota depletion",
+      "evidence_ids": [
+        "GH13"
+      ],
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "eligible_for_top5": false,
+      "verdict": "RESEARCH_DRAFT_ONLY",
+      "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+    },
+    {
+      "hypothesis": "Least-privilege agent data access",
+      "evidence_ids": [
+        "HN10"
+      ],
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "eligible_for_top5": false,
+      "verdict": "RESEARCH_DRAFT_ONLY",
+      "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+    },
+    {
+      "hypothesis": "Internal support workflow",
+      "evidence_ids": [
+        "HN11"
+      ],
+      "buyer_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "payment_evidence": {
+        "present": false,
+        "proof_type": null,
+        "url": null
+      },
+      "trend_evidence": {
+        "present": false,
+        "cohort": null,
+        "t0": null,
+        "t_plus": null,
+        "metric": null
+      },
+      "eligible_for_top5": false,
+      "verdict": "RESEARCH_DRAFT_ONLY",
+      "reason": "Public allegations/maker descriptions only; no verified buyer/product/time transaction proof or longitudinal evidence."
+    }
+  ],
+  "historical_trend_records": 15,
+  "historical_prior_claims": 8,
+  "kill_reasons": [
+    "NO_VERIFIED_BUYER_OR_PAYMENT_EVIDENCE",
+    "NO_LONGITUDINAL_TREND_EVIDENCE",
+    "MISSING_BUYER_EVIDENCE",
+    "MISSING_PAYMENT_EVIDENCE",
+    "MISSING_TREND_EVIDENCE",
+    "LOW_RELEVANCE_SEARCH_HITS: bounded query matches are not verified problem/buyer relevance",
+    "DISCUSSIONS_NOT_COLLECTED: anonymous REST issue search only",
+    "SUBAGENT_RUNTIME_USAGE_LIMIT: final merge/trend completed locally from saved artifacts"
+  ],
+  "limits": {
+    "github_raw": 15,
+    "hn_raw": 15,
+    "live_raw_total": 30,
+    "claims": 8,
+    "opportunities": 5
+  }
+}

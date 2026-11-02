@@ -1,0 +1,55 @@
+{
+  "schema_version": 1,
+  "status": "FROZEN_BEFORE_NETWORK",
+  "source": "hn.algolia.com",
+  "anchor_utc": "2026-11-02T05:07:34.465808+00:00",
+  "cutoff_utc": "2026-10-03T05:07:34.465808+00:00",
+  "max_returned_hits_total": 15,
+  "max_unique_retained": 15,
+  "minimum_target": 10,
+  "selection": "fixed query order; page 0, newest first; no backfill; deduplicate first observed objectID",
+  "request_limit": 12,
+  "attempts_per_query": 2,
+  "limitations": [
+    "Selection is a bounded purposive sample, not an exhaustive market survey.",
+    "Public posts and payment allegations are unverified leads, not payment proof."
+  ],
+  "queries": [
+    {
+      "label": "hn_query_1",
+      "query": "AI agent cost",
+      "cap": 3,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent+cost&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054"
+    },
+    {
+      "label": "hn_query_2",
+      "query": "Claude Code pricing",
+      "cap": 3,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=Claude+Code+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054"
+    },
+    {
+      "label": "hn_query_3",
+      "query": "Codex pricing",
+      "cap": 3,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=Codex+pricing&tags=%28story%2Ccomment%29&hitsPerPage=3&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054"
+    },
+    {
+      "label": "hn_query_4",
+      "query": "access denied agent",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=access+denied+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054"
+    },
+    {
+      "label": "hn_query_5",
+      "query": "rate limit agent",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=rate+limit+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054"
+    },
+    {
+      "label": "hn_query_6",
+      "query": "incident agent",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=incident+agent&tags=%28story%2Ccomment%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791004054%2Ccreated_at_i%3C%3D1793596054"
+    }
+  ]
+}

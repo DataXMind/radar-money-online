@@ -1,0 +1,63 @@
+{
+  "protocol_id": "ai-agent-cost-access-incident-discovery-v1",
+  "frozen_at": "2026-11-02T05:07:31.163700+00:00",
+  "status": "FROZEN_DISCOVERY_PROTOCOL",
+  "purpose": "Create a source-native, stable-ID activity cohort for future targeted trend tracking; not revenue or demand proof.",
+  "source_domains": [
+    "api.github.com",
+    "github.com",
+    "hn.algolia.com"
+  ],
+  "topic_scope": [
+    "AI agent cost",
+    "Claude Code pricing",
+    "Codex pricing",
+    "access denied",
+    "rate limit",
+    "incident"
+  ],
+  "input_sources": [
+    "artifacts/live-evidence-v1/github_evidence.jsonl",
+    "artifacts/live-evidence-v1/hn_evidence.jsonl"
+  ],
+  "selection": {
+    "github": "Up to 6 distinct GitHub issue/discussion records with an actual integer nonnegative comments/reply count and exact raw locator, sorted by canonical source_id as text ascending.",
+    "hn": "Up to 6 distinct HN story records with actual integer nonnegative num_comments and exact raw locator, sorted by canonical source_id as text ascending. HN comment records without a reply counter are retained as discovery data but excluded from the measured cohort.",
+    "deduplication": "Within source by stable source_id. Multiple search hits do not create independent observations.",
+    "tie_break": "Earliest actual retrieval timestamp then lexicographically smallest raw path.",
+    "target_maximum": 12,
+    "missing": "Never fill quota with invented cases; record fewer eligible records and report GAP."
+  },
+  "metric": {
+    "name": "source_native_thread_reply_count",
+    "unit": "count",
+    "github_field": "comments for issue REST/search records; discussion reply count only if explicitly present in raw data",
+    "hn_field": "num_comments for story records",
+    "comparability": "Compare each record only to its own later value from the same endpoint/field. Do not aggregate GitHub and HN counter levels or interpret them as revenue/demand.",
+    "secondary": "HN points may be stored separately, never substituted for missing reply count."
+  },
+  "sampling": {
+    "discovery": "Read final accepted WS1/WS2 output once. Preserve each WS query plan and current response hashes as protocol references.",
+    "timing_caveat": "Workstreams are parallel; this protocol was frozen before WS3 inspected current live records, but not guaranteed before other scouts began acquisition. Current T0 therefore remains provisional discovery, not a fully predeclared qualifying trend series.",
+    "future_protocol": "Before any new qualifying T0, freeze the resulting stable cohort IDs and endpoint/query/retrieval method; obtain human approval, then measure T0 and same records at T+7/T+14.",
+    "timezone": "UTC",
+    "future_window_tolerance_hours": 24,
+    "missingness": "Record unavailable/deleted/rate-limited fields as null plus reason; no zero imputation, no replacement record, no cohort swapping.",
+    "updates": "Record source-created/source-updated/retrieved times separately. Current query ranking never defines growth."
+  },
+  "followups": {
+    "t_plus_7": "T0 + 7 days, not observed yet",
+    "t_plus_14": "T0 + 14 days, not observed yet",
+    "automatic_scheduling": false,
+    "requires_separate_user_approval": true
+  },
+  "evidence_gate": {
+    "trend_evidence_present": false,
+    "reason": "No same-cohort T+7/T+14 observation exists. Current discovery T0 is provisional and not sufficient for EMERGING or Top5."
+  },
+  "missing_dependency": {
+    "name": "12 real cases from Cổng 2",
+    "available": false,
+    "replacement_claim": "None. New discovery cohort is not represented as the missing Cổng 2 dataset."
+  }
+}
