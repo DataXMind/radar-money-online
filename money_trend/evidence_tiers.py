@@ -2,16 +2,22 @@
 
 The caller must verify raw hashes, locators, quotes and entity/value mappings.
 CONFIRMED_SOURCE_STATEMENT attests that the source said it, not that it is true.
-This run accepts source_url only on feed.indiehackers.world.
+Default scope retains the historical RSS host. A caller may explicitly narrow
+the proof scope to approved GitHub/HN hosts; this never authorizes a request.
 """
 import calendar
 import re
 from datetime import date, datetime
 from decimal import Decimal, InvalidOperation
 from pathlib import PurePosixPath
-from urllib.parse import urlsplit
+from urllib.parse import parse_qsl, urlsplit
 
 HOST = 'feed.indiehackers.world'
+LEGACY_HOSTS = frozenset((HOST,))
+V2_HOSTS = frozenset(('api.github.com', 'github.com', 'hn.algolia.com'))
+PROOF_HOSTS = LEGACY_HOSTS | V2_HOSTS
+SECRET_QUERY_KEYS = frozenset(('token', 'access_token', 'api_key', 'key', 'client_secret',
+                              'secret', 'password', 'authorization', 'auth'))
 REVIEW = 'CONFIRMED_SOURCE_STATEMENT'
 META_KINDS = {'repo_star', 'hn_points', 'comment', 'post_metadata', 'publication_metadata'}
 
@@ -20,23 +26,24 @@ def _text(value):
     return isinstance(value, str) and bool(value.strip())
 
 
-def _source_url(value):
-    if not _text(value):
+def _source_url(value, allowed_hosts):
+    if not _text(value) or any(ord(character) < 32 for character in value):
         return False
     try:
         url = urlsplit(value)
-        return (url.scheme == 'https' and url.hostname == HOST and not url.username
-                and not url.password and url.port in (None, 443) and not url.fragment)
+        return (url.scheme == 'https' and url.hostname in allowed_hosts and not url.username
+                and not url.password and url.port in (None, 443) and not url.fragment
+                and not any(key.lower() in SECRET_QUERY_KEYS for key, _ in parse_qsl(url.query)))
     except ValueError:
         return False
 
 
-def _trace(proof):
+def _trace(proof, allowed_hosts):
     if not isinstance(proof, dict) or not _text(proof.get('raw_response_path')):
         return False
     path = PurePosixPath(proof['raw_response_path'].replace('\\', '/'))
     return (proof.get('review_status') == REVIEW
-            and _text(proof.get('evidence_id')) and _source_url(proof.get('source_url'))
+            and _text(proof.get('evidence_id')) and _source_url(proof.get('source_url'), allowed_hosts)
             and not path.is_absolute() and path.parts[0] == 'artifacts'
             and '..' not in path.parts and ':' not in str(path)
             and isinstance(proof.get('raw_response_sha256'), str)
@@ -93,7 +100,7 @@ def _value(value):
         raise ValueError('invalid source value')
 
 
-def _t2(candidate):
+def _t2(candidate, allowed_hosts):
     points = candidate.get('points')
     if not isinstance(points, list) or len(points) < 3:
         return [], ['T2_REQUIRES_AT_LEAST_THREE_POINTS']
@@ -104,7 +111,7 @@ def _t2(candidate):
     periods, signatures, reasons = [], set(), []
     for index, point in enumerate(points):
         try:
-            if (not _trace(point) or point.get('actual') is not True
+            if (not _trace(point, allowed_hosts) or point.get('actual') is not True
                     or point.get('statement_type') != 'actual_revenue_report'
                     or point.get('product') != candidate['product']
                     or point.get('founder') != candidate['founder']
@@ -134,12 +141,12 @@ def _t2(candidate):
     return [item[2] for item in periods], []
 
 
-def _t1(candidate):
+def _t1(candidate, allowed_hosts):
     proof = candidate.get('t1_proof')
     if not isinstance(proof, dict):
         return None
     try:
-        valid = (_trace(proof) and proof.get('verification_status') == 'VERIFIED_PAYMENT'
+        valid = (_trace(proof, allowed_hosts) and proof.get('verification_status') == 'VERIFIED_PAYMENT'
                  and proof.get('proof_type') in ('receipt', 'invoice', 'contract', 'public_filing')
                  and proof.get('payment_status') == 'PAID'
                  and proof.get('product') == candidate.get('product') and _text(proof.get('product'))
@@ -153,23 +160,29 @@ def _t1(candidate):
         return None
 
 
-def evaluate_candidate(candidate):
+def evaluate_candidate(candidate, allowed_hosts=LEGACY_HOSTS):
     """T1/PROVEN, T2/EMERGING, T3/HYPED or no tier.
 
-    eligible means this transactional RSS run's Top Opportunities (T1/T2 only).
-    Summary booleans or source instructions never replace upstream review.
+    eligible covers T1/T2; the separate infrastructure evaluator handles T2.5.
+    Default proof scope is the historical RSS host. GitHub/HN callers must pass
+    their explicit approved host set. Scope is data validation, not network
+    authorization. Summary flags never replace upstream raw-source review.
     """
     base = {'tier': None, 'verdict': 'RESEARCH_DRAFT_ONLY', 'eligible': False,
             'reasons': [], 'evidence_ids': [], 'verified_payment': False,
             'longitudinal_t7_t14_verified': False, 'source_statement_review_only': True}
+    if (not isinstance(allowed_hosts, (set, frozenset, list, tuple)) or not allowed_hosts
+            or any(not isinstance(host, str) or host not in PROOF_HOSTS for host in allowed_hosts)):
+        return {**base, 'reasons': ['INVALID_SOURCE_SCOPE']}
+    allowed_hosts = frozenset(allowed_hosts)
     if not isinstance(candidate, dict):
         return {**base, 'reasons': ['INVALID_CANDIDATE']}
-    proof = _t1(candidate)
+    proof = _t1(candidate, allowed_hosts)
     if proof:
         return {**base, 'tier': 'T1', 'verdict': 'PROVEN', 'eligible': True,
                 'reasons': ['REVIEWED_AUTHENTIC_PAYMENT_WITH_BUYER_PRODUCT_TIME_LINKAGE'],
                 'evidence_ids': [proof['evidence_id']], 'verified_payment': True}
-    points, reasons = _t2(candidate)
+    points, reasons = _t2(candidate, allowed_hosts)
     if points:
         return {**base, 'tier': 'T2', 'verdict': 'EMERGING', 'eligible': True,
                 'reasons': ['AT_LEAST_THREE_REVIEWED_SELF_REPORTED_REVENUE_PERIODS',
@@ -179,7 +192,7 @@ def evaluate_candidate(candidate):
     metadata = candidate.get('metadata', [])
     if isinstance(metadata, list):
         valid_meta = [item for item in metadata if isinstance(item, dict)
-                      and item.get('kind') in META_KINDS and _trace(item)]
+                      and item.get('kind') in META_KINDS and _trace(item, allowed_hosts)]
         if valid_meta:
             return {**base, 'tier': 'T3', 'verdict': 'HYPED', 'eligible': False,
                     'reasons': reasons + ['METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY'],

@@ -2,7 +2,7 @@
 import copy
 import unittest
 
-from money_trend.evidence_tiers import evaluate_candidate
+from money_trend.evidence_tiers import V2_HOSTS, evaluate_candidate
 
 
 def trace(eid='TEST01'):
@@ -137,3 +137,53 @@ class EvidenceTierTests(unittest.TestCase):
                 r = evaluate_candidate(value)
                 self.assertIsNone(r['tier'])
                 self.assertFalse(r['eligible'])
+
+    def test_v2_explicit_hn_scope_accepts_three_reviewed_periods_only_as_self_report(self):
+        doc = candidate()
+        for point in doc['points']:
+            point['source_url'] = 'https://hn.algolia.com/api/v1/items/123'
+        result = evaluate_candidate(doc, allowed_hosts=V2_HOSTS)
+        self.assertEqual((result['tier'], result['verdict']), ('T2', 'EMERGING'))
+        self.assertFalse(result['verified_payment'])
+        self.assertFalse(result['longitudinal_t7_t14_verified'])
+        self.assertIsNone(evaluate_candidate(doc)['tier'])
+
+    def test_v2_scope_excludes_disabled_rss_host(self):
+        self.assertIsNone(evaluate_candidate(candidate(), allowed_hosts=V2_HOSTS)['tier'])
+        self.assertEqual(evaluate_candidate(candidate())['tier'], 'T2')
+
+    def test_unknown_or_empty_scopes_fail_closed(self):
+        for scope in (None, (), [], set(), 'hn.algolia.com', {'example.com'},
+                      {'hn.algolia.com', 'example.com'}, [None], [True]):
+            with self.subTest(scope=scope):
+                result = evaluate_candidate(candidate(), allowed_hosts=scope)
+                self.assertIsNone(result['tier'])
+                self.assertFalse(result['eligible'])
+                self.assertEqual(result['reasons'], ['INVALID_SOURCE_SCOPE'])
+
+    def test_v2_credentialed_or_token_urls_never_become_t2(self):
+        for url in ('https://name:pass@hn.algolia.com/api/v1/items/123',
+                    'https://hn.algolia.com/api/v1/items/123?token=SYNTHETIC',
+                    'https://api.github.com/repos/test/test?client_secret=SYNTHETIC',
+                    'https://github.com/test/test?API_KEY=SYNTHETIC',
+                    'https://hn.algolia.com:8443/api/v1/items/123',
+                    'http://hn.algolia.com/api/v1/items/123',
+                    'https://hn.algolia.com.evil.invalid/api/v1/items/123'):
+            doc = candidate()
+            for point in doc['points']:
+                point['source_url'] = url
+            with self.subTest(url=url):
+                self.assertFalse(evaluate_candidate(doc, allowed_hosts=V2_HOSTS)['eligible'])
+
+    def test_t1_trace_respects_the_explicit_scope_without_weakening_payment_review(self):
+        proof = {**trace('TEST-T1-HN'), 'source_url': 'https://api.github.com/repos/test/test/readme',
+                 'proof_type': 'receipt', 'verification_status': 'VERIFIED_PAYMENT',
+                 'payment_status': 'PAID', 'product': 'TEST-PRODUCT', 'buyer': 'TEST-BUYER',
+                 'reviewer': 'TEST-REVIEWER', 'authenticity_verified': True,
+                 'buyer_product_time_linkage_verified': True, 'transaction_at': '2026-10-01T00:00:00Z',
+                 'reviewed_at': '2026-10-02T00:00:00Z'}
+        doc = {'product': 'TEST-PRODUCT', 't1_proof': proof}
+        self.assertEqual(evaluate_candidate(doc, allowed_hosts=V2_HOSTS)['tier'], 'T1')
+        self.assertIsNone(evaluate_candidate(doc)['tier'])
+        proof['authenticity_verified'] = False
+        self.assertIsNone(evaluate_candidate(doc, allowed_hosts=V2_HOSTS)['tier'])

@@ -1,0 +1,608 @@
+{
+  "run_id": "live-evidence-v2",
+  "reviewed_at": "2026-11-03T02:29:56.488007+00:00",
+  "review_mode": "OFFLINE_CAPTURED_SOURCE_DOCUMENTATION_REVIEW",
+  "network_requests": 0,
+  "github_reviews": [
+    {
+      "evidence_id": "V2-GH01",
+      "product": "agentscore/python-commerce",
+      "repo_url": "https://github.com/agentscore/python-commerce",
+      "product_kind": "PAYMENT_SDK",
+      "provider_mentioned": "stripe",
+      "overallqualification": false,
+      "assessments": {
+        "integration": {
+          "present": false,
+          "reason": "Documents merchant SDK Stripe capability, not billing integration of a captured current merchant product.",
+          "quote": "The full merchant-side SDK for [AgentScore](https://www.agentscore.com) in Python: agentic commerce in one install. Identity middleware (FastAPI, Flask, Django, AIOHTTP, Sanic, ASGI), payment helpers, 402 challenge builders, MPP discovery, and Stripe multichain support.",
+          "decoded_readme_line": 6,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 6"
+        },
+        "pricing": {
+          "present": false,
+          "reason": "Pricing helper and illustrative amounts are not a captured commercial pricing page for this SDK/product.",
+          "quote": "`build_pricing_block` handles cents → dollar-string (with optional shipping). Pass `discount_cents` for redemption codes / coupons: `subtotal` stays the list price, the block surfaces `discount` as a dollar-string, and `total` becomes `subtotal + tax + shipping - discount` (floored at 0). `pricing_result` accepts the same `discount_cents` and propagates it to `block.discount` so agents reading the 402 see the savings line. Pass `decimals: N` (default `2`) on either helper for sub-cent unit prici",
+          "decoded_readme_line": 274,
+          "quote_is_line_prefix": true,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 274"
+        },
+        "checkout": {
+          "present": false,
+          "reason": "Checkout is an SDK orchestrator for merchants; no current merchant product checkout is established.",
+          "quote": "`Checkout` is the canonical merchant surface: one config object, hooks for the merchant-specific pieces, and the SDK handles 402 emit, identity gating, x402 verify+settle, mppx compose, $0 carve-out, and the per-framework adapter. Most merchants reach for `Checkout` first and drop to lower-level helpers only when they need custom flows.",
+          "decoded_readme_line": 98,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 98"
+        },
+        "current_product_context": {
+          "present": false,
+          "reason": "SDK scope; cannot transfer third-party merchant billing capabilities into evidence of this product monetizing.",
+          "quote": "The full merchant-side SDK for [AgentScore](https://www.agentscore.com) in Python: agentic commerce in one install. Identity middleware (FastAPI, Flask, Django, AIOHTTP, Sanic, ASGI), payment helpers, 402 challenge builders, MPP discovery, and Stripe multichain support.",
+          "decoded_readme_line": 6,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 6"
+        }
+      },
+      "references": {
+        "source_url": "https://api.github.com/repos/agentscore/python-commerce/readme",
+        "raw_response_path": "artifacts/live-evidence-v2/ws1/requests/005_readme_1_1_c5fe9b67.body",
+        "raw_response_sha256": "21aab3644127f068ebb64145cb229b6d4c901215426540534befca1801162bb4",
+        "readme_path": "README.md",
+        "decoded_sha256": "9bee1b0e2f6686fb964bc020b7f991574ae87d1ce3257ac6a7a166c9fbe45bfb",
+        "blob_sha": "833a33c0a0a3922caf9594fabee011c7e17a4b85"
+      },
+      "deployed_checkout_verified": false,
+      "checkout_executed": false,
+      "transaction_verified": false,
+      "verified_payment": false
+    },
+    {
+      "evidence_id": "V2-GH02",
+      "product": "agentscore/node-commerce",
+      "repo_url": "https://github.com/agentscore/node-commerce",
+      "product_kind": "PAYMENT_SDK",
+      "provider_mentioned": "stripe",
+      "overallqualification": false,
+      "assessments": {
+        "integration": {
+          "present": false,
+          "reason": "Merchant-side SDK supports Stripe; this is not evidence that its own product uses a paid billing integration.",
+          "quote": "The full merchant-side SDK for [AgentScore](https://www.agentscore.com): agentic commerce in one install. Ships identity gating, payment rail helpers, 402 challenge builders, MPP discovery, and Stripe multichain support. Built and maintained by AgentScore; works with any x402/MPP merchant in the ecosystem, AgentScore-gated or not.",
+          "decoded_readme_line": 6,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 6"
+        },
+        "pricing": {
+          "present": false,
+          "reason": "Pricing-block construction is a library helper, not this product pricing page.",
+          "quote": "`buildPricingBlock` handles cents → dollar-string conversion (with optional shipping). Pass `discountCents` for redemption codes / coupons: `subtotal` stays the list price, the block surfaces `discount` as a dollar-string, and `total` becomes `subtotal + tax + shipping - discount` (floored at 0). `pricingResult` accepts the same `discountCents` and propagates it to `block.discount` so agents reading the 402 see the savings line. Pass `decimals: N` (default `2`) on either helper for sub-cent unit",
+          "decoded_readme_line": 253,
+          "quote_is_line_prefix": true,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 253"
+        },
+        "checkout": {
+          "present": false,
+          "reason": "Canonical merchant SDK surface is documented; no specific current product checkout is captured.",
+          "quote": "`Checkout` is the canonical merchant surface for fixed-price one-shot endpoints: one config object, hooks for the merchant-specific pieces, and the SDK handles 402 emit, identity gating, x402 verify+settle, mppx compose, $0 carve-out, and the per-framework adapter. Most fixed-price merchants reach for `Checkout` first.",
+          "decoded_readme_line": 101,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 101"
+        },
+        "current_product_context": {
+          "present": false,
+          "reason": "SDK shipped for merchants; captured documentation does not establish a merchant product and its own paid plan.",
+          "quote": "The full merchant-side SDK for [AgentScore](https://www.agentscore.com): agentic commerce in one install. Ships identity gating, payment rail helpers, 402 challenge builders, MPP discovery, and Stripe multichain support. Built and maintained by AgentScore; works with any x402/MPP merchant in the ecosystem, AgentScore-gated or not.",
+          "decoded_readme_line": 6,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 6"
+        }
+      },
+      "references": {
+        "source_url": "https://api.github.com/repos/agentscore/node-commerce/readme",
+        "raw_response_path": "artifacts/live-evidence-v2/ws1/requests/006_readme_2_1_06e3a36f.body",
+        "raw_response_sha256": "53c89a62e13be7083164b29cd0d19a794376df6c09383299ecef38701191bf1b",
+        "readme_path": "README.md",
+        "decoded_sha256": "b8ffb466ee81f77449e35fc6396f9fde577f511f9ec3623fbeec153d51e18dfe",
+        "blob_sha": "55d844f4dee980c0f6d8a0b52a74026f8cb0c8de"
+      },
+      "deployed_checkout_verified": false,
+      "checkout_executed": false,
+      "transaction_verified": false,
+      "verified_payment": false
+    },
+    {
+      "evidence_id": "V2-GH03",
+      "product": "Holojerm/nuxt-cf-template",
+      "repo_url": "https://github.com/Holojerm/nuxt-cf-template",
+      "product_kind": "APPLICATION_TEMPLATE",
+      "provider_mentioned": "paddle",
+      "overallqualification": false,
+      "assessments": {
+        "integration": {
+          "present": false,
+          "reason": "Paddle billing is a template feature. README explicitly allows unset provider/price and disabled plan button.",
+          "quote": "| Billing | Paddle (merchant of record) — checkout, entitlements, self-serve cancellation |",
+          "decoded_readme_line": 14,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 14"
+        },
+        "pricing": {
+          "present": false,
+          "reason": "File-routing inventory mentions pricing but captures no actual commercial plan or pricing-page content.",
+          "quote": "│   ├── pages/          # File-based routing (landing, pricing, login, account, dashboard, legal)",
+          "decoded_readme_line": 261,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 261"
+        },
+        "checkout": {
+          "present": false,
+          "reason": "Template may have its plan button disabled when Paddle price is unset; no deployed/current product checkout established.",
+          "quote": "means that plan's button is disabled, an unset Resend key means emails are logged no-ops, an unset",
+          "decoded_readme_line": 134,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 134"
+        },
+        "current_product_context": {
+          "present": false,
+          "reason": "Explicit full-stack application template, requiring fork/configuration; not proof of a distinct operating paid product.",
+          "quote": "A production-ready template for full-stack apps on **Nuxt 4 + Cloudflare Workers**.",
+          "decoded_readme_line": 3,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 3"
+        }
+      },
+      "references": {
+        "source_url": "https://api.github.com/repos/Holojerm/nuxt-cf-template/readme",
+        "raw_response_path": "artifacts/live-evidence-v2/ws1/requests/007_readme_3_1_d1bd6f73.body",
+        "raw_response_sha256": "d413b8f757b7e6881cc221995995c43b9429cef7a0b0e3d053686cef584fd74a",
+        "readme_path": "README.md",
+        "decoded_sha256": "360fbe4d3f964c1fcf4dc0cd077ef14aebe714d6c5d7d0fb2cfbf885891b9413",
+        "blob_sha": "9e9a33211892b19d786d4d5dbd489be1ae3dba19"
+      },
+      "deployed_checkout_verified": false,
+      "checkout_executed": false,
+      "transaction_verified": false,
+      "verified_payment": false
+    },
+    {
+      "evidence_id": "V2-GH04",
+      "product": "PaddleHQ/paddle-go-sdk",
+      "repo_url": "https://github.com/PaddleHQ/paddle-go-sdk",
+      "product_kind": "PAYMENT_PROVIDER_SDK",
+      "provider_mentioned": "paddle",
+      "overallqualification": false,
+      "assessments": {
+        "integration": {
+          "present": false,
+          "reason": "Official-looking Paddle SDK is for integrating arbitrary applications, not this library own product billing.",
+          "quote": "This is a [Go](https://go.dev/) SDK that you can use to integrate Paddle Billing with applications written in server-side Go.",
+          "decoded_readme_line": 5,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 5"
+        },
+        "pricing": {
+          "present": false,
+          "reason": "README says developers can build pricing pages with Paddle.js; no captured product pricing page.",
+          "quote": "For working with Paddle in your frontend, use [Paddle.js](https://developer.paddle.com/paddlejs/overview?utm_source=dx&utm_medium=paddle-go-sdk). You can open checkouts, securely collect payment information, build pricing pages, and integrate with Paddle Retain.  ",
+          "decoded_readme_line": 7,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 7"
+        },
+        "checkout": {
+          "present": false,
+          "reason": "Generic frontend capabilities and external documentation link are not a same-product implemented checkout flow.",
+          "quote": "For working with Paddle in your frontend, use [Paddle.js](https://developer.paddle.com/paddlejs/overview?utm_source=dx&utm_medium=paddle-go-sdk). You can open checkouts, securely collect payment information, build pricing pages, and integrate with Paddle Retain.  ",
+          "decoded_readme_line": 7,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 7"
+        },
+        "current_product_context": {
+          "present": false,
+          "reason": "Repository is a Go SDK, not a captured merchant app with its own pricing and checkout.",
+          "quote": "This is a [Go](https://go.dev/) SDK that you can use to integrate Paddle Billing with applications written in server-side Go.",
+          "decoded_readme_line": 5,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 5"
+        }
+      },
+      "references": {
+        "source_url": "https://api.github.com/repos/PaddleHQ/paddle-go-sdk/readme",
+        "raw_response_path": "artifacts/live-evidence-v2/ws1/requests/008_readme_4_1_8db48ac7.body",
+        "raw_response_sha256": "82cc1e194627c75f8c4542d9cef955df8b7d46360b95066586081e62775c6322",
+        "readme_path": "README.md",
+        "decoded_sha256": "20216bc7514199896b607f31ebfdfb428f043a35d27a23df8ab25bf63b68fc79",
+        "blob_sha": "866dafacba39c5aba1f78068d9d164502c7d91b8"
+      },
+      "deployed_checkout_verified": false,
+      "checkout_executed": false,
+      "transaction_verified": false,
+      "verified_payment": false
+    },
+    {
+      "evidence_id": "V2-GH05",
+      "product": "YawLabs/lemonsqueezy-mcp",
+      "repo_url": "https://github.com/YawLabs/lemonsqueezy-mcp",
+      "product_kind": "STORE_MANAGEMENT_MCP_SERVER",
+      "provider_mentioned": "lemonsqueezy",
+      "overallqualification": false,
+      "assessments": {
+        "integration": {
+          "present": false,
+          "reason": "LemonSqueezy API store-management integration capability is documented; no billing for this MCP product is established.",
+          "quote": "MCP server for the [LemonSqueezy](https://lemonsqueezy.com) API. Manage your store, products, customers, subscriptions, discounts, license keys, and more from any MCP-compatible AI assistant.",
+          "decoded_readme_line": 7,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 7"
+        },
+        "pricing": {
+          "present": false,
+          "reason": "Price-record annotations for merchant API data do not establish this product pricing page.",
+          "quote": "Both annotate every price record with `effective_unit_price`, the cents actually charged per unit, and `effective_unit_price_note`, which says where that number came from; `unit_price_is_not_charged` or `unit_price_is_per_package` is added where it applies. Read `effective_unit_price` rather than `unit_price`, which is vestigial on tiered (`volume` / `graduated`) pricing, or a variant's `price`. The subscription-item reads apply the same annotation to prices embedded via `include=price`.",
+          "decoded_readme_line": 145,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 145"
+        },
+        "checkout": {
+          "present": false,
+          "reason": "Tool can create checkout URLs for a store; not evidence that this MCP product has its own commercial checkout.",
+          "quote": "- `ls_create_checkout` — Create a checkout URL (custom pricing, prefill, discounts)",
+          "decoded_readme_line": 206,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 206"
+        },
+        "current_product_context": {
+          "present": false,
+          "reason": "MCP API tooling for other stores, not a captured same-product merchant offering.",
+          "quote": "MCP server for the [LemonSqueezy](https://lemonsqueezy.com) API. Manage your store, products, customers, subscriptions, discounts, license keys, and more from any MCP-compatible AI assistant.",
+          "decoded_readme_line": 7,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 7"
+        }
+      },
+      "references": {
+        "source_url": "https://api.github.com/repos/YawLabs/lemonsqueezy-mcp/readme",
+        "raw_response_path": "artifacts/live-evidence-v2/ws1/requests/009_readme_5_1_4b4d2d6a.body",
+        "raw_response_sha256": "be31b6b36ca6aaaa718044de7350f50ff0aebda8e501ef53b95fab125949c5b0",
+        "readme_path": "README.md",
+        "decoded_sha256": "2c648e61642f00ef402bdf1c636440bb7315269887de83e57f3a5a3541951595",
+        "blob_sha": "7357ed21d58143144c6db126638c783323809fe0"
+      },
+      "deployed_checkout_verified": false,
+      "checkout_executed": false,
+      "transaction_verified": false,
+      "verified_payment": false
+    },
+    {
+      "evidence_id": "V2-GH06",
+      "product": "capawesome-team/revenue-sdk",
+      "repo_url": "https://github.com/capawesome-team/revenue-sdk",
+      "product_kind": "PAYMENT_SDK",
+      "provider_mentioned": "stripe",
+      "overallqualification": false,
+      "assessments": {
+        "integration": {
+          "present": false,
+          "reason": "SDK wraps several payment providers. This capability is not its own product billing integration.",
+          "quote": "A unified, normalized, zero-dependency, edge-compatible TypeScript SDK over [Polar](https://polar.sh), [Lemon Squeezy](https://lemonsqueezy.com), [Stripe](https://stripe.com), [Paddle](https://paddle.com), and [Dodo Payments](https://dodopayments.com). Write your products, checkout, subscription, customer-portal, billing-history, usage and webhook logic once against one normalized API — built on raw `fetch` and Web Crypto, so it runs on Node, Cloudflare Workers, and other Web-standard runtimes.",
+          "decoded_readme_line": 7,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 7"
+        },
+        "pricing": {
+          "present": false,
+          "reason": "Pricing-page guide points to an external documentation host that was not fetched; no product pricing page captured.",
+          "quote": "- [Guides](https://revenue-sdk.dev/docs/guides/checkout-flow) — pricing page, checkout flow, webhook handler, subscription management, Cloudflare Workers, custom providers",
+          "decoded_readme_line": 180,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 180"
+        },
+        "checkout": {
+          "present": false,
+          "reason": "Quickstart creates a generic checkout, not a captured commercial checkout for this SDK or Capawesome.",
+          "quote": "Create a checkout and redirect the customer to it.",
+          "decoded_readme_line": 37,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 37"
+        },
+        "current_product_context": {
+          "present": false,
+          "reason": "Statement that SDK powers Capawesome does not supply Capawesome pricing/checkout proof; external app was not opened.",
+          "quote": "revenue-sdk is developed and maintained by [Genz IT Solutions GmbH](https://genz-its.com/). It powers [Capawesome](https://capawesome.io/), a cloud platform for mobile apps.",
+          "decoded_readme_line": 212,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 212"
+        }
+      },
+      "references": {
+        "source_url": "https://api.github.com/repos/capawesome-team/revenue-sdk/readme",
+        "raw_response_path": "artifacts/live-evidence-v2/ws1/requests/010_readme_6_1_495b6514.body",
+        "raw_response_sha256": "c1f51ac170cb5e0f9841904b225de23c400af83c45e76942054548f54366224a",
+        "readme_path": "README.md",
+        "decoded_sha256": "6a653df38a28fd0ee29d046c50c3735e78744501f9548dd5c4b6b53a66d28cd9",
+        "blob_sha": "bb99652f76afd55dda15e6b11369b866d38f51d2"
+      },
+      "deployed_checkout_verified": false,
+      "checkout_executed": false,
+      "transaction_verified": false,
+      "verified_payment": false
+    },
+    {
+      "evidence_id": "V2-GH07",
+      "product": "euron-sde-team/euron-open-crm",
+      "repo_url": "https://github.com/euron-sde-team/euron-open-crm",
+      "product_kind": "SELF_HOSTED_CRM",
+      "provider_mentioned": "stripe",
+      "overallqualification": false,
+      "assessments": {
+        "integration": {
+          "present": true,
+          "reason": "Current product documentation explicitly describes operator platform billing through Stripe or Razorpay; documentation only, no runtime verification.",
+          "quote": "- Platform billing through the operator's Stripe or Razorpay: subscriptions, webhooks, a",
+          "decoded_readme_line": 220,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 220"
+        },
+        "pricing": {
+          "present": false,
+          "reason": "Plans and entitlements are documented, but no captured pricing page, paid plan table or pricing-page implementation.",
+          "quote": "- **What a workspace bought is what it gets.** Plans are sales artifacts; at onboarding the",
+          "decoded_readme_line": 63,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 63"
+        },
+        "checkout": {
+          "present": false,
+          "reason": "Invoice/payment-link capabilities are described, but no concrete same-product pricing-to-checkout flow is captured.",
+          "quote": "- Invoices, payment links, payments and refunds through each workspace's own Razorpay or",
+          "decoded_readme_line": 206,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 206"
+        },
+        "current_product_context": {
+          "present": true,
+          "reason": "README identifies a specific self-hosted CRM product. This establishes documentation context, not live deployment or actual payments.",
+          "quote": "**Euron Open CRM** is an open-source, self-hosted, **multi-tenant CRM**: one deployment serves",
+          "decoded_readme_line": 47,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 47"
+        }
+      },
+      "references": {
+        "source_url": "https://api.github.com/repos/euron-sde-team/euron-open-crm/readme",
+        "raw_response_path": "artifacts/live-evidence-v2/ws1/requests/011_readme_7_1_3cd4b18f.body",
+        "raw_response_sha256": "ddcc4d62561e1861acb368f929ce5747d4c19f2cca0526063aca247199bb91d7",
+        "readme_path": "README.md",
+        "decoded_sha256": "f22efd29ac5cbd8791d2b04e1635c4b444f6124bbbe9d48dc403738480ec0a44",
+        "blob_sha": "2be0e29700321e9a0c917ae33a9481a72ecc85b7"
+      },
+      "deployed_checkout_verified": false,
+      "checkout_executed": false,
+      "transaction_verified": false,
+      "verified_payment": false
+    },
+    {
+      "evidence_id": "V2-GH08",
+      "product": "luckie9/ai-dev-starter",
+      "repo_url": "https://github.com/luckie9/ai-dev-starter",
+      "product_kind": "SAAS_STARTER",
+      "provider_mentioned": "stripe",
+      "overallqualification": false,
+      "assessments": {
+        "integration": {
+          "present": true,
+          "reason": "README documents Stripe/subscription wiring for this starter; current deployment remains unverified and configuration-dependent.",
+          "quote": "Built on **Next.js 16 + Supabase + Stripe** with authentication, PostgreSQL Row Level Security, subscriptions, and a marketing/dashboard UI — so founders ship product, not plumbing.",
+          "decoded_readme_line": 7,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 7"
+        },
+        "pricing": {
+          "present": false,
+          "reason": "The $29/month amount is a setup placeholder (your price); external Pro-pricing URL was not fetched.",
+          "quote": "Fill in your Supabase and Stripe keys. For Pro billing, set `NEXT_PUBLIC_STRIPE_PRICE_ID` to your `$29/month` price.",
+          "decoded_readme_line": 53,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 53"
+        },
+        "checkout": {
+          "present": false,
+          "reason": "README alleges live-demo checkout wiring but captured source does not verify actual product checkout; external sandbox was not opened.",
+          "quote": "> Unlock Stripe Checkout wiring, webhook sync, and production billing flows used by the live demo.  ",
+          "decoded_readme_line": 10,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 10"
+        },
+        "current_product_context": {
+          "present": false,
+          "reason": "Explicit boilerplate/starter and live sandbox; own operating paid product context has not been established by the capture.",
+          "quote": "Zero-Human-Click boilerplate powered by Cursor and Vercel — launch production-ready SaaS apps and MVPs in minutes instead of weeks.",
+          "decoded_readme_line": 3,
+          "quote_is_line_prefix": false,
+          "source_type": "DOCUMENTATION",
+          "raw_locator": "content (strict base64 decoded UTF-8), line 3"
+        }
+      },
+      "references": {
+        "source_url": "https://api.github.com/repos/luckie9/ai-dev-starter/readme",
+        "raw_response_path": "artifacts/live-evidence-v2/ws1/requests/012_readme_8_1_080655f5.body",
+        "raw_response_sha256": "453949829c231a8d68d63036d305e8090b5bd5163f48982d51f6240fed6fbdd6",
+        "readme_path": "README.md",
+        "decoded_sha256": "6a25e8bc959b6333f3a750e8ea82f80726aa064cfe9e0ad4d4bfd647968c323e",
+        "blob_sha": "9f840cbddefa99165796715a141209e0b5d12a06"
+      },
+      "deployed_checkout_verified": false,
+      "checkout_executed": false,
+      "transaction_verified": false,
+      "verified_payment": false
+    }
+  ],
+  "hn_reviews": [
+    {
+      "evidence_id": "V2-HN01",
+      "source_id": "50334946",
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=paying+customers&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "raw_response_path": "artifacts/live-evidence-v2/ws2/requests/001_hn_v2_1_1_b4851557.body",
+      "raw_response_sha256": "07edadb6bf732bc32b3e7d068b7f4b731028f3cf5307d03f9971ae13e22f51d8",
+      "raw_locator": "hits[0].comment_text",
+      "quote": "As a paying customer, I wish they would first the products they already have. E.g. shortcuts rarely work in the Proton Mail web interface last time I tried it. Or if I share folders with a family member, they don&#x27;t get actually synced by the Proton Drive client (they can only be accessed through the web interface).",
+      "overallqualification": false,
+      "reason": "Author self-identifies as a paying Proton customer; no independently verified identity/transaction, founder claim or all-three same-product infrastructure evidence.",
+      "full_raw_field_reviewed": true,
+      "deployed_checkout_verified": false,
+      "transaction_verified": false
+    },
+    {
+      "evidence_id": "V2-HN02",
+      "source_id": "50334266",
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=paying+customers&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "raw_response_path": "artifacts/live-evidence-v2/ws2/requests/001_hn_v2_1_1_b4851557.body",
+      "raw_response_sha256": "07edadb6bf732bc32b3e7d068b7f4b731028f3cf5307d03f9971ae13e22f51d8",
+      "raw_locator": "hits[1].comment_text",
+      "quote": "Google Mail&#x27;s $5&#x2F;seat offering is the first one that comes to mind.<p><pre><code>  04 May 2011\n  Starting with Chrome 13, we&#x27;ll have HTTPS pins for most Google properties. This means that certificate chains for, say, https:&#x2F;&#x2F;www.google.com, must include a whitelisted public key. It&#x27;s a fatal error otherwise. \n\n  https:&#x2F;&#x2F;www.imperialviolet.org&#x2F;2011&#x2F;05&#x2F;04&#x2F;pinning.html\n</code></pre>\nImperialViolet is Adam Langley’s personal technical blog.",
+      "overallqualification": false,
+      "reason": "Captured text has no complete same-product provider integration + pricing page + checkout flow; keyword match is not a qualifying payment-infrastructure proof.",
+      "full_raw_field_reviewed": true,
+      "deployed_checkout_verified": false,
+      "transaction_verified": false
+    },
+    {
+      "evidence_id": "V2-HN03",
+      "source_id": "50335122",
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=MRR&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "raw_response_path": "artifacts/live-evidence-v2/ws2/requests/002_hn_v2_2_1_3c012b9c.body",
+      "raw_response_sha256": "42c6ba5823747f520afb0dcf773dbbff6d0d4f59b6ea9479fbbe1fc349fe8190",
+      "raw_locator": "hits[0].story_text",
+      "quote": "Free daily logic puzzles without Ads.\nCheck it out: gridmino.com<p>My site offers puzzles where some of them are a new take on already established classics like Minesweeper, Kakuro, or Masyu. For example, my Minesweeper is called Dicesweep, where you need to place dice beside numbers while also matching the row and column rules.<p>Another interesting one is Kakumino. It&#x27;s like Kakuro, but you place dominoes instead of numbers.<p>There are a bunch of them, so there&#x27;s something for every",
+      "overallqualification": false,
+      "reason": "Captured text has no complete same-product provider integration + pricing page + checkout flow; keyword match is not a qualifying payment-infrastructure proof.",
+      "full_raw_field_reviewed": true,
+      "deployed_checkout_verified": false,
+      "transaction_verified": false
+    },
+    {
+      "evidence_id": "V2-HN04",
+      "source_id": "50335118",
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=MRR&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "raw_response_path": "artifacts/live-evidence-v2/ws2/requests/002_hn_v2_2_1_3c012b9c.body",
+      "raw_response_sha256": "42c6ba5823747f520afb0dcf773dbbff6d0d4f59b6ea9479fbbe1fc349fe8190",
+      "raw_locator": "hits[1].comment_text",
+      "quote": "IMO, the real reason they were laid off is because our economic system is broken. It&#x27;s wealth concentration for those in the center of the scheme and deprivation for those in the periphery.<p>Rapid technological improvement is just a convenient justification for letting people go. It sounds a lot better than the real explanation &quot;The system is broken and we need to keep optimizing money flows to sustain the scheme to prevent hyperinflation.&quot; The system destroys value faster than t",
+      "overallqualification": false,
+      "reason": "Captured text has no complete same-product provider integration + pricing page + checkout flow; keyword match is not a qualifying payment-infrastructure proof.",
+      "full_raw_field_reviewed": true,
+      "deployed_checkout_verified": false,
+      "transaction_verified": false
+    },
+    {
+      "evidence_id": "V2-HN05",
+      "source_id": "50335192",
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=revenue&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "raw_response_path": "artifacts/live-evidence-v2/ws2/requests/003_hn_v2_3_1_9e20963f.body",
+      "raw_response_sha256": "11542f101926ef999f036b09242e9082a5cb60965f007d033ce0c2e2587945f7",
+      "raw_locator": "hits[0].comment_text",
+      "quote": "I get the anger; I think this is misguided. I know this will be distinctly unpopular (bye-bye karma!)<p>SWEs in general have been paid significantly higher salaries for decades in part because of the skill level needed and that they are generally working on capital projects (build new thing) vs operational projects (maintain thing built). It&#x27;s the difference between needing a Landscaper to come in a completely reshape a bit of land for £10k once, and Gardener to come in a mow&#x2F;prune onc",
+      "overallqualification": false,
+      "reason": "Captured text has no complete same-product provider integration + pricing page + checkout flow; keyword match is not a qualifying payment-infrastructure proof.",
+      "full_raw_field_reviewed": true,
+      "deployed_checkout_verified": false,
+      "transaction_verified": false
+    },
+    {
+      "evidence_id": "V2-HN06",
+      "source_id": "50335139",
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=revenue&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "raw_response_path": "artifacts/live-evidence-v2/ws2/requests/003_hn_v2_3_1_9e20963f.body",
+      "raw_response_sha256": "11542f101926ef999f036b09242e9082a5cb60965f007d033ce0c2e2587945f7",
+      "raw_locator": "hits[1].comment_text",
+      "quote": "fresh (most likely) automatically reversed and dev&#x27;d port of the Propellerhead Software (now Reason Studios) legendary RB-338 software, now working on all major platforms.",
+      "overallqualification": false,
+      "reason": "Captured text has no complete same-product provider integration + pricing page + checkout flow; keyword match is not a qualifying payment-infrastructure proof.",
+      "full_raw_field_reviewed": true,
+      "deployed_checkout_verified": false,
+      "transaction_verified": false
+    },
+    {
+      "evidence_id": "V2-HN07",
+      "source_id": "50334908",
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=Stripe&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "raw_response_path": "artifacts/live-evidence-v2/ws2/requests/004_hn_v2_4_1_ebb6b4c6.body",
+      "raw_response_sha256": "56ca786d41ed781670bb8f1da4607b71ddec4b45ef1f86cb79029a20499331b2",
+      "raw_locator": "hits[0].comment_text",
+      "quote": "&gt; The whole reason to pay for software is to offload the liability to a 3rd-party. In simpler words: &quot;As a company, I have this need and I don&#x27;t want to solve it myself. Also, if I pay someone, I can sue them on contract breach just in case.&quot;<p>Ah management-style cover-your-ass engineering. Which doesn&#x27;t work even with things like IBM contracts, never mind with anyone smaller. The problem is what they actually guarantee.<p>When you actually investigate the question (becau",
+      "overallqualification": false,
+      "reason": "Captured text has no complete same-product provider integration + pricing page + checkout flow; keyword match is not a qualifying payment-infrastructure proof.",
+      "full_raw_field_reviewed": true,
+      "deployed_checkout_verified": false,
+      "transaction_verified": false
+    }
+  ],
+  "qualified_t25_candidates": [],
+  "summary": {
+    "github_repos_reviewed": 8,
+    "hn_records_reviewed": 7,
+    "complete_t25_cases": 0,
+    "payment_sdks_or_api_tooling": 5,
+    "application_templates_or_starters": 2,
+    "crm_with_partial_billing_documentation": 1
+  },
+  "cautions": [
+    {
+      "evidence_id": "V2-GH05",
+      "decoded_readme_lines": [
+        30,
+        31,
+        32,
+        33,
+        35,
+        36,
+        37,
+        38
+      ],
+      "finding": "Example assistant conversation includes $14,280/84 subscriptions and $99 refund; illustrative demo, not real MRR or transaction proof."
+    },
+    {
+      "evidence_id": "V2-GH08",
+      "decoded_readme_line": 53,
+      "finding": "$29/month is a setup example (your price), not verified actual product pricing."
+    }
+  ],
+  "limits": [
+    "Review confirms captured source statements and their context, not source truth or deployment.",
+    "No external docs/app/pricing/checkout URLs opened.",
+    "No checkout or source command executed; no credentials/environment/files outside captured public source read.",
+    "SDK billing capabilities cannot be joined to an unfetched merchant product to fabricate T2.5."
+  ]
+}

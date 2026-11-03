@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/repos/capawesome-team/revenue-sdk/readme",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:54:59.755537+00:00",
+  "sha256": "c1f51ac170cb5e0f9841904b225de23c400af83c45e76942054548f54366224a",
+  "bytes": 16718,
+  "body_file": "010_readme_6_1_495b6514.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "54",
+    "X-RateLimit-Reset": "1793620464"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/repos/Holojerm/nuxt-cf-template/readme",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:54:38.846511+00:00",
+  "sha256": "d413b8f757b7e6881cc221995995c43b9429cef7a0b0e3d053686cef584fd74a",
+  "bytes": 126344,
+  "body_file": "007_readme_3_1_d1bd6f73.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "57",
+    "X-RateLimit-Reset": "1793620464"
+  }
+}

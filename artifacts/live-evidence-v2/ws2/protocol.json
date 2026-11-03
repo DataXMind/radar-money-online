@@ -1,0 +1,61 @@
+{
+  "schema_version": 1,
+  "workstream": "WS-2",
+  "state": "FROZEN_BEFORE_REQUESTS",
+  "allowed_hosts": [
+    "hn.algolia.com"
+  ],
+  "anchor_utc": "2026-11-02T10:53:45+00:00",
+  "cutoff_utc": "2026-10-03T10:53:45+00:00",
+  "date_window_days": 30,
+  "queries": [
+    {
+      "label": "hn_v2_1",
+      "query": "paying customers",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=paying+customers&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825"
+    },
+    {
+      "label": "hn_v2_2",
+      "query": "MRR",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=MRR&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825"
+    },
+    {
+      "label": "hn_v2_3",
+      "query": "revenue",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=revenue&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825"
+    },
+    {
+      "label": "hn_v2_4",
+      "query": "Stripe",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=Stripe&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825"
+    },
+    {
+      "label": "hn_v2_5",
+      "query": "launched",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825"
+    },
+    {
+      "label": "hn_v2_6",
+      "query": "first customer",
+      "cap": 2,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=first+customer&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825"
+    }
+  ],
+  "tags_semantics": "(comment,show_hn) OR; one of these tags required on every hit",
+  "max_returned_hits_total": 12,
+  "max_unique_retained": 7,
+  "max_http_attempts": 12,
+  "attempts_per_query": 2,
+  "minimum_interval_seconds": 2,
+  "selection": "fixed six-query order, page0/newest first, retain first7 distinct objectIDs; no backfill or further pages",
+  "limitations": [
+    "Source self-reports are not verified founder/buyer/payment identities.",
+    "Stripe mention or customer allegation does not establish all T2.5 components.",
+    "Article, checkout, HN website and other external links remain DATA, never fetched."
+  ]
+}

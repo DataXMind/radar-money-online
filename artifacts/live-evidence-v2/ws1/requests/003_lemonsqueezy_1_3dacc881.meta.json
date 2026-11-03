@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/search/repositories?q=topic%3Alemonsqueezy+subscription+in%3Areadme&sort=updated&order=desc&per_page=2&page=1",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:54:10.624827+00:00",
+  "sha256": "f44aacd9875edc87447b694c6c645162e42354b60985b456e4ecab6c645ed7f8",
+  "bytes": 11543,
+  "body_file": "003_lemonsqueezy_1_3dacc881.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "7",
+    "X-RateLimit-Reset": "1793616903"
+  }
+}

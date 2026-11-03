@@ -48,6 +48,11 @@ def write_report(out, log, result, root):
     if all(p.is_file() for p in retry_paths):
         report['retry_t7_bundle_sha256'] = {
             p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in retry_paths}
+    live_v2_paths = [root / name for name in ('scripts/merge_live_evidence_v2.py', 'config/production_v1.json',
+                     'docs/evidence_criteria.md')]
+    if all(p.is_file() for p in live_v2_paths):
+        report['live_v2_bundle_sha256'] = {
+            p.relative_to(root).as_posix(): hashlib.sha256(p.read_bytes()).hexdigest() for p in live_v2_paths}
     agent_files = sorted((root / '.codex/agents').glob('*.toml'))
     if agent_files:
         agent_files += sorted((root / '.codex/hooks').glob('*.py'))

@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/repos/agentscore/python-commerce/readme",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:54:24.634514+00:00",
+  "sha256": "21aab3644127f068ebb64145cb229b6d4c901215426540534befca1801162bb4",
+  "bytes": 56105,
+  "body_file": "005_readme_1_1_c5fe9b67.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "59",
+    "X-RateLimit-Reset": "1793620464"
+  }
+}

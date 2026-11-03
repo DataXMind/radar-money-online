@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/repos/agentscore/node-commerce/readme",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:54:31.631129+00:00",
+  "sha256": "53c89a62e13be7083164b29cd0d19a794376df6c09383299ecef38701191bf1b",
+  "bytes": 55013,
+  "body_file": "006_readme_2_1_06e3a36f.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "58",
+    "X-RateLimit-Reset": "1793620464"
+  }
+}

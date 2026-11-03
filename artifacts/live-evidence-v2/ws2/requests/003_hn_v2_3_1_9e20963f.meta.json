@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=revenue&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:53:49.537466+00:00",
+  "sha256": "11542f101926ef999f036b09242e9082a5cb60965f007d033ce0c2e2587945f7",
+  "bytes": 7082,
+  "body_file": "003_hn_v2_3_1_9e20963f.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

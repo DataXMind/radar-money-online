@@ -1,0 +1,45 @@
+{
+  "recorded_at": "2026-11-02T10:53:56.024004+00:00",
+  "workstream": "WS-1 GitHub T2.5 scout",
+  "allowed_hosts": [
+    "api.github.com"
+  ],
+  "public_anonymous_get_only": true,
+  "queries": [
+    {
+      "label": "ai_agent",
+      "q": "topic:ai-agent stripe pricing in:readme",
+      "url": "https://api.github.com/search/repositories?q=topic%3Aai-agent+stripe+pricing+in%3Areadme&sort=updated&order=desc&per_page=2&page=1"
+    },
+    {
+      "label": "paddle",
+      "q": "topic:paddle saas checkout in:readme",
+      "url": "https://api.github.com/search/repositories?q=topic%3Apaddle+saas+checkout+in%3Areadme&sort=updated&order=desc&per_page=2&page=1"
+    },
+    {
+      "label": "lemonsqueezy",
+      "q": "topic:lemonsqueezy subscription in:readme",
+      "url": "https://api.github.com/search/repositories?q=topic%3Alemonsqueezy+subscription+in%3Areadme&sort=updated&order=desc&per_page=2&page=1"
+    },
+    {
+      "label": "stripe_saas",
+      "q": "topic:stripe topic:saas payment in:readme",
+      "url": "https://api.github.com/search/repositories?q=topic%3Astripe+topic%3Asaas+payment+in%3Areadme&sort=updated&order=desc&per_page=2&page=1"
+    }
+  ],
+  "selection": "Fixed first-page order; dedupe numeric repository ID across searches; max8 unique repos. No replacement queries.",
+  "detail_selection": "Read /readme for discovered repositories in retained order; README only, no file tree or secret/config paths.",
+  "max_retained_repos": 8,
+  "max_discovery_http_attempts": 4,
+  "max_readme_http_attempts": 8,
+  "max_http_attempts_total": 12,
+  "attempts_per_url": 1,
+  "interval_seconds": 7,
+  "timeout_seconds": 15,
+  "stop": "Any request/schema failure stops this source; never bypass a rate limit.",
+  "limitations": [
+    "README mentions and repository topics are leads, not evidence that a checkout is active.",
+    "No payment/pricing external domain or source code is executed/fetched.",
+    "No paid customer/payment transaction is proved; a single snapshot does not prove trend."
+  ]
+}

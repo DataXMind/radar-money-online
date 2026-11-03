@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/search/repositories?q=topic%3Astripe+topic%3Asaas+payment+in%3Areadme&sort=updated&order=desc&per_page=2&page=1",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:54:17.609526+00:00",
+  "sha256": "aa2b5e73d18acf45070cbac42bf70b075b8f9a1b37872b201d8f90c402b8fa7c",
+  "bytes": 11669,
+  "body_file": "004_stripe_saas_1_53732b78.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "5",
+    "X-RateLimit-Reset": "1793616903"
+  }
+}

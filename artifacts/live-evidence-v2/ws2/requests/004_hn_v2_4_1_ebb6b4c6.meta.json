@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=Stripe&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:53:51.556378+00:00",
+  "sha256": "56ca786d41ed781670bb8f1da4607b71ddec4b45ef1f86cb79029a20499331b2",
+  "bytes": 8368,
+  "body_file": "004_hn_v2_4_1_ebb6b4c6.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

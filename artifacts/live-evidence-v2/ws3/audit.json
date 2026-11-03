@@ -1,0 +1,68 @@
+{
+  "workstream": "WS-3",
+  "run_id": "live-evidence-v2",
+  "audited_at": "2026-11-02T10:53:08.755082+00:00",
+  "status": "BASELINE_INTACT_WITH_GAPS",
+  "integrity": "PASS",
+  "audit_mode": "offline_read_only_historical_inputs",
+  "network_requests": 0,
+  "new_observations": 0,
+  "baseline_records": 15,
+  "source_counts": {
+    "github": 10,
+    "hn": 5
+  },
+  "baseline_manifest": "artifacts/t7-baseline/run_manifest.json",
+  "baseline_manifest_sha256": "86563050e35cd472fc6d0d6dd46a7f6c6506c7a0801a41b97939339f7b5caa44",
+  "snapshot": "artifacts/t7-baseline/snapshot_t0.jsonl",
+  "snapshot_sha256": "e018b592b8ff3681448d585860cc455b933ffeb8e16061b6fcf5dfb09995b518",
+  "original_mvp_manifest": "artifacts/mvp-v1/run_manifest.json",
+  "original_mvp_manifest_sha256": "e17335c5910f8f6b79bc8e39322fc84b0f72ebe3009f6dd1058bd40db8de0c99",
+  "historical_files_sha256": {
+    "artifacts/t7-baseline/README.md": "3fe1a777d900b9ee9a91a8572570bdc7051051dce72e2d3946d1b5bb17fc6079",
+    "artifacts/t7-baseline/run_manifest.json": "86563050e35cd472fc6d0d6dd46a7f6c6506c7a0801a41b97939339f7b5caa44",
+    "artifacts/t7-baseline/snapshot_t0.jsonl": "e018b592b8ff3681448d585860cc455b933ffeb8e16061b6fcf5dfb09995b518",
+    "artifacts/mvp-v1/AI_MONEY_TREND_BRIEF_v1.md": "70c436543c828f1596f083dcbb6661b1f33bd1c4127211945db863d06e077490",
+    "artifacts/mvp-v1/checkpoint.json": "326ceb1cf52fe2b0d2c5e5ccf86902f6823f9ba917906a6f2a0eb4606ecd78f9",
+    "artifacts/mvp-v1/evidence_ledger.json": "7cdc2b29ef634fadd4e5c00e6cc767dc0e7e644797d30a2a8b1d3a1d13e85390",
+    "artifacts/mvp-v1/opportunities.csv": "77eecc73ad2b90b2137d55568ce05ce5a228be6fee87717a582d67651cd6c91b",
+    "artifacts/mvp-v1/run_manifest.json": "e17335c5910f8f6b79bc8e39322fc84b0f72ebe3009f6dd1058bd40db8de0c99",
+    "artifacts/mvp-v1/requests/5e98cd643ddf_001_github_1.body": "fdb57de1549d2989e76b51b6c547742adf1fa6904854bb84af5abab3a13dab21",
+    "artifacts/mvp-v1/requests/5e98cd643ddf_001_github_1.meta.json": "7aac783159246c73e087c57b2ee5e8c80dfab4fa3aecc27d889310c0860394dc",
+    "artifacts/mvp-v1/requests/9c5bb5b674a7_002_hn_1.body": "d517c2105274f457a0f6a72723bb74427bb31db41261461170f3bae7965e7547",
+    "artifacts/mvp-v1/requests/9c5bb5b674a7_002_hn_1.meta.json": "d62c8808ba69575470fc9873e1afdb463f6c32bbceb7d2cb7d0e7720ae522da8",
+    "artifacts/mvp-v1/requests/checkpoint.json": "dd8c35f05388a7d9329caf3f5bede570c5e9ad7afafb5c636baf10141fa289cc",
+    "artifacts/mvp-v1/requests/requests.jsonl": "2942bf485c5045339f10180a0b9a4724963273e64ff2604cca0ea47e5eecbe8c"
+  },
+  "baseline_excluded_from_discovery_merge": true,
+  "new_discovery_claims": 0,
+  "t7_executed": false,
+  "t14_executed": false,
+  "followup_authorized_by_this_audit": false,
+  "anchors_by_source": {
+    "github": {
+      "original_t0": "2026-11-02T03:01:40.308906+00:00",
+      "scheduled_t7": "2026-11-09T03:01:40.308906+00:00",
+      "scheduled_t14": "2026-11-16T03:01:40.308906+00:00"
+    },
+    "hn": {
+      "original_t0": "2026-11-02T03:01:44.931800+00:00",
+      "scheduled_t7": "2026-11-09T03:01:44.931800+00:00",
+      "scheduled_t14": "2026-11-16T03:01:44.931800+00:00"
+    }
+  },
+  "gaps": [
+    "NO_VERIFIED_GITHUB_STAR_COUNTER_AT_T0",
+    "NO_TOTAL_GITHUB_ISSUE_COUNTER_AT_T0",
+    "NO_GITHUB_ISSUE_IDS_IN_COHORT",
+    "T7_T14_NOT_OBSERVED",
+    "TREND_PROTOCOL_REGISTERED_AFTER_ORIGINAL_T0"
+  ],
+  "notes": [
+    "Only one historical observation T0; T+7/T+14 unobserved.",
+    "GitHub followers retained literally, never renamed stars. Missing star/total-issue/specific-issue comment counters remain null.",
+    "HN points/comment counters retain exact raw locators. Counter deltas would be net changes, not new-event counts.",
+    "Trend protocol was registered after original T0. Preparation and audit timestamps are not new baseline observation times.",
+    "Current discovery records must not replace or merge with the 15 historical cohort members."
+  ]
+}

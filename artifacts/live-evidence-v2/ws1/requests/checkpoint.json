@@ -1,0 +1,15 @@
+{
+  "state": "response_saved",
+  "url": "https://api.github.com/repos/luckie9/ai-dev-starter/readme",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:55:13.686780+00:00",
+  "sha256": "453949829c231a8d68d63036d305e8090b5bd5163f48982d51f6240fed6fbdd6",
+  "bytes": 7294,
+  "body_file": "012_readme_8_1_080655f5.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "52",
+    "X-RateLimit-Reset": "1793620464"
+  }
+}

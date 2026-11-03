@@ -1,0 +1,68 @@
+{
+  "run_kind": "single_live_hn_v2_workstream",
+  "finished_at": "2026-11-02T10:53:55.614477+00:00",
+  "status": "SCOUT_COMPLETE_UNVERIFIED",
+  "retained_items": 7,
+  "returned_hits": 12,
+  "unique_hits_seen": 10,
+  "request_attempts": 6,
+  "searches": [
+    {
+      "label": "hn_v2_1",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=paying+customers&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "response_count": 2,
+      "raw_response_sha256": "07edadb6bf732bc32b3e7d068b7f4b731028f3cf5307d03f9971ae13e22f51d8",
+      "retrieved_at": "2026-11-02T10:53:45.866387+00:00"
+    },
+    {
+      "label": "hn_v2_2",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=MRR&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "response_count": 2,
+      "raw_response_sha256": "42c6ba5823747f520afb0dcf773dbbff6d0d4f59b6ea9479fbbe1fc349fe8190",
+      "retrieved_at": "2026-11-02T10:53:47.557296+00:00"
+    },
+    {
+      "label": "hn_v2_3",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=revenue&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "response_count": 2,
+      "raw_response_sha256": "11542f101926ef999f036b09242e9082a5cb60965f007d033ce0c2e2587945f7",
+      "retrieved_at": "2026-11-02T10:53:49.537466+00:00"
+    },
+    {
+      "label": "hn_v2_4",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=Stripe&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "response_count": 2,
+      "raw_response_sha256": "56ca786d41ed781670bb8f1da4607b71ddec4b45ef1f86cb79029a20499331b2",
+      "retrieved_at": "2026-11-02T10:53:51.556378+00:00"
+    },
+    {
+      "label": "hn_v2_5",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "response_count": 2,
+      "raw_response_sha256": "5f9c3515cda366c913dd065379bab9cd707ebbd0cb0b2ce7fd7f3b25bccf3034",
+      "retrieved_at": "2026-11-02T10:53:53.539341+00:00"
+    },
+    {
+      "label": "hn_v2_6",
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=first+customer&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+      "response_count": 2,
+      "raw_response_sha256": "886391413451e4683bf01b58454caf0af1442d1fe2b4b368f3e28a14f131365c",
+      "retrieved_at": "2026-11-02T10:53:55.608765+00:00"
+    }
+  ],
+  "duplicate_ids": [
+    "50334946",
+    "50334266"
+  ],
+  "errors": [],
+  "claims": 0,
+  "opportunities": [],
+  "protocol_sha256": "22be7d2cde6e8e6d5b6f3cd23c03faeb7d93ba775cddb80b0233de71682c8c7b",
+  "output_sha256": "18dc2aba3d3cef1532599d0a766769b2e35886b89178b82db92240bbe08f52f0",
+  "source_urls_are_data_only": true,
+  "gaps": [
+    "No independent founder/buyer/transaction verification.",
+    "No complete T2.5 payment integration + pricing page + checkout-flow verification.",
+    "No T+7/T+14 observation; WS-3 baseline is separate and unchanged."
+  ]
+}

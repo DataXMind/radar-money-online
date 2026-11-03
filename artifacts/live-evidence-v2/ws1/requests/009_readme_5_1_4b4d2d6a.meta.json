@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/repos/YawLabs/lemonsqueezy-mcp/readme",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:54:52.744400+00:00",
+  "sha256": "be31b6b36ca6aaaa718044de7350f50ff0aebda8e501ef53b95fab125949c5b0",
+  "bytes": 67689,
+  "body_file": "009_readme_5_1_4b4d2d6a.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "55",
+    "X-RateLimit-Reset": "1793620464"
+  }
+}

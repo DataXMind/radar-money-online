@@ -1,18 +1,6 @@
 {
   "version": 1,
   "hooks": {
-    "Stop": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/validate_output.py\"",
-            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/validate_output.py')\"",
-            "timeout": 5
-          }
-        ]
-      }
-    ],
     "SubagentStop": [
       {
         "hooks": [
@@ -23,19 +11,6 @@
             "timeout": 5
           }
         ]
-      }
-    ],
-    "PreCompact": [
-      {
-        "hooks": [
-          {
-            "type": "command",
-            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/save_context.py\"",
-            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/save_context.py')\"",
-            "timeout": 5
-          }
-        ],
-        "matcher": "manual|auto"
       }
     ],
     "PreToolUse": [
@@ -63,6 +38,18 @@
         "matcher": "manual|auto"
       }
     ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/validate_output.py\"",
+            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/validate_output.py')\"",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
     "SessionStart": [
       {
         "hooks": [
@@ -76,19 +63,32 @@
         ],
         "matcher": "^compact$"
       }
+    ],
+    "PreCompact": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3 \"$(git rev-parse --show-toplevel)/.codex/hooks/save_context.py\"",
+            "commandWindows": "powershell.exe -NoProfile -Command \"& python (Join-Path (git rev-parse --show-toplevel) '.codex/hooks/save_context.py')\"",
+            "timeout": 5
+          }
+        ],
+        "matcher": "manual|auto"
+      }
     ]
   },
   "agents_sha256": {
     "action_planner.toml": "0e50c4ecadb29a718d652a6ad7e7aa98ff3cbacce1f6e41ba7ce80483d08bd49",
     "claim_extractor.toml": "aa2aaf6bbc3bb104cfcfca8e9e3b600f2732e8575e67432a5585f66b803e0536",
-    "evidence_auditor.toml": "75465e76e3c38cb7308083f10395d36c158e79650a15a38689977ae3b772d25f",
+    "evidence_auditor.toml": "68d4727f0923371b8b61f4738b21127fda2b95e3b7e149d96247647973c5ad04",
     "fact_checker.toml": "96e809f9073381a5e93bbcc15b631409785c393436a05fc6a13b62660b21e39d",
     "final_editor.toml": "6a6173dd2348532a2a5c5849b1f1bca8d785dfd84ca97db289245738718ab291",
     "mechanism_analyst.toml": "6f6175768fbb22e0db257f569e9c406260a8b839c5bcda1db9dcc96a6ae348b0",
     "normalizer.toml": "c762901934d946cbbbf424fc019125c2aade87ce719bd48c06f5135252bd5d9b",
     "repo_discovery.toml": "d28bba5b1d37141dbd01b0aef3793ff9bb8c050e6cd8b4b5093c6777c64db6c4",
     "scout_github.toml": "2d3ed6015c3267aee11d718bac26f2908d90f983eb4cadb7d0a3be8089f4eddc",
-    "scout_indiehackers.toml": "f2fbd2a9119e5a7894886293bc11cfce15df84e0e7fe04f866d1a2f9fe22a9f1",
+    "scout_indiehackers.toml": "0c20657efc19223c611034db17bb60aaa70370ca5ca98f3192c61c19525b09b2",
     "scout_multi_source.toml": "b0a7c42b131f0c8f628c599dd012469bd0d8af77b9f898c2bba0b405856d2d9f",
     "scout_vn.toml": "05594f1e8d779f8ab02d1657a114410b2bd93a0959e80aad4e632c118bc262cd",
     "synthesizer.toml": "14afeffffd9a23fb9c348db0f9cba5178520ff3c481cdcbf755ebc13d818e93d",

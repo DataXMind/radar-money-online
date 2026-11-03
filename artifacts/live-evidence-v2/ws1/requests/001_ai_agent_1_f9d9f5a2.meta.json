@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/search/repositories?q=topic%3Aai-agent+stripe+pricing+in%3Areadme&sort=updated&order=desc&per_page=2&page=1",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:53:56.641863+00:00",
+  "sha256": "a1a993cb824319bf451f935df0939436e65a4d3a40df7b1a3a79db0d951b976f",
+  "bytes": 11394,
+  "body_file": "001_ai_agent_1_f9d9f5a2.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "1",
+    "X-RateLimit-Reset": "1793616837"
+  }
+}

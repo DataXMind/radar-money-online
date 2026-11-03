@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/search/repositories?q=topic%3Apaddle+saas+checkout+in%3Areadme&sort=updated&order=desc&per_page=2&page=1",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:54:03.637675+00:00",
+  "sha256": "6fef4350ba817ab7021293cfa05b682749570869251c419cea13883dcd70b350",
+  "bytes": 11099,
+  "body_file": "002_paddle_1_5cc4e1d3.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "9",
+    "X-RateLimit-Reset": "1793616903"
+  }
+}

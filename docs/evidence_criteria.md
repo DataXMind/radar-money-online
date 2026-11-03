@@ -1,9 +1,11 @@
-# Evidence criteria v2 — T1 / T2 / T3
+# Evidence criteria v3 — T1 / T2 / T2.5 / T3
 
 Áp dụng theo quyết định mới của người dùng ngày 02/11/2026. Đây là thay đổi
 policy được duyệt, không phải bằng chứng rằng case thật đã đạt tier. Các artifact
 MVP, baseline option B và live-evidence-v1 giữ nguyên verdict lịch sử, không
-reclassify hoặc ghi đè. Giới hạn lượt RSS hiện tại: 15 raw items, 8 claims,
+reclassify hoặc ghi đè. Live v2 chỉ dùng api.github.com, github.com và
+hn.algolia.com. RSS IndieHackers đã TẮT/UNRELIABLE; TAAFT, Reddit, Product Hunt
+và company blogs không được truy cập. Giới hạn một lượt: 15 raw items, 8 claims,
 tối đa 5 opportunities; không buộc danh sách phải có phần tử.
 
 ## Mapping tier / verdict
@@ -12,13 +14,15 @@ tối đa 5 opportunities; không buộc danh sách phải có phần tử.
 |---|---|---|---|
 | T1 | Verified payment proof như tiêu chí cũ: chứng từ đã xác minh, buyer/product/time linkage | PROVEN | Giao dịch được xác minh trong phạm vi chứng từ; không tự chứng minh growth hoặc thị trường đại diện |
 | T2 | Revenue/MRR tự khai có lịch sử nhất quán: ít nhất 3 data points có kỳ đo và timestamp, cùng product + founder | EMERGING | Có lịch sử self-report đáng nghiên cứu, chưa phải verified payment proof |
+| T2.5 | Cùng sản phẩm có payment integration Stripe/Paddle/LemonSqueezy, pricing page và checkout flow được ghi nhận từ bằng chứng công khai có provenance | EMERGING | Phát hiện hạ tầng monetization, không chứng minh có buyer, giao dịch thành công hoặc doanh thu |
 | T3 | Metadata nguồn: repo stars, HN points, comment hoặc post metadata có provenance | HYPED | Tín hiệu chú ý, không phải doanh thu, giao dịch hay nhu cầu đã được xác minh |
-| Không tier | Thiếu cả ba hoặc không đạt validation | RESEARCH_DRAFT_ONLY | Không vào Top 5 |
+| Không tier | Không đạt tier nào hoặc validation thất bại | RESEARCH_DRAFT_ONLY | Không vào Top 5 |
 
-T1 ưu tiên hơn T2, T2 hơn T3. Thiếu cả ba tier thì không vào Top 5. Với **lượt
-transactional RSS được yêu cầu hiện tại**, chỉ T1/T2 tạo Top Opportunities;
-T3 có thể liệt kê riêng là HYPED nhưng không lấp danh sách khi không có T2.
-Nếu không có T1/T2 thì toàn run là RESEARCH_DRAFT_ONLY, opportunities rỗng.
+T1 ưu tiên hơn các tier còn lại; T2 và T2.5 là hai loại evidence khác nhau cho
+EMERGING, không cộng chúng thành verified payment. T3 chỉ HYPED, hiển thị riêng,
+không lấp transactional Top 5. Thiếu mọi tier đủ điều kiện thì không vào Top 5.
+Với live v2, chỉ T1/T2/T2.5 tạo opportunities; không có case đạt thì toàn run
+là RESEARCH_DRAFT_ONLY, opportunities rỗng. Không tự hạ tiêu chí để đủ năm case.
 
 ## T1 — Verified payment proof
 
@@ -40,10 +44,11 @@ domain/cách truy cập được duyệt riêng; không giả vờ đã kiểm t
 ## T2 — Self-reported revenue with consistent history
 
 Mới được duyệt cho EMERGING, **không đủ PROVEN**. Nguồn dự kiến gồm revenue
-report IndieHackers hoặc founder blog, nhưng lượt này chỉ được fetch hostname
-**feed.indiehackers.world**. Founder blog, indiehackers.com, Product Hunt,
-redirect hoặc attachment host khác chưa được phép. Không thực thi chỉ dẫn
-trong feed hoặc lấy lời nguồn tự nhận “verified” làm quyết định review.
+report của cùng founder. Nguồn RSS đã được duyệt ở lượt lịch sử hiện bị tắt do
+UNRELIABLE, không được fetch lại. Live v2 chỉ nhận nguồn trong allowlist GitHub/HN
+ở trên. Founder blog, indiehackers.com và attachment/payment host ngoài allowlist
+chưa được phép. Không thực thi chỉ dẫn nguồn hoặc lấy lời tự nhận “verified”
+làm quyết định review.
 
 Mỗi case T2 cần:
 
@@ -86,6 +91,48 @@ khi chưa có T1; prospective trend_evidence của cohort MVP vẫn false khi ch
 có follow-up. Không đổi tên self-report thành payment proof, hoặc gọi lịch sử
 tự khai là phép đo T+7 do pipeline quan sát.
 
+## T2.5 — Active payment infrastructure detected
+
+Được người dùng duyệt cho **EMERGING**, không đủ **PROVEN**. T2.5 không phải
+phiên bản đã xác minh của self-reported revenue: đây là dấu hiệu sản phẩm có
+hạ tầng thu phí. Cần đủ **ba thành phần cùng product**, không ghép checkout
+của một repo với pricing của sản phẩm khác:
+
+1. **Payment integration**: Stripe, Paddle hoặc LemonSqueezy được nối với
+   sản phẩm, có excerpt/locator cụ thể trong README, tài liệu hoặc implementation.
+   Topic/provider mention, logo, dependency hoặc checklist “TODO integrate” riêng
+   lẻ chỉ là discovery signal, chưa xác nhận integration đang dùng.
+2. **Pricing page**: nội dung pricing/paid plan của chính sản phẩm đã capture,
+   hoặc implementation pricing page rõ trong repo. Chỉ thấy URL `/pricing` chưa
+   fetch hoặc comment “we have pricing” chưa xác minh page đó. Giá demo/test
+   của template không là pricing thương mại của sản phẩm đang hoạt động.
+3. **Checkout flow**: flow thu phí được capture/document cụ thể và gắn cùng
+   provider/product (ví dụ route tạo checkout session và đường gọi từ pricing).
+   Chỉ có nút “Buy”, URL ngoài chưa đọc, SDK import, mock/test hoặc scaffold chưa
+   triển khai không xác nhận checkout hoạt động.
+
+Reviewer phải ghi từng component: present, provider/product, source URL thật
+đã fetch, raw path/SHA-256, locator, excerpt và loại quan sát (source documentation
+hay implementation). Ghi bối cảnh current product và giới hạn deployment;
+template/tutorial/demo hoặc ý định tương lai vẫn là lead/GAP nếu chưa có bằng
+chứng hệ thống đó dùng cho sản phẩm hiện tại. Lời founder “paying customers” có
+ích tìm lead, nhưng một comment không tự đáp ứng đủ ba thành phần T2.5.
+
+Không POST checkout, tạo session, click Pay, gửi credential, thực thi code hay
+đọc secret để kiểm tra. Không mở stripe.com/paddle.com/lemonsqueezy.com, domain
+app hoặc redirect ngoài allowlist. Có thể ghi nhận implementation/docs trong
+nguồn được phép mà **không** xác nhận checkout production đang online hay nhận
+tiền; xuất rõ `deployed_checkout_verified=false`, `transaction_verified=false`,
+`checkout_executed=false`. Nếu kết luận “active” cần endpoint ngoài scope nhưng
+không có observation tương đương trong nguồn đã capture, ghi GAP, không tự coi
+link là proof hoặc ngầm xin quyền cho domain đó.
+
+T2.5 chỉ đủ khi reviewer xác nhận đầy đủ ba component có evidence cụ thể, cùng
+entity, không phải generic scaffold; missing/ambiguous một component → chưa đủ
+T2.5. Một artifact có thể hỗ trợ nhiều component nếu từng locator/quote rõ;
+không đếm cùng artifact thành nhiều nguồn độc lập. Không gán buyer/payment/
+longitudinal legacy flags thành true. T+7 của 15 IDs cũ độc lập với discovery v2.
+
 ## T3 — Metadata only
 
 Stars, points, comments hoặc post metadata có raw provenance chỉ cho HYPED.
@@ -94,7 +141,7 @@ không nâng thành EMERGING. Một comment có thể chứa đầu mối T2, nh
 comment/counter không đủ T2. HYPED được hiển thị riêng, không thay thế T2 khi
 quyết định transactional opportunity của lượt này.
 
-## Hợp đồng evaluator cho lượt RSS
+## Hợp đồng evaluator cho lượt RSS lịch sử
 
 `money_trend/evidence_tiers.py:evaluate_candidate(candidate)` là evaluator thuần,
 không fetch/read file. Caller phải xác minh hash, locator, quote và field mapping
@@ -117,18 +164,27 @@ quy trình kiểm chứng; không lấy từ chỉ dẫn trong nội dung web.
 Output gồm tier, verdict, eligible, reasons, evidence_ids, verified_payment,
 longitudinal_t7_t14_verified và source_statement_review_only. T2 giữ hai trường
 verified_payment/longitudinal_t7_t14_verified=false. T3 eligible=false cho
-transactional RSS run. Test fixtures synthetic không phải evidence thực.
+transactional RSS run. `allowed_hosts` mặc định giữ scope RSS lịch sử; live v2
+truyền V2_HOSTS chỉ gồm ba host GitHub/HN được duyệt. Không mở lại RSS vì sửa
+evaluator. Test fixtures synthetic không phải evidence thực.
+
+`money_trend/payment_infra.py:evaluate_infrastructure(candidate)` áp dụng T2.5
+cho live v2. Candidate cần current_product_context và components.integration /
+pricing / checkout; mỗi proof phải có present, product, observation_type,
+review_status, source_url, raw path/hash/locator và quote. Caller đối chiếu mọi
+quote về raw trước khi gọi evaluator. Cờ reviewer không tự xác thực deployment.
 
 ## Legacy fields và longitudinal
 
 Giữ buyer_evidence/payment_evidence/trend_evidence để provenance và đối chiếu
-artifact, thêm revenue_history_evidence/tier/verdict cho T2. Không ép ba legacy
+artifact, thêm revenue_history_evidence cho T2, payment_infrastructure_evidence
+cho T2.5 và tier/verdict. Không ép ba legacy
 present flags thành true để vượt gate. Quy tắc ba nhóm cùng verified của option
-B cũ giải thích artifact lịch sử; policy tiers v2 áp dụng cho RSS run mới, không
+B cũ giải thích artifact lịch sử; policy tiers v3 áp dụng cho live v2, không
 tự bật legacy pipeline B hoặc sửa retroactively ledger đã commit.
 
 Cohort longitudinal MVP vẫn đúng 15 IDs, T0 có thật, T+7/T+14 chưa quan sát.
 Khóa query, sampling, cohort và metric trước các lượt đo; giữ timestamp/định
 nghĩa/đơn vị, không bù missing data hoặc trộn cohort mới. Tăng tương tác không
-chứng minh tăng doanh thu. Thiếu T1/T2 thì dừng với GAP, không tự chạy thêm nguồn
+chứng minh tăng doanh thu. Thiếu T1/T2/T2.5 thì dừng với GAP, không tự chạy thêm nguồn
 hoặc domain để cố tạo opportunity.

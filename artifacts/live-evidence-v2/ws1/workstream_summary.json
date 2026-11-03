@@ -1,0 +1,33 @@
+{
+  "state": "STOPPED",
+  "finished_at": "2026-11-02T10:55:13.692296+00:00",
+  "request_attempts": 12,
+  "retained_repos": 8,
+  "readmes_captured": 8,
+  "searches": [
+    {
+      "url": "https://api.github.com/search/repositories?q=topic%3Aai-agent+stripe+pricing+in%3Areadme&sort=updated&order=desc&per_page=2&page=1",
+      "returned": 2,
+      "raw_sha256": "a1a993cb824319bf451f935df0939436e65a4d3a40df7b1a3a79db0d951b976f"
+    },
+    {
+      "url": "https://api.github.com/search/repositories?q=topic%3Apaddle+saas+checkout+in%3Areadme&sort=updated&order=desc&per_page=2&page=1",
+      "returned": 2,
+      "raw_sha256": "6fef4350ba817ab7021293cfa05b682749570869251c419cea13883dcd70b350"
+    },
+    {
+      "url": "https://api.github.com/search/repositories?q=topic%3Alemonsqueezy+subscription+in%3Areadme&sort=updated&order=desc&per_page=2&page=1",
+      "returned": 2,
+      "raw_sha256": "f44aacd9875edc87447b694c6c645162e42354b60985b456e4ecab6c645ed7f8"
+    },
+    {
+      "url": "https://api.github.com/search/repositories?q=topic%3Astripe+topic%3Asaas+payment+in%3Areadme&sort=updated&order=desc&per_page=2&page=1",
+      "returned": 2,
+      "raw_sha256": "aa2b5e73d18acf45070cbac42bf70b075b8f9a1b37872b201d8f90c402b8fa7c"
+    }
+  ],
+  "errors": [],
+  "output_sha256": "30d493f34f8c05894fd2df0bec47cb9083779c43f5292604fd06d82b60388c16",
+  "status": "RESEARCH_DRAFT_ONLY_PENDING_REVIEW",
+  "opportunities": []
+}

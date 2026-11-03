@@ -1,0 +1,14 @@
+{
+  "url": "https://api.github.com/repos/euron-sde-team/euron-open-crm/readme",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:55:06.645355+00:00",
+  "sha256": "ddcc4d62561e1861acb368f929ce5747d4c19f2cca0526063aca247199bb91d7",
+  "bytes": 43574,
+  "body_file": "011_readme_7_1_3cd4b18f.body",
+  "content_type": "application/json; charset=utf-8",
+  "error_response": false,
+  "rate_limit": {
+    "X-RateLimit-Remaining": "53",
+    "X-RateLimit-Reset": "1793620464"
+  }
+}

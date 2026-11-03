@@ -1,0 +1,12 @@
+{
+  "state": "response_saved",
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=first+customer&tags=%28comment%2Cshow_hn%29&hitsPerPage=2&page=0&numericFilters=created_at_i%3E%3D1791024825%2Ccreated_at_i%3C%3D1793616825",
+  "status": 200,
+  "retrieved_at": "2026-11-02T10:53:55.608765+00:00",
+  "sha256": "886391413451e4683bf01b58454caf0af1442d1fe2b4b368f3e28a14f131365c",
+  "bytes": 17398,
+  "body_file": "006_hn_v2_6_1_ff94d045.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}
