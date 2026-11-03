@@ -11,7 +11,7 @@
   "input_manifest": "artifacts/mvp-v1/run_manifest.json",
   "input_manifest_sha256": "e17335c5910f8f6b79bc8e39322fc84b0f72ebe3009f6dd1058bd40db8de0c99",
   "criteria_file": "docs/evidence_criteria.md",
-  "criteria_sha256": "6ee2df23e6571d8aa45e4c458f29b3424e90b3699a75b972fde9f4f69b7d79b1",
+  "criteria_sha256": "a5c04ebd340bff6f70952b75947d108785e8c6a7b7d06f338d8d082a2a6c3744",
   "test_report": "artifacts/production-v1/preflight/offline_tests.json",
   "dashboard_template": "templates/dashboard.md",
   "output_root": "artifacts/production-v1",

@@ -1,0 +1,784 @@
+{
+  "candidates": [
+    {
+      "evidence_id": "V4-HN04",
+      "product": "ArchDocs",
+      "founder": "Aylon / HN AylonArmstrong",
+      "founder_identity_verified": false,
+      "context_quote": "My name is Aylon and I&#x27;m building ArchDocs.",
+      "product_url": "https://archdocs.io/templates/design-doc-example",
+      "homepage_url": "https://archdocs.io",
+      "homepage_url_locator": "Submission URL; demo URL occurs in post text.",
+      "pricing_quote": null,
+      "scope_warning": "AI engineering context product; identity and deployment unverified.",
+      "gaps": [
+        "No provider mention or concrete price."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50340570",
+      "author_handle": "AylonArmstrong",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 0,
+        "linkage": 40
+      },
+      "score": 40,
+      "pricing_verification": "PENDING_VERIFICATION",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN04",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/001_hn_v4_1_try1_1_92d8a332.body",
+        "raw_response_sha256": "06b402b76a46181e52f8df11d0ea0fe0c69427d8069b2686940df45cc9b5b9ff",
+        "raw_locator": "hits[3].story_text",
+        "quote": "My name is Aylon and I&#x27;m building ArchDocs.",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN04"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    },
+    {
+      "evidence_id": "V4-HN05",
+      "product": "Hanging Context",
+      "founder": "HN bshivarthy",
+      "founder_identity_verified": false,
+      "context_quote": "Hanging Context is an experiment on top of that.",
+      "product_url": "https://hangingcontext.com/stories/2026-11-02/agent-stack-rebuilt-from-below/",
+      "homepage_url": "https://hangingcontext.com/",
+      "homepage_url_locator": "Submission URL; example output occurs in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Free news experiment; Synorb is a separate paid product.",
+      "gaps": [
+        "Do not transfer Synorb monetization to Hanging Context.",
+        "No provider mention or concrete price."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50340083",
+      "author_handle": "bshivarthy",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 0,
+        "linkage": 40
+      },
+      "score": 40,
+      "pricing_verification": "PENDING_VERIFICATION",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN05",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/001_hn_v4_1_try1_1_92d8a332.body",
+        "raw_response_sha256": "06b402b76a46181e52f8df11d0ea0fe0c69427d8069b2686940df45cc9b5b9ff",
+        "raw_locator": "hits[4].story_text",
+        "quote": "Hanging Context is an experiment on top of that.",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN05"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    },
+    {
+      "evidence_id": "V4-HN07",
+      "product": "Mind Made Many",
+      "founder": "HN esamust",
+      "founder_identity_verified": false,
+      "context_quote": "I created this platform because I wanted to have a system",
+      "product_url": "https://mindmademany.com/mmm",
+      "homepage_url": "https://mindmademany.com/",
+      "homepage_url_locator": "Submission URL; organization demo occurs in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Agent organization platform; source-attributed maker only.",
+      "gaps": [
+        "Subscription mentioned without concrete price.",
+        "No provider mention."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50339212",
+      "author_handle": "esamust",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 0,
+        "linkage": 40
+      },
+      "score": 40,
+      "pricing_verification": "PENDING_VERIFICATION",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN07",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/001_hn_v4_1_try1_1_92d8a332.body",
+        "raw_response_sha256": "06b402b76a46181e52f8df11d0ea0fe0c69427d8069b2686940df45cc9b5b9ff",
+        "raw_locator": "hits[6].story_text",
+        "quote": "I created this platform because I wanted to have a system",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN07"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    },
+    {
+      "evidence_id": "V4-HN14",
+      "product": "Garrul",
+      "founder": "HN KingPinX",
+      "founder_identity_verified": false,
+      "context_quote": "I needed a comments system for my blog",
+      "product_url": "https://garrul.com/#comments",
+      "homepage_url": null,
+      "homepage_url_locator": "Demo URL only; homepage not guessed.",
+      "pricing_quote": null,
+      "scope_warning": "Self-hosted Apache-licensed comments software; AI-assisted development does not establish an AI product.",
+      "gaps": [
+        "No commercial paid-plan/provider evidence."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50340303",
+      "author_handle": "KingPinX",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 0,
+        "linkage": 40
+      },
+      "score": 40,
+      "pricing_verification": "PENDING_VERIFICATION",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN14",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+tool&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/002_hn_v4_2_try1_1_5796b2d2.body",
+        "raw_response_sha256": "de48325e97c301efaabbbf6a883b6c298cee280022e41beb6ec91d3920548fd1",
+        "raw_locator": "hits[5].story_text",
+        "quote": "I needed a comments system for my blog",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN14"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    },
+    {
+      "evidence_id": "V4-HN15",
+      "product": "Subvocal",
+      "founder": "Aarush and Arnav / HN aarushyadav",
+      "founder_identity_verified": false,
+      "context_quote": "we&#x27;re Aarush and Arnav from The Subvocal Company",
+      "product_url": "https://subvocal.company/",
+      "homepage_url": "https://subvocal.company/",
+      "homepage_url_locator": "Exact URL in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Prototype/preorder hardware; future shipping is not a current deployed software product.",
+      "gaps": [
+        "A $200 discount is not a product price.",
+        "Preorder URL is not checkout proof.",
+        "No provider mention."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50340088",
+      "author_handle": "aarushyadav",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 0,
+        "linkage": 40
+      },
+      "score": 40,
+      "pricing_verification": "PENDING_VERIFICATION",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN15",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+tool&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/002_hn_v4_2_try1_1_5796b2d2.body",
+        "raw_response_sha256": "de48325e97c301efaabbbf6a883b6c298cee280022e41beb6ec91d3920548fd1",
+        "raw_locator": "hits[6].story_text",
+        "quote": "we&#x27;re Aarush and Arnav from The Subvocal Company",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN15"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    },
+    {
+      "evidence_id": "V4-HN17",
+      "product": "Prelay",
+      "founder": "HN MPSimmons",
+      "founder_identity_verified": false,
+      "context_quote": "Today, we&#x27;re launching our first commercial offering",
+      "product_url": "https://prelay.lwnn.news",
+      "homepage_url": "https://prelay.lwnn.news",
+      "homepage_url_locator": "Exact URL in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Weather work planning; AI-product relevance not established in the post.",
+      "gaps": [
+        "No concrete price/provider mention."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50341158",
+      "author_handle": "MPSimmons",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 0,
+        "linkage": 40
+      },
+      "score": 40,
+      "pricing_verification": "PENDING_VERIFICATION",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN17",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/003_hn_v4_3_try1_1_7506e975.body",
+        "raw_response_sha256": "ac9efa3b6c1c74ccf70c4fd43c7bffcd703b0f1813e44e9c199a2d5e1b6482c9",
+        "raw_locator": "hits[0].story_text",
+        "quote": "Today, we&#x27;re launching our first commercial offering",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN17"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    },
+    {
+      "evidence_id": "V4-HN19",
+      "product": "mxRaven",
+      "founder": "Kush / HN ku5h",
+      "founder_identity_verified": false,
+      "context_quote": "Hi HN, I am Kush, a student founder from India building mxRaven",
+      "product_url": "https://mxraven.com",
+      "homepage_url": "https://mxraven.com",
+      "homepage_url_locator": "Exact URL in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Email infrastructure supporting agent mailboxes; do not confuse first-party SDKs with the product.",
+      "gaps": [
+        "No concrete price/provider mention."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50338055",
+      "author_handle": "ku5h",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 0,
+        "linkage": 40
+      },
+      "score": 40,
+      "pricing_verification": "PENDING_VERIFICATION",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN19",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/003_hn_v4_3_try1_1_7506e975.body",
+        "raw_response_sha256": "ac9efa3b6c1c74ccf70c4fd43c7bffcd703b0f1813e44e9c199a2d5e1b6482c9",
+        "raw_locator": "hits[2].story_text",
+        "quote": "Hi HN, I am Kush, a student founder from India building mxRaven",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN19"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    },
+    {
+      "evidence_id": "V4-HN20",
+      "product": "Better Together",
+      "founder": "HN adamontherun",
+      "founder_identity_verified": false,
+      "context_quote": "Launched <a href=\"https:&#x2F;&#x2F;better-together.fun\" rel=\"nofollow\">https:&#x2F;&#x2F;better-together.fun</a> this weekend to allow our personal AI agents to collaborate on problems that are tough to solve solo.<p>First up is dealing with spam texts and calls.",
+      "product_url": "https://better-together.fun",
+      "homepage_url": "https://better-together.fun/",
+      "homepage_url_locator": "Submission URL; no-slash URL also occurs in post text.",
+      "pricing_quote": null,
+      "scope_warning": "AI agent collaboration; source-attributed launch claim only.",
+      "gaps": [
+        "No concrete price/provider mention."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50331415",
+      "author_handle": "adamontherun",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 0,
+        "linkage": 40
+      },
+      "score": 40,
+      "pricing_verification": "PENDING_VERIFICATION",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN20",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/003_hn_v4_3_try1_1_7506e975.body",
+        "raw_response_sha256": "ac9efa3b6c1c74ccf70c4fd43c7bffcd703b0f1813e44e9c199a2d5e1b6482c9",
+        "raw_locator": "hits[3].story_text",
+        "quote": "Launched <a href=\"https:&#x2F;&#x2F;better-together.fun\" rel=\"nofollow\">https:&#x2F;&#x2F;better-together.fun</a> this weekend to allow our personal AI agents to collaborate on problems that are tough to solve solo.<p>First up is dealing with spam texts and calls.",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN20"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    },
+    {
+      "evidence_id": "V4-HN22",
+      "product": "Maintainers Coffee",
+      "founder": "HN egz",
+      "founder_identity_verified": false,
+      "context_quote": "We&#x27;re launching Maintainers Coffee to make mailing a small thanks to someone with appreciated work more simple.",
+      "product_url": "https://maintainers.coffee/github/theorderingmachine",
+      "homepage_url": "https://maintainers.coffee/",
+      "homepage_url_locator": "Exact homepage in submission URL; demo URL is in post text.",
+      "pricing_quote": "Someone can send coffee for USD $8 to either Canada or the US.",
+      "scope_warning": "Physical coffee gifting service, not an AI product; retain literal discovery score transparently.",
+      "gaps": [
+        "No provider mention.",
+        "Post price is not a captured pricing page.",
+        "Non-AI physical service; no AI market conclusion."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50330154",
+      "author_handle": "egz",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 30,
+        "linkage": 40
+      },
+      "score": 70,
+      "pricing_verification": "POST_PRICE_ONLY_PAGE_PENDING",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN22",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/003_hn_v4_3_try1_1_7506e975.body",
+        "raw_response_sha256": "ac9efa3b6c1c74ccf70c4fd43c7bffcd703b0f1813e44e9c199a2d5e1b6482c9",
+        "raw_locator": "hits[5].story_text",
+        "quote": "We&#x27;re launching Maintainers Coffee to make mailing a small thanks to someone with appreciated work more simple.",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN22"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    }
+  ],
+  "shortlist": [
+    {
+      "evidence_id": "V4-HN22",
+      "product": "Maintainers Coffee",
+      "founder": "HN egz",
+      "founder_identity_verified": false,
+      "context_quote": "We&#x27;re launching Maintainers Coffee to make mailing a small thanks to someone with appreciated work more simple.",
+      "product_url": "https://maintainers.coffee/github/theorderingmachine",
+      "homepage_url": "https://maintainers.coffee/",
+      "homepage_url_locator": "Exact homepage in submission URL; demo URL is in post text.",
+      "pricing_quote": "Someone can send coffee for USD $8 to either Canada or the US.",
+      "scope_warning": "Physical coffee gifting service, not an AI product; retain literal discovery score transparently.",
+      "gaps": [
+        "No provider mention.",
+        "Post price is not a captured pricing page.",
+        "Non-AI physical service; no AI market conclusion."
+      ],
+      "post_url": "https://news.ycombinator.com/item?id=50330154",
+      "author_handle": "egz",
+      "provider_mentions": [],
+      "payment_provider_mention": null,
+      "score_components": {
+        "integration": 0,
+        "pricing": 30,
+        "linkage": 40
+      },
+      "score": 70,
+      "pricing_verification": "POST_PRICE_ONLY_PAGE_PENDING",
+      "homepage_verification": "PENDING_EXACT_URL_APPROVAL",
+      "pricing_page_verified": false,
+      "integration_verified": false,
+      "checkout_executed": false,
+      "source_statement_review_only": true,
+      "provenance": {
+        "evidence_id": "V4-HN22",
+        "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+        "raw_response_path": "artifacts/live-evidence-v4/scan/requests/003_hn_v4_3_try1_1_7506e975.body",
+        "raw_response_sha256": "ac9efa3b6c1c74ccf70c4fd43c7bffcd703b0f1813e44e9c199a2d5e1b6482c9",
+        "raw_locator": "hits[5].story_text",
+        "quote": "We&#x27;re launching Maintainers Coffee to make mailing a small thanks to someone with appreciated work more simple.",
+        "review_status": "CONFIRMED_SOURCE_STATEMENT"
+      },
+      "tier": "T3",
+      "verdict": "HYPED",
+      "eligible": false,
+      "tier_evaluation": {
+        "tier": "T3",
+        "verdict": "HYPED",
+        "eligible": false,
+        "reasons": [
+          "T2_REQUIRES_AT_LEAST_THREE_POINTS",
+          "METADATA_ONLY_NOT_TRANSACTIONAL_OPPORTUNITY"
+        ],
+        "evidence_ids": [
+          "V4-HN22"
+        ],
+        "verified_payment": false,
+        "longitudinal_t7_t14_verified": false,
+        "source_statement_review_only": true
+      },
+      "infrastructure_evaluation": {
+        "tier": null,
+        "verdict": "RESEARCH_DRAFT_ONLY",
+        "eligible": false,
+        "source_statement_review_only": true,
+        "deployed_checkout_verified": false,
+        "transaction_verified": false,
+        "checkout_executed": false,
+        "verified_payment": false,
+        "founder_identity_verified": false,
+        "longitudinal_t7_t14_verified": false,
+        "checkout_flow_verified": false,
+        "evidence_ids": [],
+        "reasons": [
+          "CURRENT_PRODUCT_CONTEXT_MISSING_OR_INVALID"
+        ],
+        "checkout_gaps": []
+      }
+    }
+  ],
+  "excluded_url_posts": [
+    {
+      "evidence_id": "V4-HN08",
+      "reason": "Node-version API metadata and a third-party Google article; no product homepage/demo in text."
+    },
+    {
+      "evidence_id": "V4-HN25",
+      "reason": "Only technical documentation in text; homepage present solely in submission URL."
+    }
+  ]
+}

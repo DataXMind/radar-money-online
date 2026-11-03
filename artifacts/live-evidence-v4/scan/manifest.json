@@ -1,0 +1,43 @@
+{
+  "status": "SCOUT_COMPLETE_UNVERIFIED",
+  "finished_at": "2026-11-03T03:33:08.611330+00:00",
+  "returned_hits": 30,
+  "unique_retained": 26,
+  "duplicate_ids": [
+    "50342493",
+    "50340570",
+    "50339212",
+    "50337394"
+  ],
+  "with_post_text_public_urls": 11,
+  "http_attempts": 3,
+  "http_4xx_5xx": 0,
+  "errors": [],
+  "searches": [
+    {
+      "query": "AI agent",
+      "returned": 10,
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+      "raw_response_sha256": "06b402b76a46181e52f8df11d0ea0fe0c69427d8069b2686940df45cc9b5b9ff",
+      "body_file": "001_hn_v4_1_try1_1_92d8a332.body"
+    },
+    {
+      "query": "AI tool",
+      "returned": 10,
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+tool&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+      "raw_response_sha256": "de48325e97c301efaabbbf6a883b6c298cee280022e41beb6ec91d3920548fd1",
+      "body_file": "002_hn_v4_2_try1_1_5796b2d2.body"
+    },
+    {
+      "query": "launched",
+      "returned": 10,
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+      "raw_response_sha256": "ac9efa3b6c1c74ccf70c4fd43c7bffcd703b0f1813e44e9c199a2d5e1b6482c9",
+      "body_file": "003_hn_v4_3_try1_1_7506e975.body"
+    }
+  ],
+  "protocol_sha256": "7cd4fec97ebe1519fca11d9a1f4e860366aa58e695c462713d3a4539227dd54e",
+  "opportunities": [],
+  "product_urls_fetched": [],
+  "paid_api_calls": 0
+}

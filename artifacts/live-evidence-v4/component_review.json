@@ -1,0 +1,160 @@
+{
+  "schema_version": 1,
+  "reviewed_at": "2026-11-03T07:32:19.475229+00:00",
+  "reviewer": "Codex offline source-statement review; independently audited by evidence_auditor",
+  "source_statement_only": true,
+  "approved_urls": [],
+  "leads": [
+    {
+      "evidence_id": "V4-HN04",
+      "product": "ArchDocs",
+      "founder": "Aylon / HN AylonArmstrong",
+      "founder_identity_verified": false,
+      "context_quote": "My name is Aylon and I&#x27;m building ArchDocs.",
+      "product_url": "https://archdocs.io/templates/design-doc-example",
+      "homepage_url": "https://archdocs.io",
+      "homepage_url_locator": "Submission URL; demo URL occurs in post text.",
+      "pricing_quote": null,
+      "scope_warning": "AI engineering context product; identity and deployment unverified.",
+      "gaps": [
+        "No provider mention or concrete price."
+      ]
+    },
+    {
+      "evidence_id": "V4-HN05",
+      "product": "Hanging Context",
+      "founder": "HN bshivarthy",
+      "founder_identity_verified": false,
+      "context_quote": "Hanging Context is an experiment on top of that.",
+      "product_url": "https://hangingcontext.com/stories/2026-11-02/agent-stack-rebuilt-from-below/",
+      "homepage_url": "https://hangingcontext.com/",
+      "homepage_url_locator": "Submission URL; example output occurs in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Free news experiment; Synorb is a separate paid product.",
+      "gaps": [
+        "Do not transfer Synorb monetization to Hanging Context.",
+        "No provider mention or concrete price."
+      ]
+    },
+    {
+      "evidence_id": "V4-HN07",
+      "product": "Mind Made Many",
+      "founder": "HN esamust",
+      "founder_identity_verified": false,
+      "context_quote": "I created this platform because I wanted to have a system",
+      "product_url": "https://mindmademany.com/mmm",
+      "homepage_url": "https://mindmademany.com/",
+      "homepage_url_locator": "Submission URL; organization demo occurs in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Agent organization platform; source-attributed maker only.",
+      "gaps": [
+        "Subscription mentioned without concrete price.",
+        "No provider mention."
+      ]
+    },
+    {
+      "evidence_id": "V4-HN14",
+      "product": "Garrul",
+      "founder": "HN KingPinX",
+      "founder_identity_verified": false,
+      "context_quote": "I needed a comments system for my blog",
+      "product_url": "https://garrul.com/#comments",
+      "homepage_url": null,
+      "homepage_url_locator": "Demo URL only; homepage not guessed.",
+      "pricing_quote": null,
+      "scope_warning": "Self-hosted Apache-licensed comments software; AI-assisted development does not establish an AI product.",
+      "gaps": [
+        "No commercial paid-plan/provider evidence."
+      ]
+    },
+    {
+      "evidence_id": "V4-HN15",
+      "product": "Subvocal",
+      "founder": "Aarush and Arnav / HN aarushyadav",
+      "founder_identity_verified": false,
+      "context_quote": "we&#x27;re Aarush and Arnav from The Subvocal Company",
+      "product_url": "https://subvocal.company/",
+      "homepage_url": "https://subvocal.company/",
+      "homepage_url_locator": "Exact URL in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Prototype/preorder hardware; future shipping is not a current deployed software product.",
+      "gaps": [
+        "A $200 discount is not a product price.",
+        "Preorder URL is not checkout proof.",
+        "No provider mention."
+      ]
+    },
+    {
+      "evidence_id": "V4-HN17",
+      "product": "Prelay",
+      "founder": "HN MPSimmons",
+      "founder_identity_verified": false,
+      "context_quote": "Today, we&#x27;re launching our first commercial offering",
+      "product_url": "https://prelay.lwnn.news",
+      "homepage_url": "https://prelay.lwnn.news",
+      "homepage_url_locator": "Exact URL in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Weather work planning; AI-product relevance not established in the post.",
+      "gaps": [
+        "No concrete price/provider mention."
+      ]
+    },
+    {
+      "evidence_id": "V4-HN19",
+      "product": "mxRaven",
+      "founder": "Kush / HN ku5h",
+      "founder_identity_verified": false,
+      "context_quote": "Hi HN, I am Kush, a student founder from India building mxRaven",
+      "product_url": "https://mxraven.com",
+      "homepage_url": "https://mxraven.com",
+      "homepage_url_locator": "Exact URL in post text.",
+      "pricing_quote": null,
+      "scope_warning": "Email infrastructure supporting agent mailboxes; do not confuse first-party SDKs with the product.",
+      "gaps": [
+        "No concrete price/provider mention."
+      ]
+    },
+    {
+      "evidence_id": "V4-HN20",
+      "product": "Better Together",
+      "founder": "HN adamontherun",
+      "founder_identity_verified": false,
+      "context_quote": "Launched <a href=\"https:&#x2F;&#x2F;better-together.fun\" rel=\"nofollow\">https:&#x2F;&#x2F;better-together.fun</a> this weekend to allow our personal AI agents to collaborate on problems that are tough to solve solo.<p>First up is dealing with spam texts and calls.",
+      "product_url": "https://better-together.fun",
+      "homepage_url": "https://better-together.fun/",
+      "homepage_url_locator": "Submission URL; no-slash URL also occurs in post text.",
+      "pricing_quote": null,
+      "scope_warning": "AI agent collaboration; source-attributed launch claim only.",
+      "gaps": [
+        "No concrete price/provider mention."
+      ]
+    },
+    {
+      "evidence_id": "V4-HN22",
+      "product": "Maintainers Coffee",
+      "founder": "HN egz",
+      "founder_identity_verified": false,
+      "context_quote": "We&#x27;re launching Maintainers Coffee to make mailing a small thanks to someone with appreciated work more simple.",
+      "product_url": "https://maintainers.coffee/github/theorderingmachine",
+      "homepage_url": "https://maintainers.coffee/",
+      "homepage_url_locator": "Exact homepage in submission URL; demo URL is in post text.",
+      "pricing_quote": "Someone can send coffee for USD $8 to either Canada or the US.",
+      "scope_warning": "Physical coffee gifting service, not an AI product; retain literal discovery score transparently.",
+      "gaps": [
+        "No provider mention.",
+        "Post price is not a captured pricing page.",
+        "Non-AI physical service; no AI market conclusion."
+      ]
+    }
+  ],
+  "excluded_url_posts": [
+    {
+      "evidence_id": "V4-HN08",
+      "reason": "Node-version API metadata and a third-party Google article; no product homepage/demo in text."
+    },
+    {
+      "evidence_id": "V4-HN25",
+      "reason": "Only technical documentation in text; homepage present solely in submission URL."
+    }
+  ]
+}

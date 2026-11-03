@@ -1,0 +1,6 @@
+{
+  "state": "request_failed",
+  "url": "https://api.github.com",
+  "attempt": 1,
+  "error": "<urlopen error [Errno 11001] getaddrinfo failed>"
+}

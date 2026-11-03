@@ -1,0 +1,23 @@
+{
+  "approved_urls": [],
+  "requests": [
+    {
+      "evidence_id": "V4-HN22",
+      "product": "Maintainers Coffee",
+      "url": "https://maintainers.coffee/",
+      "kind": "PRODUCT_HOMEPAGE",
+      "status": "PENDING_USER_APPROVAL",
+      "source_url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+      "raw_response_path": "artifacts/live-evidence-v4/scan/requests/003_hn_v4_3_try1_1_7506e975.body",
+      "raw_response_sha256": "ac9efa3b6c1c74ccf70c4fd43c7bffcd703b0f1813e44e9c199a2d5e1b6482c9",
+      "raw_locator": "hits[5].url",
+      "score": 70,
+      "scope_warning": "Physical coffee gifting service, not an AI product; retain literal discovery score transparently.",
+      "fetch_executed": false
+    }
+  ],
+  "pricing_urls": [],
+  "checkout_urls": [],
+  "budget_reset_authorized": false,
+  "acquisition_stopped": "G4 elapsed wall clock; G3 prevents opportunities regardless of individual verification"
+}

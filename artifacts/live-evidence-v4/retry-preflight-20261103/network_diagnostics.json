@@ -1,0 +1,45 @@
+{
+  "date_local": "2026-11-03",
+  "timezone": "Asia/Saigon",
+  "diagnostics": [
+    {
+      "environment": "sandbox",
+      "command": "nslookup hn.algolia.com",
+      "exit_code": 0,
+      "dns_resolution_succeeded": false,
+      "output": "*** Default servers are not available\n*** Request to UnKnown timed-out\nServer: UnKnown\nAddress: 127.0.0.1\nDNS request timed out. timeout was 2 seconds. (four times)"
+    },
+    {
+      "environment": "sandbox",
+      "command": "ping -n 1 -w 2000 hn.algolia.com",
+      "exit_code": 1,
+      "output": "Ping request could not find host hn.algolia.com. Please check the name and try again.",
+      "icmp_reached_target": false
+    },
+    {
+      "environment": "sandbox",
+      "method": "GET",
+      "url": "https://api.github.com",
+      "http_status": null,
+      "error": "<urlopen error [Errno 11001] getaddrinfo failed>",
+      "evidence_log": "control/requests.jsonl",
+      "purpose": "connectivity control explicitly authorized in the retry prompt; no repository scan"
+    },
+    {
+      "environment": "approved execution outside sandbox",
+      "command": "nslookup hn.algolia.com",
+      "exit_code": 0,
+      "dns_resolution_succeeded": true,
+      "output": "Non-authoritative answer:\nServer: dns.google\nAddress: 8.8.8.8\nName: hn.algolia.com\nAddress: 34.160.168.181"
+    }
+  ],
+  "automatic_review": {
+    "combined_control_and_hn_command": "REJECTED_BEFORE_EXECUTION",
+    "reason": "Reviewer accepted HN preflight as authorized and low-risk but rejected the GitHub control request, citing the previous GitHub prohibition.",
+    "safer_alternative": "Removed the GitHub control request and executed only the authorized HN preflight; that command was approved.",
+    "github_control_outside_sandbox": "NOT_EXECUTED"
+  },
+  "network_configuration_changed": false,
+  "secrets_read": false,
+  "product_urls_fetched": false
+}

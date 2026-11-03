@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+  "status": 200,
+  "retrieved_at": "2026-11-03T03:33:08.601337+00:00",
+  "sha256": "ac9efa3b6c1c74ccf70c4fd43c7bffcd703b0f1813e44e9c199a2d5e1b6482c9",
+  "bytes": 33942,
+  "body_file": "003_hn_v4_3_try1_1_7506e975.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

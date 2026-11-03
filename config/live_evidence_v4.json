@@ -1,0 +1,22 @@
+{
+  "run_id": "live-evidence-v4",
+  "capture_state": "COMPLETED_SINGLE_AUTHORIZED_BATCH",
+  "automatic_refresh": false,
+  "additional_capture_authorized": false,
+  "allowed_hosts": [
+    "hn.algolia.com"
+  ],
+  "approved_product_urls": [],
+  "source_protocol": "artifacts/live-evidence-v4/scan/protocol.json",
+  "source_protocol_sha256": "7cd4fec97ebe1519fca11d9a1f4e860366aa58e695c462713d3a4539227dd54e",
+  "evidence_criteria": "docs/evidence_criteria.md",
+  "evidence_criteria_sha256": "a5c04ebd340bff6f70952b75947d108785e8c6a7b7d06f338d8d082a2a6c3744",
+  "minimum_candidate_count": 5,
+  "minimum_score": 70,
+  "minimum_scored_candidate_count": 5,
+  "max_opportunities": 5,
+  "baseline_in_discovery_merge": false,
+  "t7_authorized": false,
+  "budget_guard_fraction": 0.7,
+  "max_claims": 8
+}

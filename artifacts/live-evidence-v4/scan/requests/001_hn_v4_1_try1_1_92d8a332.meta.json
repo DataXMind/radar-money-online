@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+  "status": 200,
+  "retrieved_at": "2026-11-03T03:33:04.509750+00:00",
+  "sha256": "06b402b76a46181e52f8df11d0ea0fe0c69427d8069b2686940df45cc9b5b9ff",
+  "bytes": 43351,
+  "body_file": "001_hn_v4_1_try1_1_92d8a332.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

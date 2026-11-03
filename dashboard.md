@@ -1,31 +1,37 @@
-# AI Money-Trend — live evidence v2
+# AI Money-Trend — live evidence v4
 
-**RESEARCH_DRAFT_ONLY**. Capture 02/11/2026; offline review 03/11/2026.
+**RESEARCH_DRAFT_ONLY — 0 opportunities.** Capture 03/11/2026, 10:33 Asia/Saigon.
 
 | Metric | Count |
 |---|---:|
-| GitHub repos + HN records | 8 + 7 |
-| Claims / opportunities | 8 / 0 |
-| HTTP attempts / 200 responses | 18 / 18 |
-| T3/HYPED source records (unqualified) | 15 |
-| EMERGING / PROVEN opportunities | 0 / 0 |
-| Historical baseline IDs (excluded from discovery) | 15 |
+| HN scan HTTP attempts / HTTP 200 | 3 / 3 |
+| Hits / distinct Show HN posts | 30 / 26 |
+| Product/demo discovery leads | 9 |
+| Leads scoring ≥70 / required | 1 / 5 |
+| Source claims / opportunities | 8 / 0 |
+| Verified T2.5a / T2.5b | 0 / 0 |
+| Product/pricing/checkout GETs | 0 |
+| Historical baseline IDs (separate) | 15 |
 
 ## Top Opportunities
 
-Chưa có. T2.5 cần cùng product có integration + pricing page + checkout flow.
-SDK/template hoặc ba keyword mentions không chứng minh active paid product.
+Chưa có. G3 thiếu 5 candidates ≥70; chưa có integration + captured pricing
+page. T2.5a đủ EMERGING khi verified; T2.5b thêm checkout tĩnh, không bắt buộc.
 
-## GAP summary
+## GAP và URL chờ review
 
-- GH07 có Stripe billing docs, chưa đủ pricing/checkout; phần lớn sample là SDK/starter.
-- HN customer/revenue language chưa tạo founder case hoặc complete payment infra.
-- Demo revenue/refund và setup-price placeholders không là real payment/revenue proof.
-- T0 giữ nguyên; chưa có T+7/T+14. T+7 chờ 09/11, chưa chạy/cài lịch.
-- RSS IndieHackers TẮT UNRELIABLE; TAAFT/Reddit/Product Hunt không được dùng.
+- Không post nào nhắc Stripe/Paddle/LemonSqueezy; pricing pages pending verification.
+- Maintainers Coffee đạt literal 70 (0/30/40), nhưng là quà tặng cà phê vật lý,
+  không phải sản phẩm AI. URL homepage nguyên văn chờ duyệt:
+  [https://maintainers.coffee/](https://maintainers.coffee/). Chưa fetch.
+- G1/G2 PASS. G4 dừng acquisition do wall-clock vượt 70% qua quãng pause;
+  chưa có budget reset. G5 mới verify HN provenance, chưa verify trang sản phẩm.
+- T0 giữ nguyên, T+7 chờ **09/11/2026**; GH07/GH08 không điều tra thêm.
 
-[Run report](artifacts/live-evidence-v2/live_evidence_report.md) ·
-[Ledger](artifacts/live-evidence-v2/evidence_ledger.json) · [CSV](artifacts/live-evidence-v2/opportunities.csv) ·
-[Manifest](artifacts/live-evidence-v2/run_manifest.json).
+[Report](artifacts/live-evidence-v4/live_evidence_report.md) ·
+[Candidates + scores](artifacts/live-evidence-v4/candidates.json) ·
+[Ledger](artifacts/live-evidence-v4/evidence_ledger.json) ·
+[CSV](artifacts/live-evidence-v4/opportunities.csv) ·
+[Manifest](artifacts/live-evidence-v4/run_manifest.json).
 
-Offline suite: 181 PASS. Không chạy thêm live. Chờ review; chưa production-ready.
+Offline suite: **221 PASS**. Dừng chờ review; chưa production-ready.

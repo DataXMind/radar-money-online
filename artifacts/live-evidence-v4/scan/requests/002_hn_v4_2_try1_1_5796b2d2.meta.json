@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+tool&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783",
+  "status": 200,
+  "retrieved_at": "2026-11-03T03:33:06.719782+00:00",
+  "sha256": "de48325e97c301efaabbbf6a883b6c298cee280022e41beb6ec91d3920548fd1",
+  "bytes": 64932,
+  "body_file": "002_hn_v4_2_try1_1_5796b2d2.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

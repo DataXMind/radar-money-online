@@ -1,0 +1,2 @@
+{"time": "2026-11-03T03:07:14.867188+00:00", "event": "request_start", "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&hitsPerPage=1", "attempt": 1, "request_id": "001_g1_preflight_1_2cf72d2b"}
+{"time": "2026-11-03T03:07:14.897529+00:00", "event": "request_error", "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&hitsPerPage=1", "request_id": "001_g1_preflight_1_2cf72d2b", "attempt": 1, "status": null, "error": "<urlopen error [Errno 11001] getaddrinfo failed>"}

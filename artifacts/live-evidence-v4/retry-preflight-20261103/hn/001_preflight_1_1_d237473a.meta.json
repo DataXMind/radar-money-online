@@ -1,0 +1,11 @@
+{
+  "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&hitsPerPage=1",
+  "status": 200,
+  "retrieved_at": "2026-11-03T03:23:47.881548+00:00",
+  "sha256": "7e4322f9c67ebde894fcac17ab65e70ece64e3daedf454fd889c5c3a9ca23566",
+  "bytes": 1333,
+  "body_file": "001_preflight_1_1_d237473a.body",
+  "content_type": "application/json",
+  "error_response": false,
+  "rate_limit": {}
+}

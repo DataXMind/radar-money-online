@@ -1,0 +1,93 @@
+{
+  "run_id": "live-evidence-v4",
+  "status": "RESEARCH_DRAFT_ONLY",
+  "evaluated_at": "2026-11-03T07:36:53.096839+00:00",
+  "raw_count": 26,
+  "returned_hits": 30,
+  "claim_count": 8,
+  "claim_selection": {
+    "limit": 8,
+    "available_reviewed_candidates": 9,
+    "rule": "descending discovery score, then stable evidence_id; retain every candidate review",
+    "selected_evidence_ids": [
+      "V4-HN22",
+      "V4-HN04",
+      "V4-HN05",
+      "V4-HN07",
+      "V4-HN14",
+      "V4-HN15",
+      "V4-HN17",
+      "V4-HN19"
+    ]
+  },
+  "candidate_count": 9,
+  "shortlist_count": 1,
+  "opportunity_count": 0,
+  "request_counts": {
+    "scan_attempts": 3,
+    "scan_http_200": 3,
+    "scan_http_4xx_5xx": 0,
+    "scan_dns_errors": 0
+  },
+  "gates": {
+    "G1": {
+      "status": "PASS",
+      "http_status": 200,
+      "source_url": "https://hn.algolia.com/api/v1/search?tags=show_hn&hitsPerPage=1",
+      "raw_response_path": "artifacts/live-evidence-v4/retry-preflight-20261103/hn/001_preflight_1_1_d237473a.body",
+      "raw_response_sha256": "7e4322f9c67ebde894fcac17ab65e70ece64e3daedf454fd889c5c3a9ca23566",
+      "accepted_by_user_before_scan": true
+    },
+    "G2": {
+      "status": "PASS",
+      "http_4xx_5xx": 0,
+      "requests": 3,
+      "error_rate": 0.0
+    },
+    "G3": {
+      "status": "FAIL",
+      "candidate_count": 9,
+      "candidates_at_least_70": 1,
+      "minimum_each": 5
+    },
+    "G4": {
+      "status": "ACQUISITION_STOP",
+      "elapsed_wall_clock_seconds": 14729.096839,
+      "guard_seconds": 1260.0,
+      "capture_finished_elapsed_seconds": 104.61133,
+      "includes_long_user_usage_limit_pause": true,
+      "budget_reset_recorded": false,
+      "token_consumption": null,
+      "model_usd_consumption": null,
+      "paid_http_api_calls": 0,
+      "additional_acquisition_permitted": false
+    },
+    "G5": {
+      "status": "SOURCE_PROVENANCE_PASS_PRODUCT_PAGES_PENDING",
+      "public_source_records": 26,
+      "verified_product_pages": 0,
+      "verified_pricing_pages": 0,
+      "approved_product_urls": []
+    }
+  },
+  "normalization_notes": {
+    "method": "offline reparse of original raw bytes; only href plus non-anchor text URLs",
+    "corrected_records": [
+      "V4-HN05",
+      "V4-HN08",
+      "V4-HN15",
+      "V4-HN19"
+    ],
+    "initial_normalized_jsonl_preserved": true,
+    "new_network_requests": 0
+  },
+  "gaps": [
+    "FEWER_THAN_FIVE_CANDIDATES_AT_LEAST_70",
+    "NO_PROVIDER_MENTION_IN_CAPTURED_POSTS",
+    "NO_VERIFIED_CURRENT_PRODUCT_INTEGRATION",
+    "PRICING_PAGES_PENDING_EXACT_URL_APPROVAL",
+    "NO_VERIFIED_PAYMENT_OR_THREE_POINT_REVENUE_HISTORY",
+    "T7_T14_NOT_OBSERVED",
+    "G4_WALL_CLOCK_GUARD_REACHED_AFTER_PAUSE"
+  ]
+}

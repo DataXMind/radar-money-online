@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "run_id": "live-evidence-v4",
+  "state": "FROZEN_BEFORE_SCAN",
+  "anchor_utc": "2026-11-03T03:33:03+00:00",
+  "cutoff_utc": "2026-10-04T03:33:03+00:00",
+  "window_days": 30,
+  "queries": [
+    {
+      "label": "hn_v4_1",
+      "query": "AI agent",
+      "cap": 10,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+agent&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783"
+    },
+    {
+      "label": "hn_v4_2",
+      "query": "AI tool",
+      "cap": 10,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=AI+tool&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783"
+    },
+    {
+      "label": "hn_v4_3",
+      "query": "launched",
+      "cap": 10,
+      "url": "https://hn.algolia.com/api/v1/search_by_date?query=launched&tags=show_hn&hitsPerPage=10&page=0&numericFilters=created_at_i%3E%3D1791084783%2Ccreated_at_i%3C%3D1793676783"
+    }
+  ],
+  "allowed_hosts": [
+    "hn.algolia.com"
+  ],
+  "max_returned_hits_total": 30,
+  "max_unique_retained": 30,
+  "target_returned_hits": [
+    20,
+    30
+  ],
+  "selection": "three fixed queries, newest first, page0, ten hits each; first objectID wins; no backfill",
+  "product_url_rule": "public product homepage/demo URL must occur in story_text; top-level url alone is insufficient",
+  "max_http_attempts": 6,
+  "dns_retries_per_query": 1,
+  "dns_retry_delay_seconds": 60,
+  "g1": "accepted prior HTTP200 captured in retry-preflight-20261103",
+  "g2": "stop if HTTP4xx/5xx requests / all scan attempts >0.30; DNS is not HTTP4xx/5xx",
+  "g3": "at least5 product candidates AND at least5 scoring>=70; else no opportunities",
+  "budget_started_utc": "2026-11-03T03:31:24+00:00",
+  "wall_clock_seconds": 1800,
+  "g4_time_guard_fraction": 0.7,
+  "token_budget": 150000,
+  "api_usd_budget": 3,
+  "unobservable_budgets": [
+    "session model token and USD consumption are unavailable to this script"
+  ],
+  "g5": "public source URL with HTTP200 raw provenance; product reachability pending exact URL approval",
+  "approved_product_urls": [],
+  "follow_outbound_links": false
+}

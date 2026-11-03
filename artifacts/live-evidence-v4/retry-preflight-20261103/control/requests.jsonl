@@ -1,0 +1,2 @@
+{"time": "2026-11-03T03:22:50.172886+00:00", "event": "request_start", "url": "https://api.github.com", "attempt": 1, "request_id": "001_connectivity_control_1_29eea417"}
+{"time": "2026-11-03T03:22:50.181877+00:00", "event": "request_error", "url": "https://api.github.com", "request_id": "001_connectivity_control_1_29eea417", "attempt": 1, "status": null, "error": "<urlopen error [Errno 11001] getaddrinfo failed>"}

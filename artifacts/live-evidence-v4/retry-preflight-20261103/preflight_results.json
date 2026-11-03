@@ -1,0 +1,22 @@
+{
+  "stop_after_preflight": true,
+  "preflight_attempts": 1,
+  "g1": "PASS",
+  "full_scan_started": false,
+  "results": [
+    {
+      "test": "preflight_1",
+      "url": "https://hn.algolia.com/api/v1/search?tags=show_hn&hitsPerPage=1",
+      "started_at": "2026-11-03T03:23:47.093062+00:00",
+      "environment": "approved execution outside sandbox",
+      "redirects_followed": false,
+      "automatic_retries": false,
+      "status": 200,
+      "sha256": "7e4322f9c67ebde894fcac17ab65e70ece64e3daedf454fd889c5c3a9ca23566",
+      "body_file": "001_preflight_1_1_d237473a.body",
+      "retrieved_at": "2026-11-03T03:23:47.881548+00:00",
+      "json_valid": true,
+      "hits_returned": 1
+    }
+  ]
+}
